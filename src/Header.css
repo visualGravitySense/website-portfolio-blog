@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #111;
+    color: #fff;
+    font-family: "Neue Bit", sans-serif;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ffcc00;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #ff0055;
+  }
+  

@@ -1,0 +1,39 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .hero-title {
+    font-size: 5rem;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    font-family: "Blacker Display", sans-serif;
+  }
+  
+  .hero-title span {
+    color: #ff0055;
+    text-shadow: 0 0 10px #ff0055;
+  }
+  
+  .hero-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #333, #222, #ff0055);
+    animation: gradient-animation 10s infinite alternate;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  

@@ -1,0 +1,38 @@
+.chaos-block {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #111;
+  }
+  
+  .cta-button {
+    background: #ff0055;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transform: rotate(-10deg);
+    transition: transform 0.2s ease, background 0.3s;
+  }
+  
+  .cta-button:hover {
+    transform: rotate(5deg);
+    background: #ff3377;
+  }
+  
+  .chaos-text {
+    color: #fff;
+    font-size: 2rem;
+    transform: rotate(15deg);
+  }
+  
+  .chaos-shape {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #ff0055, #ffcc00);
+    transform: rotate(45deg);
+  }
+  
