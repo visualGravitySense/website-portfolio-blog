@@ -2,28 +2,67 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 20px;
     background: #111;
     color: #fff;
     font-family: "Neue Bit", sans-serif;
   }
   
   .logo {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #ffcc00;
     text-transform: uppercase;
     text-shadow: 0 0 5px #ffcc00;
   }
   
+  .navigation-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между блоками навигации и соц. иконок */
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px; /* Расстояние между ссылками */
+  }
+  
   .nav a {
-    margin: 0 15px;
-    color: #fff;
+    color: #a2a2a2;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     transition: color 0.3s;
   }
   
   .nav a:hover {
-    color: #ff0055;
+    color: #87ff01;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px; /* Расстояние между соц. иконками */
+    /* align-items: center; */
+  }
+  
+  .social-icons a {
+    color: #666;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  /* Оригинальные цвета при наведении */
+  .social-icons a:hover:nth-child(1) {
+    color: #ff00f2; /* GitHub (темно-серый) */
+  }
+  
+  .social-icons a:hover:nth-child(2) {
+    color: #0077b5; /* LinkedIn (синий) */
+  }
+  
+  .social-icons a:hover:nth-child(3) {
+    color: #e4405f; /* Instagram (розовый) */
+  }
+  
+  .social-icons a:hover:nth-child(4) {
+    color: #38d4a5; /* Email (красный) */
   }
   
