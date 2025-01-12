@@ -14,16 +14,16 @@ const Header = () => {
           <a href="#contact">Контакты</a>
         </nav>
         <div className="social-icons">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/visualGravitySense" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/dmitri-gornakov-7a664840/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/gornainsta/" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
-          <a href="mailto:youremail@example.com">
+          <a href="mailto:dmitri.gornakov@gmail.com">
             <FaEnvelope />
           </a>
         </div>

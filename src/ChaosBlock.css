@@ -14,7 +14,7 @@
     font-size: 1.5rem;
     border: none;
     cursor: pointer;
-    transform: rotate(-10deg);
+    transform: rotate(-3deg);
     transition: transform 0.2s ease, background 0.3s;
   }
   
