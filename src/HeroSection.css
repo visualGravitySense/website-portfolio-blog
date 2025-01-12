@@ -1,39 +1,105 @@
-.hero-section {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+/* Общий стиль кнопки */
+.cta-button {
+  padding: 10px 20px;
+  background: #ff0055;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+  z-index: 10; /* Высокий приоритет слоя */
+  position: relative; /* Убедимся, что z-index работает */
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+/* Фон секции */
+.hero.hero-creative {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #00d9ff, #0000ff, #00ff00, #0099ff, #000) no-repeat;
+  background-size: 400% 400%;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  animation: backgroundMove 8s infinite linear;
+}
+
+/* Шум */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/noise.png') repeat;
+  opacity: 0.2;
+  z-index: 1; /* Шум ниже кнопки */
+}
+
+/* Glitch эффект */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background: conic-gradient(from 180deg at center, #ff00ff, #00ffff, #00d9ff, #0000ff, #ffff00);
+  clip-path: polygon(10% 0, 90% 10%, 80% 90%, 0% 80%);
+  opacity: 0.3;
+  animation: glitch 3s infinite ease-in-out alternate;
+  z-index: 2; /* Эффект ниже кнопки */
+}
+
+/* Остальной контент */
+.hero-content {
+  position: relative;
+  z-index: 5; /* Убедимся, что текст тоже выше фона */
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* Анимация движения градиента */
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .hero-title {
-    font-size: 5rem;
-    color: #fff;
-    z-index: 2;
-    text-align: center;
-    font-family: "Blacker Display", sans-serif;
+  50% {
+    background-position: 100% 50%;
   }
-  
-  .hero-title span {
-    color: #ff0055;
-    text-shadow: 0 0 10px #ff0055;
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .hero-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #333, #222, #ff0055);
-    animation: gradient-animation 10s infinite alternate;
+}
+
+/* Анимация glitch */
+@keyframes glitch {
+  0% {
+    transform: translate(-5px, -5px) scale(1.1);
   }
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
+  50% {
+    transform: translate(5px, 5px) scale(1.2);
   }
-  
+  100% {
+    transform: translate(-10px, 10px) scale(1.1);
+  }
+}
