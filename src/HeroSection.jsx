@@ -8,7 +8,7 @@ import "./HeroSection.css";
 const Hero = () => {
   return (
     <section className="hero hero-creative" id="hero">
-      {/* Декоративный фон */}
+      {/* Декоративный фон  */}
       <div className="hero-glitch"></div>
       <div className="hero-noise"></div>
 

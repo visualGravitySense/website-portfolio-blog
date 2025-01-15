@@ -14,8 +14,8 @@ const App = () => {
       <Header />
       <HeroSection />
       <ChaosBlock />
-      <LessonCards />
-      <ProjectsGallery />
+      {/* <LessonCards /> */}
+      {/* <ProjectsGallery /> */}
       <ContactForm />
       <Footer />
     </div>
