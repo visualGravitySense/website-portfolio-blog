@@ -6,9 +6,9 @@ const Footer = () => {
     <footer className="footer">
       <p>&copy; 2025 Creative Technologist. Все права защищены.</p>
       <div className="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">Twitter</a>
+        <a href="https://www.linkedin.com/in/dmitri-gornakov-7a664840/">LinkedIn</a>
+        <a href="https://github.com/visualGravitySense">GitHub</a>
+        <a href="https://www.instagram.com/gornainsta/">Instagram</a>
       </div>
     </footer>
   );

@@ -103,3 +103,44 @@
     transform: translate(-10px, 10px) scale(1.1);
   }
 }
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .hero.hero-creative {
+    height: 60vh; /* Уменьшаем высоту */
+  }
+
+  .hero-title {
+    font-size: 2.5rem; /* Уменьшаем размер заголовка */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem; /* Уменьшаем размер подзаголовка */
+  }
+
+  .cta-button {
+    padding: 8px 15px; /* Уменьшаем отступы кнопки */
+    font-size: 1rem; /* Уменьшаем размер текста кнопки */
+  }
+}
+
+/* Адаптация для очень маленьких устройств */
+@media (max-width: 480px) {
+  .hero.hero-creative {
+    height: 50vh; /* Ещё больше уменьшаем высоту */
+  }
+
+  .hero-title {
+    font-size: 2rem; /* Уменьшаем размер заголовка */
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem; /* Уменьшаем размер подзаголовка */
+    margin-bottom: 20px; /* Уменьшаем отступ */
+  }
+
+  .cta-button {
+    padding: 6px 12px; /* Ещё больше уменьшаем отступы кнопки */
+    font-size: 0.9rem; /* Уменьшаем размер текста кнопки */
+  }
+}

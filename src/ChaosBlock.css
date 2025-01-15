@@ -1,38 +1,81 @@
 .chaos-block {
-    position: relative;
-    padding: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #111;
-  }
-  
-  .cta-button {
-    background: #ff0055;
-    color: #fff;
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    border: none;
-    cursor: pointer;
-    transform: rotate(-3deg);
-    transition: transform 0.2s ease, background 0.3s;
-  }
-  
-  .cta-button:hover {
-    transform: rotate(5deg);
-    background: #ff3377;
-  }
-  
-  .chaos-text {
-    color: #fff;
-    font-size: 2rem;
-    transform: rotate(15deg);
-  }
-  
-  .chaos-shape {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(135deg, #ff0055, #ffcc00);
-    transform: rotate(45deg);
-  }
-  
+  position: relative;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #111, #222);
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.chaos-content {
+  z-index: 1;
+  position: relative;
+}
+
+.chaos-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ff0055;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  transform: rotate(-2deg);
+}
+
+.chaos-description {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #ff0055;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+  transform: rotate(-3deg);
+}
+
+.cta-button:hover {
+  background: #ff3377;
+  transform: rotate(3deg) scale(1.05);
+}
+
+.chaos-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.chaos-image {
+  position: absolute;
+  width: 200px;
+  opacity: 0.8;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.chaos-image:hover {
+  transform: scale(1.1) rotate(0deg);
+  opacity: 1;
+}
+
+.chaos-image-1 {
+  top: 10%;
+  left: 5%;
+}
+
+.chaos-image-2 {
+  bottom: 15%;
+  right: 10%;
+}
