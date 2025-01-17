@@ -1,51 +1,116 @@
+/* Общий стиль баннера */
 .chaos-block {
   position: relative;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #111, #222);
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0d0d0d, #222222);
   color: #fff;
-  overflow: hidden;
   text-align: center;
+  overflow: hidden;
+  border: 5px solid rgba(255, 0, 85, 0.7);
+  box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff;
 }
 
+/* Контентная область */
 .chaos-content {
   z-index: 1;
   position: relative;
 }
 
+/* Заголовок */
 .chaos-title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 20px;
   text-transform: uppercase;
-  color: #ff0055;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  transform: rotate(-2deg);
+  color: #ff00ff;
+  text-shadow: 3px 3px 8px #00ffff, -3px -3px 8px #ff0055;
+  transform: skewX(-5deg);
+  animation: neon-glow 2s infinite alternate;
 }
 
+/* Описание */
 .chaos-description {
   font-size: 1.5rem;
   margin-bottom: 30px;
-  line-height: 1.4;
+  line-height: 1.6;
   color: #fff;
+  text-shadow: 2px 2px 5px rgba(255, 0, 85, 0.7);
+  animation: float 3s ease-in-out infinite;
 }
 
+/* SubHeading */
+.chaos-sub {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(255, 0, 85, 0.7);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Кнопка */
 .cta-button {
-  padding: 15px 30px;
+  padding: 15px 40px;
   font-size: 1.5rem;
   font-weight: bold;
-  background: #ff0055;
-  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff0055, #00ffff);
+  color: #000;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.3s ease;
-  transform: rotate(-3deg);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px #ff00ff, 0 0 20px #00ffff;
+  transform: skewX(-5deg);
 }
 
 .cta-button:hover {
-  background: #ff3377;
-  transform: rotate(3deg) scale(1.05);
+  transform: skewX(5deg) scale(1.1);
+  background: linear-gradient(90deg, #ff3377, #33ccff);
+  box-shadow: 0 0 25px #ff00ff, 0 0 35px #00ffff;
 }
+
+/* Картинки */
+.chaos-images {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.chaos-image {
+  width: 300px;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.chaos-image:hover {
+  transform: rotate(-5deg) scale(1.1);
+  box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff;
+}
+
+/* Анимации */
+@keyframes neon-glow {
+  from {
+    text-shadow: 3px 3px 8px #ff0055, -3px -3px 8px #00ffff;
+  }
+  to {
+    text-shadow: 5px 5px 12px #ff00ff, -5px -5px 12px #00ffff;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 .chaos-images {
   position: absolute;
