@@ -13,9 +13,10 @@ const Hero = () => {
       <div className="hero-noise"></div>
 
       <div className="hero-content">
-        <h1 className="hero-title">Создаю хаос, чтобы упорядочить мир</h1>
+        <h1 className="hero-title">Создаю хаос,</h1><h1 className="hero-title">чтобы упорядочить мир</h1>
         <p className="hero-subtitle">
-        Дизайн без правил - моя стихия! Здесь хаос находит порядок. <br/> Ваши идеи + мой креатив = прорывной результат.
+          Дизайн без правил - моя стихия! Здесь хаос находит порядок.
+          <br /> Ваши идеи + мой креатив = прорывной результат.
         </p>
         <button className="cta-button">Понеслась!</button>
       </div>
