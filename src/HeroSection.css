@@ -8,6 +8,9 @@
   text-shadow: 2px 2px 4px #E9F3F3, -2px -2px 4px #E8EDF8;
   animation: glitch 30s infinite alternate;
 }
+.hero-title .highlight {
+  color: #5227CC; /* Цвет для выделения */
+}
 
 /* Текст описания */
 .hero-subtitle {

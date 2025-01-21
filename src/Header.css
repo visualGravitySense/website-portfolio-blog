@@ -32,13 +32,15 @@
   
   .nav a {
     color: #6C757D;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 0.9rem;
     transition: color 0.3s;
   }
   
   .nav a:hover {
     color: #5227CC;
+    /* font-size: 1.1rem; */
+    text-decoration: underline;
   }
   
   .social-icons {

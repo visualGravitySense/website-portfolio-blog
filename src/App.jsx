@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
 import ChaosBlock from "./ChaosBlock";
+import ComplexComponent from "./ComplexComponent";
 import LessonCards from "./LessonCards";
 import ProjectsGallery from "./ProjectsGallery";
 import ContactForm from "./ContactForm";
@@ -14,10 +15,11 @@ const App = () => {
     <div className="app">
       <Header />
       <HeroSection />
-      <ChaosBlock />
+      <ComplexComponent />
+      {/* <ChaosBlock /> */}
       {/* <LessonCards /> */}
       {/* <ProjectsGallery /> */}
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Footer />
     </div>
   );
