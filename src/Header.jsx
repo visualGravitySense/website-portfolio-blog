@@ -1,17 +1,20 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 import "./Header.css";
+import logo from './assets/logo-digo-1.png';
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo">Dmitri Gornakov</div>
+      <div className="logo">
+        <img src={logo} alt="Dmitri Gornakov" />
+      </div>
       <div className="navigation-container">
         <nav className="nav">
-          <a href="#hero">Главная</a>
-          <a href="#lessons">Уроки</a>
-          <a href="#projects">Проекты</a>
-          <a href="#contact">Контакты</a>
+          <a href="#hero">Home</a>
+          <a href="#lessons">Classes</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contacts</a>
         </nav>
         <div className="social-icons">
           <a href="https://github.com/visualGravitySense" target="_blank" rel="noopener noreferrer">

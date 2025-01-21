@@ -8,8 +8,7 @@ import ContactForm from "./ContactForm";
 import Footer from "./Footer";
 import "./App.css";
 
-
-const App = () => {
+const Course = () => {
   return (
     <div className="app">
       <Header />
@@ -23,4 +22,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Course;

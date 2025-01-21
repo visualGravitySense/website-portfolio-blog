@@ -3,17 +3,21 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #111;
+    background: linear-gradient(90deg, #E9F3F3, #E8EDF8, #F5EEF8);
     color: #fff;
     font-family: "Neue Bit", sans-serif;
   }
   
   .logo {
-    font-size: 1rem;
-    color: #ffcc00;
-    text-transform: uppercase;
-    text-shadow: 0 0 5px #ffcc00;
+    display: flex;
+    align-items: center;
   }
+  
+  .logo img {
+    max-height: 50px; /* Ограничение высоты изображения */
+    width: auto; /* Сохранение пропорций изображения */
+  }
+  
   
   .navigation-container {
     display: flex;
@@ -27,14 +31,14 @@
   }
   
   .nav a {
-    color: #a2a2a2;
+    color: #6C757D;
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s;
   }
   
   .nav a:hover {
-    color: #87ff01;
+    color: #5227CC;
   }
   
   .social-icons {

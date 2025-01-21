@@ -18,7 +18,7 @@ const Hero = () => {
           Дизайн без правил - моя стихия! Здесь хаос находит порядок.
           <br /> Ваши идеи + мой креатив = прорывной результат.
         </p>
-        <button className="cta-button">Понеслась!</button>
+        <button className="cta-button">Начать работать</button>
       </div>
 
       
