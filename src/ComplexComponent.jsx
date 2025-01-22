@@ -97,7 +97,7 @@ const ComplexComponent = () => {
           <div className="section-header">
           {/* <h2>О проекте</h2> */}
           <h2>
-          About <span className="highlight">me</span>
+          About <span className="highlight">Me</span>
           </h2>
           
         </div>
@@ -143,7 +143,7 @@ const ComplexComponent = () => {
               <p className="description">{card.secondaryDescription}</p>
 
               <div className="buttons">
-              <a href="mailto:dmitri.gornakov@gmail.com"><button className="btn-purple">Select a course</button></a>
+              <a href=""><button className="btn-purple">Select a course</button></a>
                 {/* <button className="cta-button btn-purple">Начать работать</button> */}
               </div>
             </div>
