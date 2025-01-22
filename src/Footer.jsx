@@ -6,9 +6,9 @@ const Footer = () => {
     <footer className="footer">
       <p>&copy; 2025 Dmitri Gornakov | Creative Technologist.</p>
       <div className="social-links">
-        <a href="https://www.linkedin.com/in/dmitri-gornakov-7a664840/">LinkedIn</a>
-        <a href="https://github.com/visualGravitySense">GitHub</a>
-        <a href="https://www.instagram.com/gornainsta/">Instagram</a>
+        <a href="https://www.linkedin.com/in/dmitri-gornakov-7a664840/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/visualGravitySense" target="_blank">GitHub</a>
+        <a href="https://www.instagram.com/gornainsta/" target="_blank">Instagram</a>
       </div>
     </footer>
   );
