@@ -48,11 +48,18 @@
     margin-bottom: 10px;
   }
   
+  .title {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #6e3aff;
+    text-align: left;
+  }
+
   .description {
     margin: 20px 0;
     font-size: 1rem;
     color: #333;
-    text-align: justify;
+    text-align: left;
   }
   
   .buttons {
