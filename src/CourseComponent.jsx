@@ -143,7 +143,7 @@ const cardsData = [
 
 const ComplexComponent = () => {
   return (
-    <div className="complex-component">
+    <div className="complex-component" id="lessons">
       
       
       <div className="content-wrapper">

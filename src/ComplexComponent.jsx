@@ -91,7 +91,6 @@ const ComplexComponent = () => {
       
       <div className="content-wrapper">
         {/* Левый блок */}
-
         
         <div className="left-block">
           <div className="section-header">

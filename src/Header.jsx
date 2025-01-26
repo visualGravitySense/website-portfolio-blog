@@ -12,8 +12,8 @@ const Header = () => {
       <div className="navigation-container">
         <nav className="nav">
           <a href="#hero">Home</a>
-          <a href="#lessons">Classes</a>
           <a href="#projects">Projects</a>
+          <a href="#lessons">Classes</a>
           <a href="#contact">Contacts</a>
         </nav>
         <div className="social-icons">
