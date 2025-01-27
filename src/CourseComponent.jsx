@@ -145,6 +145,11 @@ const ComplexComponent = () => {
   return (
     <div className="complex-component" id="lessons">
       
+      <div className="section-header">
+            <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+                My <span className="highlight">Projects</span> and <span className="highlight">Works</span>
+             </h2>
+        </div>
       
       <div className="content-wrapper">
         {/* Левый блок */}

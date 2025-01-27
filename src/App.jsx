@@ -25,7 +25,7 @@ const App = () => {
         <ComplexComponent />
         <Portfolio />
 
-        {/* <CourseComponent /> */}
+        <CourseComponent />
 
         {/* <Routes> */}
           {/* <Route path="/" element={<ComplexComponent />} /> */}
