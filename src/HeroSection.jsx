@@ -191,7 +191,7 @@ const Hero = () => {
                 <button type="submit" className="submit-button">Send</button>
               </form>
               <button className="close-button" onClick={togglePopup}>
-                Close
+              ✖
               </button>
             </div>
           </div>

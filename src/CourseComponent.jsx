@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import "./Popup.css";
+
 import './Component.css';
 import crypto1 from './assets/crypto-startup-1.jpg';
 import crypto2 from './assets/crypto-startup-2.jpg';
@@ -142,6 +145,54 @@ const cardsData = [
 
 
 const ComplexComponent = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    // company: "",
+    // industry: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const togglePopup = () => setIsOpen(!isOpen);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "YOUR_SERVICE_ID", // Замените на ваш Service ID
+        "YOUR_TEMPLATE_ID", // Замените на ваш Template ID
+        formData,
+        "YOUR_PUBLIC_KEY" // Замените на ваш Public Key
+      )
+      .then(
+        (response) => {
+          alert("Message sent successfully!");
+          setFormData({
+            name: "",
+            company: "",
+            industry: "",
+            phone: "",
+            email: "",
+            message: "",
+          });
+          setIsOpen(false);
+        },
+        (error) => {
+          alert("Error sending message. Try again.");
+          console.error(error);
+        }
+      );
+  };
+
   return (
     <div className="complex-component" id="lessons">
       
@@ -226,9 +277,45 @@ const ComplexComponent = () => {
             </div>
           ))}
 
-            <div className="buttons">
+            {/* <div className="buttons">
                 <a href="/landing"><button className="btn-purple">Select a course</button></a>
+              </div> */}
+
+              {/* Кнопка для открытия Popup */}
+              <div className="buttons">
+                <button className="btn-purple" onClick={togglePopup}>
+                Select a course
+                </button>
               </div>
+              
+
+              {isOpen && (
+                <div class="popup-overlay">
+                <div class="popup-content">
+                  <button class="close-button" onClick={togglePopup}>✖</button>
+                  <h2>Leave a request for a course</h2>
+                  <p>We gather a group of 10-15 people and launch the course immediately. You can register for a course by leaving a request and a manager will contact you within 24 hours.</p>
+                  <form id="request-form">
+                    <input type="text" name="name" placeholder="Your name (required)" onChange={handleInputChange} required />
+                    {/* <input type="text" name="company" placeholder="Название компании" /> */}
+                    {/* <input type="text" name="industry" placeholder="Сфера деятельности" /> */}
+                    <input type="tel" name="phone" placeholder="Phone (optional)" onChange={handleInputChange} />
+                    <input type="email" name="email" placeholder="E-mail (required)" onChange={handleInputChange} required />
+                    <textarea name="task" placeholder="Comments (optional)" onChange={handleInputChange}></textarea>
+                    {/* <label>
+                      Если нужно, прикрепите файл:
+                      <input type="file" name="attachment" />
+                    </label> */}
+                    <button type="submit" class="submit-button">Send a request</button>
+                  </form>
+                  <p class="privacy-note">
+                    By clicking the "Send a request" button, you agree to the 
+                    <a href="" target="_blank"> processing of your personal data</a>.
+                  </p>
+                </div>
+              
+              </div>
+              )}
 
         </div>
         

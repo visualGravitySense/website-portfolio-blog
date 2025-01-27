@@ -1,9 +1,6 @@
 import React from 'react';
 import './Component.css';
 
-
-
-
 const infoData = [
   {
     title: "Hello!",
@@ -112,10 +109,11 @@ const ComplexComponent = () => {
               </div>
             ))}
 
-            <br/>
-            <div className="buttons">
+            {/* <br/> */}
+            {/* <div className="buttons">
                 <a href="mailto:dmitri.gornakov@gmail.com"><button className="btn-green">Start working</button></a>
-              </div>
+              </div> */}
+
           {/* <div className="card">
             <img src="path-to-icon.png" alt="e-Coupon" />
             <p className="description">
@@ -142,7 +140,7 @@ const ComplexComponent = () => {
               <p className="description">{card.secondaryDescription}</p>
 
               <div className="buttons">
-              <a href=""><button className="btn-purple">Select a course</button></a>
+              {/* <a href=""><button className="btn-purple">Select a course</button></a> */}
                 {/* <button className="cta-button btn-purple">Начать работать</button> */}
               </div>
             </div>
