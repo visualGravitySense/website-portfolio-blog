@@ -72,3 +72,17 @@
     color: #38d4a5; /* Email (красный) */
   }
   
+  /* Скрываем навигацию на мобильных устройствах */
+@media (max-width: 768px) {
+  .navigation-container {
+    display: none;
+  }
+}
+
+/* Центрируем логотип на мобильных устройствах */
+@media (max-width: 768px) {
+  .logo {
+    justify-content: center; /* Выравнивание по центру */
+    margin: 0 auto; /* Убираем возможные отступы */
+  }
+}

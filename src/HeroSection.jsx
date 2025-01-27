@@ -41,7 +41,7 @@ const Hero = () => {
         alt="Computer"
         className="floating-item computer"
       /> */}
-      
+
       {/* <img
         src={logodigo2}
         alt="Logo"
@@ -69,11 +69,10 @@ const Hero = () => {
       
 
       <div className="hero-content">
-        <h1 className="hero-title">I create chaos</h1>
-          <h1 className="hero-title">to organize <span className="highlight">the world</span></h1>
+        <h1 className="hero-title">I create chaos to <br/>organize <span className="highlight">the world</span></h1>
         <p className="hero-subtitle">
           Design without rules is my element! Here chaos finds order.
-          <br /> Your ideas + my creativity = breakthrough result.
+           Your ideas + my creativity = breakthrough result.
         </p>
         <a href="mailto:dmitri.gornakov@gmail.com?subject=Начать работать&body=Здравствуйте!"><button className="cta-button">
           Start working
