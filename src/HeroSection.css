@@ -7,6 +7,7 @@
   color: #000;
   text-shadow: 2px 2px 4px #E9F3F3, -2px -2px 4px #E8EDF8;
   animation: glitch 30s infinite alternate;
+  line-height: 1.5;
 }
 .hero-title .highlight {
   color: #5227CC; /* Цвет для выделения */
@@ -302,12 +303,12 @@
   animation-delay: 12s;
 }
 
-.logo {
+/* .logo {
   bottom: 5%;
   left: 50%;
   animation-delay: 15s;
   transform: scale(1.3);
-}
+} */
 
 /* Анимация движения для всех элементов */
 @keyframes floatItem {
@@ -319,5 +320,97 @@
   }
   100% {
     transform: translateY(0) scale(1);
+  }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .hero.hero-creative {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #E9F3F3, -1px -1px 2px #E8EDF8;
+    line-height: 1.5;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-shadow: 0.5px 0.5px 1.5px #E8EDF8;
+  }
+
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .floating-star {
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
+  }
+
+  .picture {
+    bottom: 10%;
+    left: 10%;
+    animation-delay: 6s;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero.hero-creative {
+    height: 80vh;
+    padding: 15px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .cta-button {
+    padding: 16px 16px;
+    font-size: 1.5rem;
+  }
+
+  .floating-star {
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+  }
+
+  .picture {
+    bottom: 10%;
+    left: 10%;
+    animation-delay: 6s;
+  }
+}
+
+/* Упрощение эффектов на мобильных */
+.hero.hero-creative::before {
+  opacity: 0.1;
+}
+
+.hero.hero-creative::after {
+  display: none; /* Убираем дополнительный фон для мобильных */
+}
+
+/* Уменьшение сложных анимаций на мобильных */
+@media (max-width: 768px) {
+  .hero-title,
+  .hero-subtitle {
+    animation: none; /* Убираем сложные анимации для производительности */
+  }
+
+  .floating-star {
+    animation: none;
   }
 }

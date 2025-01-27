@@ -63,7 +63,7 @@ const Portfolio = () => {
     <section id="projects" style={{ padding: "2rem", backgroundColor: "#fff" }}>
         <div className="section-header">
             <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                My <span className="highlight">Projects</span>
+                My <span className="highlight">Projects</span> and <span className="highlight">Works</span>
              </h2>
         </div>
       

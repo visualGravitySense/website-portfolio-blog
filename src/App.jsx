@@ -11,29 +11,31 @@ import Footer from "./Footer";
 import Portfolio from "./Portfolio";
 import "./App.css";
 // import LandingPage from "./LandingPage"; // Импортируйте новый компонент страницы
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 
 const App = () => {
   return (
-    <Router>
+    // <Router>
       <div className="app">
         <Header />
         <HeroSection />
+
         <ComplexComponent />
         <Portfolio />
 
         <CourseComponent />
-        <Routes>
+
+        {/* <Routes> */}
           {/* <Route path="/" element={<ComplexComponent />} /> */}
           {/* <Route path="/landing" element={<LandingPage />} /> */}
           {/* <Route path="/website-portfolio-blog" element={<HeroSection />} /> */}
           {/* Добавьте новые страницы по мере необходимости */}
-        </Routes>
+        {/* </Routes> */}
         <Footer />
       </div>
-    </Router>
+    // </Router>
     
   );
 };

@@ -18,7 +18,30 @@
     transition: color 0.3s;
   }
   
-  .social-links a:hover {
+  /* .social-links a:hover {
     color: #ccff00;
+  } */
+
+   /* Оригинальные цвета при наведении */
+   .social-links a:hover:nth-child(1) {
+    color: #ff00f2; /* GitHub (темно-серый) */
   }
   
+  .social-links a:hover:nth-child(2) {
+    color: #0077b5; /* LinkedIn (синий) */
+  }
+  
+  .social-links a:hover:nth-child(3) {
+    color: #e4405f; /* Instagram (розовый) */
+  }
+  
+  .social-links a:hover:nth-child(4) {
+    color: #38d4a5; /* Email (красный) */
+  }
+  
+  @media (max-width: 768px) {
+    .social-links a {
+      font-size: 1rem;
+      
+    }
+  }

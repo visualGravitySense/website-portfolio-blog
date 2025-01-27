@@ -7,14 +7,20 @@
   
   .section-header {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
+
+    flex-direction: column; /* В одну колонку на мобильных */
+    align-items: center; /* Центрирование заголовка */
+    text-align: center;
+    margin-bottom: 15px;
   }
   
   .section-header h2 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: #4d2c91;
+    font-size: 1.2rem; /* Уменьшаем шрифт */
   }
   
   .highlight {
@@ -23,8 +29,18 @@
   
   .content-wrapper {
     display: flex;
+    /* justify-content: space-between;
+    width: 100%; */
+
+    /* flex-direction: column; Вертикальный макет */
+    /* width: 100%; */
+    /* align-items: center; Центрируем блоки */
+
     justify-content: space-between;
+    gap: 20px; /* Пространство между блоками */
+    flex-wrap: wrap; /* Позволяет переносить блоки на следующую строку */
     width: 100%;
+
   }
   
   .left-block,
@@ -32,47 +48,73 @@
   .right-block {
     flex: 1;
     padding: 10px;
+
+    /* flex: none; Отменяем равные пропорции */
+    /* width: 100%; Растягиваем блоки     */
+
+    max-width: calc(33.33% - 20px); /* Три блока в ряд с учетом gap */
+    box-sizing: border-box; /* Учитываем отступы и ширину */
   }
   
   .card {
     background: #f8f8fc;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    /* padding: 20px; */
+    /* margin: 10px; */
+
+    padding: 15px; /* Уменьшаем отступы */
     text-align: center;
-    margin: 10px;
+    margin: 10px 0; /* Увеличиваем вертикальный отступ */
   }
   
   .card img {
-    max-width: 300px;
+    /* max-width: 300px; */
     margin-bottom: 10px;
+
+    max-width: 100%; /* Масштабируем изображение */
+    height: auto; /* Сохраняем пропорции */
   }
   
   .title {
-    margin: 20px 0;
-    font-size: 1rem;
+    /* margin: 20px 0;
+    font-size: 1rem; */
+
+    margin: 10px 0; /* Уменьшаем отступы */
+    font-size: 0.9rem; /* Уменьшаем размер текста */
     color: #6e3aff;
     text-align: left;
   }
 
   .description {
-    margin: 20px 0;
-    font-size: 1rem;
+    /* margin: 20px 0; */
+    /* font-size: 1rem; */
     color: #333;
     text-align: left;
+
+    margin: 10px 0; /* Уменьшаем отступы */
+    font-size: 0.9rem; /* Уменьшаем размер текста */
+    
   }
   
   .buttons {
     display: flex;
+
+    /* flex-direction: column; Кнопки в одну колонку */
     justify-content: center;
     gap: 10px;
   }
   
   .btn {
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    padding: 8px 15px; /* Уменьшаем размер кнопок */
+
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    
+    /* font-size: 1rem; */
+    font-size: 0.9rem; /* Уменьшаем шрифт */
+
     cursor: pointer;
   }
   
@@ -86,3 +128,29 @@
     color: #fff;
   }
   
+
+  /* Media query для мобильных устройств */
+@media (max-width: 768px) {
+  
+
+  .content-wrapper {
+    flex-direction: column; /* Все блоки в одну колонку */
+    /* align-items: stretch; Растянуть на всю ширину */
+    gap: 15px; /* Уменьшаем пространство между блоками */
+  }
+
+  .left-block,
+  .center-block,
+  .right-block {
+    max-width: 100%; /* Растягиваем на всю ширину */
+    padding: 10px;
+  }
+
+  .card {
+    margin: 15px 0; /* Больше пространства между карточками */
+  }
+
+  .section-header h2 {
+    font-size: 1.1rem; /* Ещё меньше для узких экранов */
+  }
+}
