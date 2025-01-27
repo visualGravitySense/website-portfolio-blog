@@ -352,6 +352,12 @@
     height: 30px;
     opacity: 0.6;
   }
+
+  .picture {
+    bottom: 10%;
+    left: 10%;
+    animation-delay: 6s;
+  }
 }
 
 @media (max-width: 480px) {
@@ -379,6 +385,12 @@
     width: 25px;
     height: 25px;
     opacity: 0.5;
+  }
+
+  .picture {
+    bottom: 10%;
+    left: 10%;
+    animation-delay: 6s;
   }
 }
 

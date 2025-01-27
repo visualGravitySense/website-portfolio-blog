@@ -39,3 +39,9 @@
     color: #38d4a5; /* Email (красный) */
   }
   
+  @media (max-width: 768px) {
+    .social-links a {
+      font-size: 1rem;
+      
+    }
+  }

@@ -22,8 +22,8 @@ const App = () => {
         <Header />
         <HeroSection />
 
-        {/* <ComplexComponent /> */}
-        {/* <Portfolio /> */}
+        <ComplexComponent />
+        <Portfolio />
 
         {/* <CourseComponent /> */}
 
