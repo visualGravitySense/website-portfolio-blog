@@ -16,11 +16,11 @@ const Hero = () => {
   const [formData, setFormData] = useState({
     name: "",
     company: "",
-    industry: "",
-    phone: "",
+    // industry: "",
+    // phone: "",
     email: "",
     message: "",
-  });
+  }); 
 
   const togglePopup = () => setIsOpen(!isOpen);
 
@@ -45,8 +45,7 @@ const Hero = () => {
           setFormData({
             name: "",
             company: "",
-            industry: "",
-            phone: "",
+            
             email: "",
             message: "",
           });
@@ -151,6 +150,7 @@ const Hero = () => {
                   onChange={handleInputChange}
                   required
                 />
+
                 <input
                   type="text"
                   name="company"
@@ -159,21 +159,23 @@ const Hero = () => {
                   onChange={handleInputChange}
                   required
                 />
-                <input
+                {/* <input
                   type="text"
                   name="industry"
                   placeholder="Field of activity"
                   value={formData.industry}
                   onChange={handleInputChange}
-                />
-                <input
+                /> */}
+
+                {/* <input
                   type="tel"
                   name="phone"
                   placeholder="Phone"
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                />
+                /> */}
+
                 <input
                   type="email"
                   name="email"
@@ -182,6 +184,7 @@ const Hero = () => {
                   onChange={handleInputChange}
                   required
                 />
+
                 <textarea
                   name="message"
                   placeholder="Brief description of the task"
