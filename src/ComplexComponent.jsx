@@ -33,37 +33,18 @@ const infoData = [
 
 const classesData = [
   {
-    title: "Key Skills and Work Experience",
+    title: "Product Design & UI/UX",
     description: `
-      Project Management - 
-      Product Design - 
-      Backend - 
-      Frontend - 
-      Data Analysis - 
-      Customer Success
+      From idea to product: Market research and audience needs analysis, formulation of key problems that the product will solve. Concept generation and testing of ideas on rapid prototypes. I design working products that find their users, not just beautiful interfaces.
     `,
     secondaryTitle: "",
     secondaryDescription: `
       `
   },
-  // {
-  //   title: "Coolbet | GAN",
-  //   description: `
-  //     Marketing Digital Designer | January 2022 April 2024
-  //   `,
-  //   secondaryTitle: "Цели",
-  //   secondaryDescription: `
-  //     Создание отзывчивых интерфейсов, надежная серверная логика, оптимизация инфраструктуры и автоматизация процессов.
-  //   `
-  // }
-];
-
-const cardsData = [
   {
     title: "Project Management",
     description: `
-      Full cycle of startup development: Planning. Brand creation. Launch and attracting first users.
-
+      I combine strategic planning, design and development, covering the full cycle. Implementation and scaling from a simple idea. I assemble a team and set up work processes. Testing ideas, prototypes and MVP.
     `,
     secondaryTitle: "",
     secondaryDescription: `
@@ -71,15 +52,58 @@ const cardsData = [
     `
   },
   {
-    title: "Working with a modern technology stack",
+  title: "React.js, Node.js, Cloud technologies",
+  description: `
+    Modern web solutions and SaaS products covering the entire cycle from design to deployment and optimization. Development of custom UI components and design systems.
+  `,
+  secondaryTitle: "",
+  secondaryDescription: `
+    
+  `
+}
+];
+
+const cardsData = [
+  {
+    title: "Marketing Digital Designer",
     description: `
-      React.js for front-end.
-Node.js for API.
-Integration of cloud technologies.
+      Coolbet | January 2022 April 2024
+
     `,
     secondaryTitle: "",
     secondaryDescription: `
-      
+      Conceptualized and developed compelling digital assets 
+including landing pages, interactive banners, and social media 
+components that increased brand awareness and user 
+engagement. 
+
+    `
+  },
+  {
+    title: "Frontend Developer",
+    description: `
+      winz.io | January 2020 December 2021
+    `,
+    secondaryTitle: "",
+    secondaryDescription: `
+      Designed high-impact visual assets and interfaces for a 
+cryptocurrency-based iGaming platform using Angular, 
+enhancing the marketing UI and Affiliate pages with HTML.
+    `
+  },
+  {
+    title: "Creative Designer",
+    description: `
+      FCI Levadia | August 2018 August 2019
+    `,
+    secondaryTitle: "",
+    secondaryDescription: `
+      Revamped the visual identity and digital presence for a 
+football club and a major industrial group, aligning branding 
+elements with target audience expectations.
+
+
+
     `
   }
 ];
@@ -200,7 +224,7 @@ const ComplexComponent = () => {
             <div className="buttons">
             <a href={dgcv1} target = "_blank">
             {/* <a href={dgcv1} download> */}
-              <button className="btn-purple">Download My CV</button>
+              <button className="btn-purple">View full CV</button>
             </a>
               {/* <a href=""><button className="btn-purple">View My CV</button></a> */}
                 {/* <button className="cta-button btn-purple">Начать работать</button> */}

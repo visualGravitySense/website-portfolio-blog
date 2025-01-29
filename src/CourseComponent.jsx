@@ -178,8 +178,8 @@ const ComplexComponent = () => {
           alert("Message sent successfully!");
           setFormData({
             name: "",
-            company: "",
-            industry: "",
+            // company: "",
+            // industry: "",
             phone: "",
             email: "",
             message: "",
