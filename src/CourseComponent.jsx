@@ -198,7 +198,7 @@ const ComplexComponent = () => {
       
       <div className="section-header">
             <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                My <span className="highlight">Projects</span> and <span className="highlight">Works</span>
+                My <span className="highlight">Creative</span> Classes 
              </h2>
         </div>
       
@@ -227,7 +227,12 @@ const ComplexComponent = () => {
                 
               </div>
             ))}
-            
+
+            <div className="buttons">
+                <button className="btn-purple" onClick={togglePopup}>
+                Book your course
+                </button>
+              </div>
             
         </div>
 
@@ -250,6 +255,12 @@ const ComplexComponent = () => {
 
             
           ))}
+
+            <div className="buttons">
+                <button className="btn-purple" onClick={togglePopup}>
+                Book your course
+                </button>
+              </div>
           
 
         </div>
@@ -284,7 +295,7 @@ const ComplexComponent = () => {
               {/* Кнопка для открытия Popup */}
               <div className="buttons">
                 <button className="btn-purple" onClick={togglePopup}>
-                Select a course
+                Book your course
                 </button>
               </div>
               

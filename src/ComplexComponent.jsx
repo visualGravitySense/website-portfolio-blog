@@ -1,16 +1,19 @@
 import React from 'react';
 import './Component.css';
+import photo1 from './assets/photo-1.jpg';
+import dgcv1 from './assets/dmitri-gornakov-cv.pdf'
 
 const infoData = [
   {
+    imageSrc3: photo1,
     title: "Hello!",
     description: `
-            My name is Dmitry Gornakov, I am a creative technologist with experience in graphic design, frontend and backend development, and machine learning.
+            My name is Dmitry Gornakov - digital solutions architect. From product design to working with code and data analysis. I build a world of technological innovations, where technology and aesthetics always go together.
 
     `,
-    secondaryTitle: "Targets",
+    secondaryTitle: "",
     secondaryDescription: `
-      My mission is to teach you skills that will help you create innovative projects and build a career in IT.
+      
     `
   },
   // {
@@ -30,21 +33,23 @@ const infoData = [
 
 const classesData = [
   {
-    title: "Startup for learning cryptocurrencies",
+    title: "Key Skills and Work Experience",
     description: `
-      Website on React or Vue.js with backend integration via Node.js. Front-end, Back-end technologies, libraries and integrations, DevOps and hosting, Gamification.
+      Project Management - 
+      Product Design - 
+      Backend - 
+      Frontend - 
+      Data Analysis - 
+      Customer Success
     `,
-    secondaryTitle: "Course objectives",
+    secondaryTitle: "",
     secondaryDescription: `
-      MVP development. Create a minimum viable product: from the idea to the implementation of the first functions (for example, quizzes or statistics on cryptocurrencies).    `
+      `
   },
   // {
-  //   title: "Стек технологий с позиции Full Stack Developer",
+  //   title: "Coolbet | GAN",
   //   description: `
-  //     Front-end: React, Tailwind CSS, Bootstrap
-  //     Back-end: Node.js (Express.js), Python (Django, FastAPI)
-  //     Базы данных: PostgreSQL, MongoDB, Redis
-  //     DevOps: Docker, Kubernetes, GitHub Actions
+  //     Marketing Digital Designer | January 2022 April 2024
   //   `,
   //   secondaryTitle: "Цели",
   //   secondaryDescription: `
@@ -84,22 +89,32 @@ Integration of cloud technologies.
 const ComplexComponent = () => {
   return (
     <div className="complex-component">
+
+      <div className="section-header">
+          <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+              About <span className="highlight">Me</span> 
+            </h2>
+      </div>
       
       
       <div className="content-wrapper">
         {/* Левый блок */}
         
         <div className="left-block">
-          <div className="section-header">
+          {/* <div className="section-header"> */}
           {/* <h2>О проекте</h2> */}
-          <h2>
+          {/* <h2>
           About <span className="highlight">Me</span>
-          </h2>
+          </h2> */}
           
-        </div>
+        {/* </div> */}
         
           {infoData.map((card, i) => (
               <div key={i} className="card">
+                {card.imageSrc3 && (
+                  <img src={card.imageSrc3} alt={card.title} className="card-image" />
+                )}
+
                 <h3 className="title">{card.title}</h3>
                 <p className="description">{card.description}</p>
                 <h4 className="title">{card.secondaryTitle}</h4>
@@ -128,10 +143,10 @@ const ComplexComponent = () => {
 
         {/* Центральный блок */}
         <div className="center-block">
-        <div className="section-header">
+        {/* <div className="section-header">
         <h2>
             Creative <span className="highlight">Classes</span>
-          </h2></div>
+          </h2></div> */}
           {classesData.map((card, i) => (
             <div key={i} className="card">
               <h3 className="title">{card.title}</h3>
@@ -139,10 +154,7 @@ const ComplexComponent = () => {
               <h4 className="title">{card.secondaryTitle}</h4>
               <p className="description">{card.secondaryDescription}</p>
 
-              <div className="buttons">
-              {/* <a href=""><button className="btn-purple">Select a course</button></a> */}
-                {/* <button className="cta-button btn-purple">Начать работать</button> */}
-              </div>
+              
             </div>
           ))}
         </div>
@@ -168,12 +180,13 @@ const ComplexComponent = () => {
         {/* Правый блок */}
 
         <div className="right-block">
-          <div className="section-header">  
+          {/* <div className="section-header">  
         <h2 className="">
           Technology  <span className="highlight">Stack</span>
-          </h2></div>
+          </h2></div> */}
           {cardsData.map((card, i) => (
             <div key={i} className="card">
+              
               <h3 className="title">{card.title}</h3>
               <p className="description">{card.description}</p>
               <h4 className="title">{card.secondaryTitle}</h4>
@@ -181,7 +194,17 @@ const ComplexComponent = () => {
 
               
             </div>
+            
           ))}
+
+            <div className="buttons">
+            <a href={dgcv1} target = "_blank">
+            {/* <a href={dgcv1} download> */}
+              <button className="btn-purple">Download My CV</button>
+            </a>
+              {/* <a href=""><button className="btn-purple">View My CV</button></a> */}
+                {/* <button className="cta-button btn-purple">Начать работать</button> */}
+            </div>
         </div>
         
         {/* <div className="right-block">

@@ -25,9 +25,9 @@
 /* Кнопка */
 .cta-button {
   padding: 15px 30px;
-  background: linear-gradient(90deg, #D7FF4A, #d8ff4a);
-  color: #000;
-  border: 2px solid transparent;
+  background: linear-gradient(180deg, #6e3aff, #4303f3);
+  color: #d7d3e2;
+  /* border: 2px solid transparent; */
   font-size: 1.2rem;
   cursor: pointer;
   /* text-transform: uppercase; */
