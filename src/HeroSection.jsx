@@ -12,6 +12,7 @@ import contact1 from './assets/contact-1.png';
 import picture1 from './assets/picture-1.png';
 
 const Hero = () => {
+
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -32,15 +33,20 @@ const Hero = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!formData.name || !formData.email) {
+      alert("Please fill in the required fields.");
+      return;
+    }
+
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // Замените на ваш Service ID
-        "YOUR_TEMPLATE_ID", // Замените на ваш Template ID
+        "service_qqu3vd9",
+        "template_3w6nbgc",
         formData,
-        "YOUR_PUBLIC_KEY" // Замените на ваш Public Key
+        "OOkYd6kaV2PnokJfd"
       )
       .then(
-        (response) => {
+        () => {
           alert("Message sent successfully!");
           setFormData({
             name: "",
@@ -58,7 +64,7 @@ const Hero = () => {
       );
   };
 
-// const Hero = () => {
+
   return (
     <section className="hero hero-creative" id="hero">
       {/* Декоративный фон  */}
@@ -157,7 +163,7 @@ const Hero = () => {
                   placeholder="Company name"
                   value={formData.company}
                   onChange={handleInputChange}
-                  required
+                  
                 />
                 {/* <input
                   type="text"

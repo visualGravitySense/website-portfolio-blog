@@ -12,142 +12,153 @@ import crypto3 from './assets/crypto-startup-3.jpg';
 const infoData = [
   {
     imageSrc: crypto1, // Путь к изображению
-    title: "Crypto Wise: Creating the Future of Technology!",
+    title: "Build your own crypto startup from scratch!",
     description: `
-            A Unique Course from a Creative Technologist: From Design to Machine Learning.
+            Go from idea to first user. Find out how I created Crypto Wise in 30 days.
 
     `,
-    secondaryTitle: "",
+    secondaryTitle: "What awaits you?",
     secondaryDescription: `
-      A Creative Approach to Teaching Modern Technologies: From Graphic Design to Python and Fullstack Development.
+      Mastering the work with cryptocurrency API. 
+      Developing a real startup from scratch. 
+      Implementation of gamification and data visualization. 
+      Ready-made tools and templates.
     `
   },
-  {
-    imageSrc: "", // Путь к изображению
-    title: "Course platform. Choice of platform.",
-    description: `
-      Thinkific, Teachable or Podia — ready-made solutions for course hosting.
-      In-house development: Developing a platform on React or Vue.js with back-end integration via Node.js or Django.
-    `,
-    secondaryTitle: "Front-end technologies",
-    secondaryDescription: `
-      React.js — the basis for creating an interactive user interface.
-      Vite — for quick project assembly.
-      Bootstrap / Tailwind CSS — for creating responsive design.
-      GraphQL or REST API — for working with data.
-    `
-  },
-  {
-    imageSrc: "", // Путь к изображению
-    title: "Back-end technologies",
-    description: `
-      Node.js + Express.js — for creating an API for the course service.
-      MongoDB or PostgreSQL — for storing user data, course progress, and materials.
-      Auth0 — for authorization and data protection.
-    `,
-    secondaryTitle: "Additional libraries and integrations",
-    secondaryDescription: `
-      CoinPaprika API — for demonstrating how to work with cryptocurrency data.
-      Chart.js or D3.js — for visualizing cryptocurrency data.
-      Lottie.js — for adding animations (e.g. gamified elements).
-      Firebase — for sending notifications, storing files, or analytics.
-    `
-  }
+  // {
+  //   imageSrc: "", // Путь к изображению
+  //   title: "This course is for you if...",
+  //   description: `
+  //     You want to launch your startup. You are passionate about cryptocurrencies and blockchain. You want to learn how to work with a modern technology stack. You are looking for ways to monetize your projects.
+  //   `,
+  //   secondaryTitle: "Training Program",
+  //   secondaryDescription: `
+  //     Module 1: Market research and idea development. Module 2: Creating an MVP using CoinPaprika API. Module 3: Implementing gamification and data visualization. Module 4: Launch, promotion and monetization.
+
+  //   `
+  // },
+  // {
+  //   imageSrc: "", // Путь к изображению
+  //   title: "",
+  //   description: `
+
+  //   `,
+  //   secondaryTitle: "",
+  //   secondaryDescription: `
+      
+  //   `
+  // }
 ];
 
 const classesData = [
   {
-    title: "API Training",
+    imageSrc1: crypto3, // Путь к изображению
+    title: "This course is for you if...",
     description: `
-      Participants will learn how to integrate the CoinPaprika API to obtain cryptocurrency data, process this data, and visualize it.
+      You want to launch your startup. You are passionate about cryptocurrencies and blockchain. You want to learn how to work with a modern technology stack. You are looking for ways to monetize your projects.
     `,
-    secondaryTitle: "MVP Development",
+    secondaryTitle: "Training Program",
     secondaryDescription: `
-      Create a minimum viable product: from an idea to implementing the first functions (e.g. quizzes or cryptocurrency statistics).`
+      Module 1: Market research and idea development. Module 2: Creating an MVP using CoinPaprika API. Module 3: Implementing gamification and data visualization. Module 4: Launch, promotion and monetization.
+      `
   },
-  {
-    title: "Gamification of Products",
-    description: `
-      Participants will learn how to implement game elements in an educational or information product to increase user engagement.
-    `,
-    secondaryTitle: "",
-    secondaryDescription: `
+  // {
+  //   imageSrc1: "", // Путь к изображению
+  //   title: "Gamification of Products",
+  //   description: `
+  //     Participants will learn how to implement game elements in an educational or information product to increase user engagement.
+  //   `,
+  //   secondaryTitle: "",
+  //   secondaryDescription: `
       
-    `
-  },
-  {
-    title: "Project Management",
-    description: `
-      Planning.
-      Brand creation.
-      Launch and attracting the first users.    `,
-    secondaryTitle: "Working with a modern technology stack",
-    secondaryDescription: `
-      React.js for front-end.
-      Node.js for API.
-      Integrating Firebase or other cloud technologies.
-    `
-  }
+  //   `
+  // },
+  // {
+  //   imageSrc1: "", // Путь к изображению
+  //   title: "Project Management",
+  //   description: `
+  //     Planning.
+  //     Brand creation.
+  //     Launch and attracting the first users.    `,
+  //   secondaryTitle: "Working with a modern technology stack",
+  //   secondaryDescription: `
+  //     React.js for front-end.
+  //     Node.js for API.
+  //     Integrating Firebase or other cloud technologies.
+  //   `
+  // }
 ];
 
 const cardsData = [
-  {
-    imageSrc: "", // Путь к изображению
-    title: "Graphic Design | UI/UX",
-    description: `
-      Free case design for real-world tasks. We will teach you how to create aesthetic interfaces and design projects for startups.
+  // {
+  //   imageSrc2: "", // Путь к изображению
+  //   title: "Graphic Design | UI/UX",
+  //   description: `
+  //     Free case design for real-world tasks. We will teach you how to create aesthetic interfaces and design projects for startups.
 
-    `,
-    secondaryTitle: "Frontend | React",
-    secondaryDescription: `
-      Modern UI development. Learn React to build interactive applications.
-    `
-  },
+  //   `,
+  //   secondaryTitle: "Frontend | React",
+  //   secondaryDescription: `
+  //     Modern UI development. Learn React to build interactive applications.
+  //   `
+  // },
   
-  {
-    imageSrc2: "", // Путь к изображению
-    title: "Backend | Django | JS",
-    description: `
-      Reliable systems based on Django. Developing the server side for complex projects.
+  // {
+  //   imageSrc2: "", // Путь к изображению
+  //   title: "Backend | Django | JS",
+  //   description: `
+  //     Reliable systems based on Django. Developing the server side for complex projects.
 
-    `,
-    secondaryTitle: "IT: Fullstack",
-    secondaryDescription: `
-      Comprehensive approach to development. Combining front-end and back-end in one project.
-    `
-  },
+  //   `,
+  //   secondaryTitle: "IT: Fullstack",
+  //   secondaryDescription: `
+  //     Comprehensive approach to development. Combining front-end and back-end in one project.
+  //   `
+  // },
 
-  {
-    imageSrc2: crypto3, // Путь к изображению
-    title: "",
-    description: `
-      Implemented design case
-    `,
-    secondaryTitle: "",
-    secondaryDescription: `
+  // {
+  //   imageSrc2: crypto3, // Путь к изображению
+  //   title: "",
+  //   description: `
+  //     Implemented design case
+  //   `,
+  //   secondaryTitle: "",
+  //   secondaryDescription: `
       
-    `
-  },
+  //   `
+  // },
 
   {
     imageSrc2: crypto2, // Путь к изображению
-    title: "",
+    title: "Bonuses",
     description: `
-      Fullstack project (e.g. website/web app)
+      Access to a private chat. Ready-made code templates. Checklist for launching a startup.
+    `,
+    secondaryTitle: "Guarantee",
+    secondaryDescription: `
+      3 free tutorials in beginning to understand if the course is suitable.
+    `
+  },
+  {
+    imageSrc2: "", // Путь к изображению
+    title: "Start the path to creating your startup today!",
+    description: `
+      Don't miss the opportunity to create your successful project from scratch.
     `,
     secondaryTitle: "",
     secondaryDescription: `
       
     `
-  }
+  },
+  
 ];
 
 
 
-const ComplexComponent = () => {
+const CourseComponent = () => {
 
   const [isOpen, setIsOpen] = useState(false);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({ 
     name: "",
     // company: "",
     // industry: "",
@@ -166,20 +177,23 @@ const ComplexComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!formData.name || !formData.email) {
+      alert("Please fill in the required fields.");
+      return;
+    }
+
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // Замените на ваш Service ID
-        "YOUR_TEMPLATE_ID", // Замените на ваш Template ID
+        "service_qqu3vd9",
+        "template_3w6nbgc",
         formData,
-        "YOUR_PUBLIC_KEY" // Замените на ваш Public Key
+        "OOkYd6kaV2PnokJfd"
       )
       .then(
-        (response) => {
+        () => {
           alert("Message sent successfully!");
           setFormData({
             name: "",
-            // company: "",
-            // industry: "",
             phone: "",
             email: "",
             message: "",
@@ -198,7 +212,7 @@ const ComplexComponent = () => {
       
       <div className="section-header">
             <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                My <span className="highlight">Creative</span> Classes 
+                My <span className="highlight">creative</span> Classes 
              </h2>
         </div>
       
@@ -209,7 +223,7 @@ const ComplexComponent = () => {
           <div className="section-header">
           {/* <h2>О проекте</h2> */}
           <h2>
-          About this <span className="highlight">Course</span>
+          About this <span className="highlight">course</span>
           </h2>
           
         </div>
@@ -240,11 +254,14 @@ const ComplexComponent = () => {
         <div className="center-block">
         <div className="section-header">
         <h2>
-         
-          Course <span className="highlight"> Objectives</span>
+        
+          Who is this <span className="highlight"> course for?</span>
           </h2></div>
           {classesData.map((card, i) => (
             <div key={i} className="card">
+              {card.imageSrc1 && (
+                  <img src={card.imageSrc1} alt={card.title} className="card-image" />
+                )}
               <h3 className="title">{card.title}</h3>
               <p className="description">{card.description}</p>
               <h4 className="title">{card.secondaryTitle}</h4>
@@ -268,11 +285,11 @@ const ComplexComponent = () => {
         
 
         {/* Правый блок */}
-
+        
         <div className="right-block">
           <div className="section-header">  
         <h2 className="">
-          Training  <span className="highlight">Program</span>
+        Bonuses and <span className="highlight">guarantees</span>
           </h2></div>
           {cardsData.map((card, i) => (
             <div key={i} className="card">
@@ -301,25 +318,26 @@ const ComplexComponent = () => {
               
 
               {isOpen && (
-                <div class="popup-overlay">
-                <div class="popup-content">
-                  <button class="close-button" onClick={togglePopup}>✖</button>
+                <div className="popup-overlay">
+                <div className="popup-content">
+                  <button className="close-button" onClick={togglePopup}>✖</button>
                   <h2>Leave a request for a course</h2>
                   <p>We gather a group of 10-15 people and launch the course immediately. You can register for a course by leaving a request and a manager will contact you within 24 hours.</p>
-                  <form id="request-form">
-                    <input type="text" name="name" placeholder="Your name (required)" onChange={handleInputChange} required />
+                  
+                  <form id="request-form" onSubmit={handleSubmit}>
+                    <input type="text" name="name" placeholder="Your name (required)" onChange={handleInputChange} value={formData.name} required />
                     {/* <input type="text" name="company" placeholder="Название компании" /> */}
                     {/* <input type="text" name="industry" placeholder="Сфера деятельности" /> */}
-                    <input type="tel" name="phone" placeholder="Phone (optional)" onChange={handleInputChange} />
-                    <input type="email" name="email" placeholder="E-mail (required)" onChange={handleInputChange} required />
-                    <textarea name="task" placeholder="Comments (optional)" onChange={handleInputChange}></textarea>
+                    <input type="tel" name="phone" placeholder="Phone (optional)" onChange={handleInputChange} value={formData.phone} />
+                    <input type="email" name="email" placeholder="E-mail (required)" onChange={handleInputChange} value={formData.email} required />
+                    <textarea name="message" placeholder="Comments (optional)" value={formData.message} onChange={handleInputChange} ></textarea>
                     {/* <label>
                       Если нужно, прикрепите файл:
                       <input type="file" name="attachment" />
                     </label> */}
-                    <button type="submit" class="submit-button">Send a request</button>
+                    <button type="submit" className="submit-button">Send a request</button>
                   </form>
-                  <p class="privacy-note">
+                  <p className="privacy-note">
                     By clicking the "Send a request" button, you agree to the 
                     <a href="" target="_blank"> processing of your personal data</a>.
                   </p>
@@ -350,4 +368,4 @@ const ComplexComponent = () => {
   );
 };
 
-export default ComplexComponent;
+export default CourseComponent;

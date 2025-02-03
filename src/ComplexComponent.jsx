@@ -88,7 +88,7 @@ engagement.
     secondaryDescription: `
       Designed high-impact visual assets and interfaces for a 
 cryptocurrency-based iGaming platform using Angular, 
-enhancing the marketing UI and Affiliate pages with HTML.
+enhancing the marketing UI and Affiliate pages with HTML. 
     `
   },
   {
