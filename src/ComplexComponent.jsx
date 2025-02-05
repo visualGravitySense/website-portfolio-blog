@@ -8,7 +8,7 @@ const infoData = [
     imageSrc3: photo1,
     title: "Hello!",
     description: `
-            My name is Dmitry Gornakov - digital solutions architect. From product design to working with code and data analysis. I build a world of technological innovations, where technology and aesthetics always go together.
+            My name is Dmitri Gornakov - digital solutions architect. I help businesses speak the same language as the client. From product design to working with code and data analysis. I build a world of technological innovations, where technology and aesthetics always go hand in hand, and where every detail works to achieve the goal: attracting customers, strengthening the brand, increasing sales. I create a design without water, simply - that works.
 
     `,
     secondaryTitle: "",
@@ -30,8 +30,17 @@ const infoData = [
   //   `
   // }
 ];
-
+ 
 const classesData = [
+  {
+    title: "What am I doing?",
+    description: `
+      I create digital solutions that work for results. Design that catches the eye. Websites that sell. Creatives that are memorable.
+    `,
+    secondaryTitle: "",
+    secondaryDescription: `
+      `
+  },
   {
     title: "Product Design & UI/UX",
     description: `

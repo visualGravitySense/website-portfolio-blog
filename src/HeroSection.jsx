@@ -136,7 +136,7 @@ const Hero = () => {
 
         {/* Кнопка для открытия Popup */}
         <button className="cta-button" onClick={togglePopup}>
-          Start working
+          Order a project
         </button>
 
          {/* Popup */}

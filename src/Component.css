@@ -20,6 +20,12 @@
   .section-header h2 {
     /* font-size: 1.5rem; */
     color: #4d2c91;
+    font-size: 2rem; /* Уменьшаем шрифт */
+  }
+
+  .section-header h3 {
+    /* font-size: 1.5rem; */
+    color: #4d2c91;
     font-size: 1.2rem; /* Уменьшаем шрифт */
   }
   
@@ -151,6 +157,8 @@
   }
 
   .section-header h2 {
-    font-size: 1.1rem; /* Ещё меньше для узких экранов */
+    font-size: 1.5rem; /* Ещё меньше для узких экранов */
   }
 }
+
+

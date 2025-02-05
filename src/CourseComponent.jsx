@@ -222,9 +222,9 @@ const CourseComponent = () => {
         <div className="left-block">
           <div className="section-header">
           {/* <h2>О проекте</h2> */}
-          <h2>
+          <h3>
           About this <span className="highlight">course</span>
-          </h2>
+          </h3>
           
         </div>
         
@@ -253,10 +253,10 @@ const CourseComponent = () => {
         {/* Центральный блок */}
         <div className="center-block">
         <div className="section-header">
-        <h2>
+        <h3>
         
           Who is this <span className="highlight"> course for?</span>
-          </h2></div>
+          </h3></div>
           {classesData.map((card, i) => (
             <div key={i} className="card">
               {card.imageSrc1 && (
@@ -288,9 +288,9 @@ const CourseComponent = () => {
         
         <div className="right-block">
           <div className="section-header">  
-        <h2 className="">
+        <h3 className="">
         Bonuses and <span className="highlight">guarantees</span>
-          </h2></div>
+          </h3></div>
           {cardsData.map((card, i) => (
             <div key={i} className="card">
               {card.imageSrc2 && (
