@@ -1,7 +1,7 @@
 import React from "react";
 
 import Header from "../Header";
-import HeroSection from "../HeroSection";
+import Hero from "../Hero";
 import ComplexComponent from "../ComplexComponent";
 import CourseComponent from "../CourseComponent";
 import Footer from "../Footer";
@@ -13,7 +13,7 @@ import crypto1 from '../assets/crypto-4.jpg';
 import PortfolioCard from "../components/PortfolioCard";
 
 const projects = [
-    { id: 1, title: "V ictorija Driving School", description: "Branding, complete website update, modern UI/UX design, and creation of visual content.", image: crypto1 },
+    { id: 1, title: "Victorija Driving School", description: "Branding, complete website update, modern UI/UX design, and creation of visual content.", image: crypto1 },
     // { id: 2, title: "UI/UX Design", description: "Creative design systems", image: "/img2.png" },
     // { id: 3, title: "UI/UX Design", description: "Creative design systems", image: "/img2.png" },
     // { id: 4, title: "UI/UX Design", description: "Creative design systems", image: "/img2.png" },
@@ -25,7 +25,14 @@ export default function Home() {
 
         <div className="app">
             <Header />
-            <HeroSection />
+
+            {/* <HeroSection /> */}
+            <Hero 
+                title="I create chaos to organize the world" 
+                subtitle="Design without rules is my element! Here chaos finds order." 
+                ctaText="Order a project" 
+                showPopup={true} 
+                />
 
             <ComplexComponent />
             <Portfolio />
