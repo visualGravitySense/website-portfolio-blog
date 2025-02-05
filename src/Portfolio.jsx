@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./Component.css";
 import crypto1 from './assets/crypto-4.jpg';
 import gamma1 from './assets/gamma-1.png';
