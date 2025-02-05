@@ -119,7 +119,7 @@ elements with target audience expectations.
 
 
 
-const ComplexComponent = () => {
+const IntroductionComponent = () => {
   return (
     <div className="complex-component">
 
@@ -133,7 +133,7 @@ const ComplexComponent = () => {
       <div className="content-wrapper">
         {/* Левый блок */}
         
-        <div className="left-block">
+        <div className="intro-text">
           {/* <div className="section-header"> */}
           {/* <h2>О проекте</h2> */}
           {/* <h2>
@@ -161,7 +161,7 @@ const ComplexComponent = () => {
         </div>
 
         {/* Центральный блок */}
-        <div className="center-block">
+        {/* <div className="center-block">
          
           {classesData.map((card, i) => (
             <div key={i} className="card">
@@ -173,13 +173,13 @@ const ComplexComponent = () => {
               
             </div>
           ))}
-        </div>
+        </div> */}
 
         
 
         {/* Правый блок */}
 
-        <div className="right-block">
+        <div className="intro-immage">
           {/* <div className="section-header">  
         <h2 className="">
           Technology  <span className="highlight">Stack</span>
@@ -227,4 +227,4 @@ const ComplexComponent = () => {
   );
 };
 
-export default ComplexComponent;
+export default IntroductionComponent;

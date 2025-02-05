@@ -48,6 +48,19 @@
     width: 100%;
 
   }
+
+  
+  .intro-text,
+  .intro-immage {
+    flex: 1;
+    padding: 10px;
+
+    /* flex: none; Отменяем равные пропорции */
+    /* width: 100%; Растягиваем блоки     */
+
+    max-width: calc(50% - 20px); /* Три блока в ряд с учетом gap */
+    box-sizing: border-box; /* Учитываем отступы и ширину */
+  }
   
   .left-block,
   .center-block,
