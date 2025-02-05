@@ -157,12 +157,29 @@ const ComplexComponent = () => {
               </div>
             ))}
 
-            
+            {/* <br/> */}
+            {/* <div className="buttons">
+                <a href="mailto:dmitri.gornakov@gmail.com"><button className="btn-green">Start working</button></a>
+              </div> */}
+
+          {/* <div className="card">
+            <img src="path-to-icon.png" alt="e-Coupon" />
+            <p className="description">
+              Привет! Меня зовут Дмитрий Горнаков, я - креативный технологист с опытом работы в графическом дизайне, фронтенд- и бэкенд-разработке, и машинном обучении. Моя миссия - обучать вас навыкам, которые помогут создавать инновационные проекты и строить карьеру в IT.
+            </p>
+          </div>
+          <br/>
+          <div className="buttons">
+          <a href="mailto:dmitri.gornakov@gmail.com"><button className="cta-button btn-green">Начать работать</button></a>
+          </div> */}
         </div>
 
         {/* Центральный блок */}
         <div className="center-block">
-         
+        {/* <div className="section-header">
+        <h2>
+            Creative <span className="highlight">Classes</span>
+          </h2></div> */}
           {classesData.map((card, i) => (
             <div key={i} className="card">
               <h3 className="title">{card.title}</h3>
@@ -175,7 +192,23 @@ const ComplexComponent = () => {
           ))}
         </div>
 
-        
+        {/* <div className="center-block">
+          <div className="card-row">
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="card">
+                <img src="path-to-icon.png" alt="e-Coupon" />
+                <p>e-Coupon</p>
+              </div>
+            ))}
+          </div> */}
+          {/* <p className="description">
+            Привет! Меня зовут Дмитрий Горнаков, я - креативный технологист с опытом работы в графическом дизайне, фронтенд- и бэкенд-разработке, и машинном обучении. Моя миссия - обучать вас навыкам, которые помогут создавать инновационные проекты и строить карьеру в IT.
+          </p>
+          <div className="buttons">
+            <button className="cta-button btn-green">Начать работать</button>
+            <button className="cta-button btn-purple">Начать работать</button>
+          </div> */}
+        {/* </div> */}
 
         {/* Правый блок */}
 
