@@ -348,21 +348,7 @@ const CourseComponent = () => {
 
         </div>
         
-        {/* <div className="right-block">
-          {[...Array(2)].map((_, i) => (
-            <div key={i} className="card">
-              
-              <img src="path-to-icon.png" alt="e-Coupon" />
-              <p>e-Coupon</p>
-              <p className="description">
-                Front-end: React, Vue.js
-                Back-end: Node.js, Python (Django, Flask)
-                PostgreSQL, MongoDB
-                AWS, GCP, Azure
-              </p>
-            </div>
-          ))}
-        </div> */}
+        
       </div>
     </div>
   );
