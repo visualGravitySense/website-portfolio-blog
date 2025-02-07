@@ -53,14 +53,29 @@
   .intro-text,
   .intro-immage {
     flex: 1;
-    padding: 10px;
+    /* padding: 10px; */
 
     /* flex: none; Отменяем равные пропорции */
     /* width: 100%; Растягиваем блоки     */
 
-    max-width: calc(50% - 20px); /* Три блока в ряд с учетом gap */
+    /* max-width: calc(50% - 20px); Три блока в ряд с учетом gap */
+    /* box-sizing: border-box; Учитываем отступы и ширину */
+  }
+
+  .block {
+    /* flex: 1; */
+    padding: 10px;    
+    max-width: calc(33.33% - 20px); /* Три блока в ряд с учетом gap */
     box-sizing: border-box; /* Учитываем отступы и ширину */
   }
+
+  .cards-container {
+    display: flex; /* Включает flexbox */
+    flex-wrap: wrap; /* Если элементы не помещаются, они переносятся */
+    justify-content: center; /* Центрируем элементы */
+    gap: 20px; /* Отступ между карточками */
+  }
+  
   
   .left-block,
   .center-block,
@@ -175,3 +190,18 @@
 }
 
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 24px; расстояние между колонками */
+}
+
+.columnBig {
+  flex: 1 1 calc(100% - 8px); /* Две колонки, учитывая gap */
+  max-width: calc(100% - 8px);
+}
+
+.column {
+  flex: 1 1 calc(50% - 8px); /* Две колонки, учитывая gap */
+  max-width: calc(50% - 8px);
+}
