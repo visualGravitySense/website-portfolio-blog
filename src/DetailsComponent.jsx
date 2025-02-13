@@ -8,11 +8,6 @@ import crypto2 from './assets/crypto-startup-2.jpg';
 import crypto3 from './assets/crypto-startup-3.jpg';
 
 
-
-
-
-
-
 export default function ({ imageSrc3, title, description, secondaryTitle, secondaryDescription }) {
   return (
    

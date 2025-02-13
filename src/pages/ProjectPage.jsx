@@ -7,18 +7,13 @@ import AboutComponent from "../AboutComponent";
 import photo1 from '../assets/contact-1.png';
 import DetailsComponent from "../DetailsComponent";
 
-// const cardsData = {
-//   1: { title: "Startup Project", content: "Details about full cycle development." },
-// //   2: { title: "UI/UX Design", content: "Details about creative design systems." },
-// };
-
 
 const ProjectPage = () => {
   const [cardsData, setCardsData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const querySnapshot = await getDocs(collection(db, "portfolio"));
+      const querySnapshot = await getDocs(collection(db, "cases"));
       const data = querySnapshot.docs.map((doc) => doc.data());
       setCardsData(data);
     };
@@ -31,7 +26,7 @@ const ProjectPage = () => {
       {cardsData.map((item, index) => (
         <DetailsComponent 
           key={index}
-          imageSrc={item.imageSrc3}
+          imageSrc3={item.imageSrc3}
           title={item.title}
           description={item.description}
           secondaryTitle={item.secondaryTitle}

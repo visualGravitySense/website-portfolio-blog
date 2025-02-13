@@ -65,7 +65,7 @@
   .block {
     /* flex: 1; */
     padding: 10px;    
-    max-width: calc(33.33% - 20px); /* Три блока в ряд с учетом gap */
+    max-width: calc(33.33% - 20px); Три блока в ряд с учетом gap
     box-sizing: border-box; /* Учитываем отступы и ширину */
   }
 
@@ -86,7 +86,7 @@
     /* flex: none; Отменяем равные пропорции */
     /* width: 100%; Растягиваем блоки     */
 
-    max-width: calc(33.33% - 20px); /* Три блока в ряд с учетом gap */
+    max-width: calc(33.33% - 20px); Три блока в ряд с учетом gap
     box-sizing: border-box; /* Учитываем отступы и ширину */
   }
   
