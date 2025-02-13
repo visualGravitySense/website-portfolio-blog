@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { db, collection, getDocs } from "../../firebaseConfig";
+import { doc, getDoc } from "firebase/firestore";
+
 import { useParams, Link } from "react-router-dom";
 import Hero from "../Hero";
 import IntroductionComponent from "../IntroductionComponent";
@@ -9,31 +11,60 @@ import DetailsComponent from "../DetailsComponent";
 
 
 const ProjectPage = () => {
-  const [cardsData, setCardsData] = useState([]);
+  const { id } = useParams();  // Получаем ID кейса из URL
+    const [caseData, setCaseData] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const querySnapshot = await getDocs(collection(db, "cases"));
-      const data = querySnapshot.docs.map((doc) => doc.data());
-      setCardsData(data);
-    };
+    useEffect(() => {
+      const fetchCase = async () => {
+          if (!id) return;
 
-    fetchData();
-  }, []);
+          try {
+              const caseRef = doc(db, "cases", id); // Ссылка на документ
+              const caseSnap = await getDoc(caseRef); // Получаем данные
 
-  return (
-    <div className="cards-container">
-      {cardsData.map((item, index) => (
-        <DetailsComponent 
-          key={index}
-          imageSrc3={item.imageSrc3}
-          title={item.title}
-          description={item.description}
-          secondaryTitle={item.secondaryTitle}
-          secondaryDescription={item.secondaryDescription}
+              if (caseSnap.exists()) {
+                  setCaseData(caseSnap.data()); // Устанавливаем объект
+              } else {
+                  console.log("Документ не найден!");
+              }
+          } catch (error) {
+              console.error("Ошибка загрузки данных:", error);
+          }
+      };
+
+      fetchCase();
+  }, [id]);
+
+  if (!caseData) {
+      return <p>Loading...</p>;
+  }
+
+  return ( 
+
+    <>
+
+        <Hero 
+        title="Victoria Driving School" 
+        subtitle="New website, fresh UI/UX, and marketing visuals for social media." 
+        showPopup={false}  
         />
-      ))}
+    
+    
+    
+    <div className="cards-container">
+      
+        <DetailsComponent 
+          // key={index}
+          imageSrc3={caseData.imageSrc3}
+            title={caseData.title}
+            description={caseData.description}
+            secondaryTitle={caseData.secondaryTitle}
+            secondaryDescription={caseData.secondaryDescription}
+        />
+     
     </div>
+
+    </>
   );
 };
 

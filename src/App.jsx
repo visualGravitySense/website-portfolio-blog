@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes> 
         <Route path="/website-portfolio-blog" element={<Home />} />
-        <Route path="/project/:id" element={<ProjectPage />} />
+        <Route path="/case/:id" element={<ProjectPage />} />
       </Routes>
     </Router>
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "./Popup.css";
 
@@ -7,11 +7,15 @@ import crypto1 from './assets/crypto-startup-1.jpg';
 import crypto2 from './assets/crypto-startup-2.jpg';
 import crypto3 from './assets/crypto-startup-3.jpg';
 
+import { Link } from "react-router-dom";
+import { db, collection, getDocs } from "../firebaseConfig";
 
-export default function ({ imageSrc3, title, description, secondaryTitle, secondaryDescription }) {
+
+export default function ({ id, imageSrc3, title, description, secondaryTitle, secondaryDescription }) {
+
   return (
    
-      <div className="block">
+      <div className="">
         <div className="card">
           {imageSrc3 && (
             
@@ -21,6 +25,18 @@ export default function ({ imageSrc3, title, description, secondaryTitle, second
           <p className="description">{description}</p>
           <h4 className="title">{secondaryTitle}</h4>
           <p className="description">{secondaryDescription}</p>
+
+          <Link to={`/case/${id}`}>
+                <button className="btn-purple" style={{
+                    marginTop: "10px",
+                    padding: "8px 16px",
+                    color: "white",
+                    border: "none",
+                    cursor: "pointer"
+                }}>
+                    View Details
+                </button>
+            </Link>
         </div>
       </div>
   );
