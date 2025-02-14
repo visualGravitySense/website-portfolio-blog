@@ -39,9 +39,8 @@ const ProjectPage = () => {
       return <p>Loading...</p>;
   }
 
-  return ( 
-
-    <>
+  return (
+    <div>
 
         <Hero 
         title="Victoria Driving School" 
@@ -54,137 +53,161 @@ const ProjectPage = () => {
     <div className="cards-container">
       
         <DetailsComponent 
-          // key={index}
-          imageSrc3={caseData.imageSrc3}
+          
+            imageSrc2={caseData.imageSrc2}
+            title={caseData.titleShort}
+            description={caseData.descrShirt}
+            secondaryTitle={caseData.secondaryTitleShort}
+            secondaryDescription={caseData.secDescrShirt}
+        />
+
+        
+
+        <DetailsComponent 
+                
+                imageSrc3={caseData.imageSrc3}
+                title={caseData.titleCustomer}
+                description={caseData.descrCustomer}
+                // secondaryTitle={caseData.secondaryTitle}
+                // secondaryDescription={caseData.secondaryDescription}
+            />
+
+        
+
+
+        <DetailsComponent 
+                
+                // imageSrc3={caseData.imageSrc3}
+                title={caseData.titleTargets}
+                description={caseData.descrTargets}
+                // secondaryTitle={caseData.secondaryTitle}
+                // secondaryDescription={caseData.secondaryDescription}
+            />
+     
+    </div>
+
+    <div className="cards-container">
+      
+        <DetailsComponent 
+          
+            // imageSrc3={caseData.imageSrc3}
+            // title={caseData.titleType}
+            // description={caseData.descrType}
+            // secondaryTitle={caseData.secondaryTitle}
+            // secondaryDescription={caseData.secondaryDescription}
+        />
+
+        {/* <DetailsComponent 
+                
+                imageSrc3={caseData.imageSrc3}
+                title={caseData.title}
+                description={caseData.description}
+                secondaryTitle={caseData.secondaryTitle}
+                secondaryDescription={caseData.secondaryDescription}
+            /> */}
+
+        {/* <DetailsComponent 
+                
+                imageSrc3={caseData.imageSrc3}
+                title={caseData.title}
+                description={caseData.description}
+                secondaryTitle={caseData.secondaryTitle}
+                secondaryDescription={caseData.secondaryDescription}
+            /> */}
+     
+    </div>
+
+    
+
+    {/* <div className="row"> */}
+
+         {/* <div className="column">
+          <IntroductionComponent
+            
+            imageSrc3={caseData.imageSrc3}
             title={caseData.title}
             description={caseData.description}
             secondaryTitle={caseData.secondaryTitle}
             secondaryDescription={caseData.secondaryDescription}
-        />
-     
-    </div>
+          />
+        
+        <IntroductionComponent
+            
+            imageSrc3={caseData.imageSrc3}
+            title={caseData.title}
+            description={caseData.description}
+            secondaryTitle={caseData.secondaryTitle}
+            secondaryDescription={caseData.secondaryDescription}
+          />
+       
+      </div> */}
 
-    </>
+      {/* <div className="column">
+          <IntroductionComponent
+            
+            imageSrc3={caseData.imageSrc3}
+            title={caseData.title}
+            description={caseData.description}
+            secondaryTitle={caseData.secondaryTitle}
+            secondaryDescription={caseData.secondaryDescription}
+          />
+        
+        <IntroductionComponent
+            
+            imageSrc3={caseData.imageSrc3}
+            title={caseData.title}
+            description={caseData.description}
+            secondaryTitle={caseData.secondaryTitle}
+            secondaryDescription={caseData.secondaryDescription}
+          />
+       
+      </div> */}
+
+      {/* <div className="column">
+        
+          <AboutComponent
+            
+            imageSrc={caseData.imageSrc}
+            title={caseData.title}
+            description={caseData.description}
+            secondaryTitle={caseData.secondaryTitle}
+            secondaryDescription={caseData.secondaryDescription}
+          />
+
+        <AboutComponent
+            
+            imageSrc={caseData.imageSrc}
+            title={caseData.title}
+            description={caseData.description}
+            secondaryTitle={caseData.secondaryTitle}
+            secondaryDescription={caseData.secondaryDescription}
+          />
+      </div> */}
+
+      {/* <div className="column">
+        
+          <AboutComponent
+            
+            imageSrc={caseData.imageSrc}
+            title={caseData.title}
+            description={caseData.description}
+            secondaryTitle={caseData.secondaryTitle}
+            secondaryDescription={caseData.secondaryDescription}
+          />
+
+        <AboutComponent
+            
+            imageSrc={caseData.imageSrc}
+            title={caseData.title}
+            description={caseData.description}
+            secondaryTitle={caseData.secondaryTitle}
+            secondaryDescription={caseData.secondaryDescription}
+          />
+      </div>
+
+    </div> */}
+    </div>
   );
 };
 
 export default ProjectPage;
-
-
-
-// export default function ProjectPage() {
-//   const cardsData = [
-//     {
-//       imageSrc3: photo1,
-//       title: "Marketing Digital Designer",
-//       description: "Coolbet | January 2022 - April 2024",
-//       secondaryTitle: "Creative Projects",
-//       secondaryDescription: "Conceptualized and developed compelling digital assets"
-//     },
-//     {
-//       imageSrc3: photo1,
-//       title: "Product Manager",
-//       description: "TechCorp | 2020 - 2022",
-//       secondaryTitle: "Product Development",
-//       secondaryDescription: "Led cross-functional teams to deliver innovative solutions"
-//     },
-//     {
-//       imageSrc: photo1,
-//       title: "1Marketing Digital Designer",
-//       description: "Coolbet | January 2022 - April 2024",
-//       secondaryTitle: "Creative Projects",
-//       secondaryDescription: "Conceptualized and developed compelling digital assets"
-//     },
-//     {
-//       imageSrc: photo1,
-//       title: "1Product Manager",
-//       description: "TechCorp | 2020 - 2022",
-//       secondaryTitle: "Product Development",
-//       secondaryDescription: "Led cross-functional teams to deliver innovative solutions"
-//     }
-//   ];
-
-//   const { id } = useParams();
-//   const project = projectData[id];
-
-//   if (!project) {
-//     return <h2>Project not found</h2>;
-//   }
-
-//   return (
-//     <>
-//       <Hero 
-//         title="Victoria Driving School" 
-//         subtitle="New website, fresh UI/UX, and marketing visuals for social media." 
-//         showPopup={false}  
-//         />
-    
-//     <div className="section-header">
-//           <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-//               About <span className="highlight">Project</span> 
-//             </h2>
-//       </div>
-
-//       <div className="row">
-//         <div className="column">
-//         <div>{cardsData.map((item, index) => ( // ✅ Добавляем index
-//           <IntroductionComponent
-//             key={index}
-//             imageSrc3={item.imageSrc3}
-//             title={item.title}
-//             description={item.description}
-//             secondaryTitle={item.secondaryTitle}
-//             secondaryDescription={item.secondaryDescription}
-//           />
-//         ))}</div>
-       
-//       </div>
-//       <div className="column">
-//         <div>{cardsData.map((item, index) => ( // ✅ Добавляем index
-//           <AboutComponent
-//             key={index}
-//             imageSrc={item.imageSrc}
-//             title={item.title}
-//             description={item.description}
-//             secondaryTitle={item.secondaryTitle}
-//             secondaryDescription={item.secondaryDescription}
-//           />
-//         ))}</div>
-       
-//       </div>
-
-        
-//         <div className="row">{cardsData.map((item, index) => ( // ✅ Добавляем index
-//             <div className="columnBig">
-//             <AboutComponent
-//               key={index}
-//               imageSrc={item.imageSrc}
-//               title={item.title}
-//               description={item.description}
-//               secondaryTitle={item.secondaryTitle}
-//               secondaryDescription={item.secondaryDescription}
-//             /></div>
-//           ))}</div>
-        
-//       </div>
-
-//       <div className="cards-container">{cardsData.map((item, index) => ( // ✅ Добавляем index
-           
-//       <DetailsComponent 
-//         key={index}
-//         imageSrc={item.imageSrc3}
-//         title={item.title}
-//         description={item.description}
-//         secondaryTitle={item.secondaryTitle}
-//         secondaryDescription={item.secondaryDescription}
-//       />
-     
-//       ))}</div>
-        
-//       {/* <Link to="/website-portfolio-blog" className="cta-button">Back to Home</Link> */}
-      
-    
-//     </>
-    
-//   );
-// }

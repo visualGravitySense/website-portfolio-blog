@@ -90,7 +90,7 @@ export default function Home() {
             </div>
 
             {/* Courses component prepare for Gamma Intellegence */}
-            {/* <CourseComponent /> */}
+            <CourseComponent />
 
             {/* Footer component */}
             <Footer />
