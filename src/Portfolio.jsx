@@ -10,14 +10,14 @@ import aawra1 from './assets/aawra-1.png';
 
 const Portfolio = () => {
   const works = [
-    {
-      id: 1,
-      title: "Gamma Intelligence Training Centre",
-      description:
-        "Website redesign and branding refresh. Work in progress, fresh modern interface.",
-      image: gamma1, // путь к картинке
-      link: "https://www.behance.net/gallery/217490965/Gamma-Intelligence-Training-Centre-Website-redesign",
-    },
+    // {
+    //   id: 1,
+    //   title: "Gamma Intelligence Training Centre",
+    //   description:
+    //     "Website redesign and branding refresh. Work in progress, fresh modern interface.",
+    //   image: gamma1, // путь к картинке
+    //   link: "https://www.behance.net/gallery/217490965/Gamma-Intelligence-Training-Centre-Website-redesign",
+    // },
     {
       id: 2,
       title: "Digo Online Education Platform",

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { db, collection, getDocs } from "../firebaseConfig";
 
 
-export default function ({ id, imageSrc3, title, description, secondaryTitle, secondaryDescription }) {
+export default function ({ id, imageSrc3, imageSrc2, imageSrc1, title, description, secondaryTitle, secondaryDescription }) {
 
   return (
    

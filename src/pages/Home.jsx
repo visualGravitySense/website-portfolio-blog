@@ -53,7 +53,7 @@ export default function Home() {
 
             <div className="section-header">
                 <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                Cases of my <span className="highlight">successful projects</span>
+                Cases of my <span className="highlight">projects</span>
                 </h2>
             </div>  
 
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
 
             {/* Courses component prepare for Gamma Intellegence */}
-            {/* <CourseComponent /> */}
+            <CourseComponent />
 
             {/* Footer component */}
             <Footer />
