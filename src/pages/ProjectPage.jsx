@@ -8,7 +8,8 @@ import IntroductionComponent from "../IntroductionComponent";
 import AboutComponent from "../AboutComponent";
 import photo1 from '../assets/contact-1.png';
 import DetailsComponent from "../DetailsComponent";
-
+import Header from "../Header"
+import Footer from "../Footer"
 
 const ProjectPage = () => {
   const { id } = useParams();  // Получаем ID кейса из URL
@@ -41,61 +42,76 @@ const ProjectPage = () => {
 
   return (
     <div>
+        <header/>
 
         <Hero 
-        title="Victoria Driving School" 
-        subtitle="New website, fresh UI/UX, and marketing visuals for social media." 
+        title="Cases of my projects" 
+        subtitle="Project cases websites, applications." 
         showPopup={false}  
         />
     
     
     
     <div className="cards-container">
+        <div className="row"> 
+
+            <div className="column">
+                <AboutComponent           
+                    imageSrc2={caseData.imageSrc2}
+                    title={caseData.titleShort}
+                    description={caseData.descrShirt}
+                    secondaryTitle={caseData.secondaryTitleShort}
+                    secondaryDescription={caseData.secDescrShirt}
+                />
+                </div>
+            <div className="column">
+                <AboutComponent 
+                    imageSrc3={caseData.imageSrc3}
+                    title={caseData.titleCustomer}
+                    description={caseData.descrCustomer}
+                    // secondaryTitle={caseData.secondaryTitle}
+                    // secondaryDescription={caseData.secondaryDescription}
+                />
+            </div>
+            </div>
       
-        <DetailsComponent 
-          
-            imageSrc2={caseData.imageSrc2}
-            title={caseData.titleShort}
-            description={caseData.descrShirt}
-            secondaryTitle={caseData.secondaryTitleShort}
-            secondaryDescription={caseData.secDescrShirt}
-        />
-
         
 
-        <DetailsComponent 
-                
-                imageSrc3={caseData.imageSrc3}
-                title={caseData.titleCustomer}
-                description={caseData.descrCustomer}
-                // secondaryTitle={caseData.secondaryTitle}
-                // secondaryDescription={caseData.secondaryDescription}
-            />
-
         
+            <div className="row"> 
 
-
-        <DetailsComponent 
-                
-                // imageSrc3={caseData.imageSrc3}
-                title={caseData.titleTargets}
-                description={caseData.descrTargets}
-                // secondaryTitle={caseData.secondaryTitle}
-                // secondaryDescription={caseData.secondaryDescription}
-            />
+                <div className="column">
+                    <AboutComponent 
+                            imageSrc1={caseData.imageSrc1}
+                            title={caseData.titleTargets}
+                            description={caseData.descrTargets}
+                            // secondaryTitle={caseData.secondaryTitle}
+                            // secondaryDescription={caseData.secondaryDescription}
+                        />
+                        </div>
+                        <div className="column">
+                            <AboutComponent 
+                            // imageSrc3={caseData.imageSrc3}
+                            title={caseData.titleTargets}
+                            description={caseData.descrTargets}
+                            // secondaryTitle={caseData.secondaryTitle}
+                            // secondaryDescription={caseData.secondaryDescription}
+                        />
+                        </div>
+                    </div>
      
     </div>
 
     <div className="cards-container">
       
-        <DetailsComponent 
+        {/* <DetailsComponent  */}
           
-            // imageSrc3={caseData.imageSrc3}
+            {/* // imageSrc3={caseData.imageSrc3}
             // title={caseData.titleType}
             // description={caseData.descrType}
             // secondaryTitle={caseData.secondaryTitle}
-            // secondaryDescription={caseData.secondaryDescription}
-        />
+            // secondaryDescription={caseData.secondaryDescription} */}
+        {/* /> */}
 
         {/* <DetailsComponent 
                 
@@ -206,6 +222,7 @@ const ProjectPage = () => {
       </div>
 
     </div> */}
+    <Footer />
     </div>
   );
 };
