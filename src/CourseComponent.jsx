@@ -3,153 +3,69 @@ import emailjs from "emailjs-com";
 import "./Popup.css";
 
 import './Component.css';
-import crypto1 from './assets/crypto-startup-1.jpg';
-import crypto2 from './assets/crypto-startup-2.jpg';
-import crypto3 from './assets/crypto-startup-3.jpg';
+import crypto1 from './assets/analyse-1.png';
+import crypto2 from './assets/front-1.png';
+import crypto3 from './assets/interface-1.png';
 
 
 
 const infoData = [
   {
     imageSrc: crypto1, // Путь к изображению
-    title: "Build your own crypto startup from scratch!",
+    title: "Data Analysis using Python and SQL",
     description: `
             Go from idea to first user. Find out how I created Crypto Wise in 30 days.
 
     `,
     secondaryTitle: "What awaits you?",
     secondaryDescription: `
-      Mastering the work with cryptocurrency API. 
-      Developing a real startup from scratch. 
-      Implementation of gamification and data visualization. 
-      Ready-made tools and templates.
+      In this 15-week course, all aspects of the data analyst profession are covered. The theoretical part of the course provides the necessary skills in Python/MySQL, as well as the required amount of mathematics.
+The practical part of the course is based on the analysis of real company data.
     `
   },
-  // {
-  //   imageSrc: "", // Путь к изображению
-  //   title: "This course is for you if...",
-  //   description: `
-  //     You want to launch your startup. You are passionate about cryptocurrencies and blockchain. You want to learn how to work with a modern technology stack. You are looking for ways to monetize your projects.
-  //   `,
-  //   secondaryTitle: "Training Program",
-  //   secondaryDescription: `
-  //     Module 1: Market research and idea development. Module 2: Creating an MVP using CoinPaprika API. Module 3: Implementing gamification and data visualization. Module 4: Launch, promotion and monetization.
-
-  //   `
-  // },
-  // {
-  //   imageSrc: "", // Путь к изображению
-  //   title: "",
-  //   description: `
-
-  //   `,
-  //   secondaryTitle: "",
-  //   secondaryDescription: `
-      
-  //   `
-  // }
+  
 ];
 
 const classesData = [
   {
-    imageSrc1: crypto3, // Путь к изображению
-    title: "This course is for you if...",
+    imageSrc1: crypto2, // Путь к изображению
+    title: "Front-end development based on React.js - an intensive course for beginners.",
     description: `
-      You want to launch your startup. You are passionate about cryptocurrencies and blockchain. You want to learn how to work with a modern technology stack. You are looking for ways to monetize your projects.
+      As of today, React is the most popular library for frontend application development. This 126-hour course covers the entire tech stack needed for a Junior frontend developer:
     `,
     secondaryTitle: "Training Program",
     secondaryDescription: `
-      Module 1: Market research and idea development. Module 2: Creating an MVP using CoinPaprika API. Module 3: Implementing gamification and data visualization. Module 4: Launch, promotion and monetization.
+      Static web design with HTML/CSS, Responsive design using Bootstrap 5, Fundamentals of JavaScript, Working with React.js
       `
   },
-  // {
-  //   imageSrc1: "", // Путь к изображению
-  //   title: "Gamification of Products",
-  //   description: `
-  //     Participants will learn how to implement game elements in an educational or information product to increase user engagement.
-  //   `,
-  //   secondaryTitle: "",
-  //   secondaryDescription: `
-      
-  //   `
-  // },
-  // {
-  //   imageSrc1: "", // Путь к изображению
-  //   title: "Project Management",
-  //   description: `
-  //     Planning.
-  //     Brand creation.
-  //     Launch and attracting the first users.    `,
-  //   secondaryTitle: "Working with a modern technology stack",
-  //   secondaryDescription: `
-  //     React.js for front-end.
-  //     Node.js for API.
-  //     Integrating Firebase or other cloud technologies.
-  //   `
-  // }
+  
 ];
 
 const cardsData = [
-  // {
-  //   imageSrc2: "", // Путь к изображению
-  //   title: "Graphic Design | UI/UX",
-  //   description: `
-  //     Free case design for real-world tasks. We will teach you how to create aesthetic interfaces and design projects for startups.
-
-  //   `,
-  //   secondaryTitle: "Frontend | React",
-  //   secondaryDescription: `
-  //     Modern UI development. Learn React to build interactive applications.
-  //   `
-  // },
   
+
+  {
+    imageSrc2: crypto3, // Путь к изображению
+    title: "Prototyping in Figma and UX/UI design - intensive course",
+    description: `
+      The main goal of the course is to acquire theoretical knowledge in UX (User Experience) and basic practical skills in UI (User Interface) essential for designing websites and user interfaces.
+    `,
+    secondaryTitle: "",
+    secondaryDescription: `
+      The course is designed for those who want to start a career in the IT field without programming skills and learn to create website and user interface designs using Figma..
+    `
+  },
   // {
   //   imageSrc2: "", // Путь к изображению
-  //   title: "Backend | Django | JS",
+  //   title: "Start the path to creating your startup today!",
   //   description: `
-  //     Reliable systems based on Django. Developing the server side for complex projects.
-
-  //   `,
-  //   secondaryTitle: "IT: Fullstack",
-  //   secondaryDescription: `
-  //     Comprehensive approach to development. Combining front-end and back-end in one project.
-  //   `
-  // },
-
-  // {
-  //   imageSrc2: crypto3, // Путь к изображению
-  //   title: "",
-  //   description: `
-  //     Implemented design case
+  //     Don't miss the opportunity to create your successful project from scratch.
   //   `,
   //   secondaryTitle: "",
   //   secondaryDescription: `
       
   //   `
   // },
-
-  {
-    imageSrc2: crypto2, // Путь к изображению
-    title: "Bonuses",
-    description: `
-      Access to a private chat. Ready-made code templates. Checklist for launching a startup.
-    `,
-    secondaryTitle: "Guarantee",
-    secondaryDescription: `
-      3 free tutorials in beginning to understand if the course is suitable.
-    `
-  },
-  {
-    imageSrc2: "", // Путь к изображению
-    title: "Start the path to creating your startup today!",
-    description: `
-      Don't miss the opportunity to create your successful project from scratch.
-    `,
-    secondaryTitle: "",
-    secondaryDescription: `
-      
-    `
-  },
   
 ];
 
@@ -212,7 +128,7 @@ const CourseComponent = () => {
       
       <div className="section-header">
             <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                My <span className="highlight">creative</span> Classes 
+            The best courses from <span className="highlight">Gamma Intelligence </span>– upgrade your IT and design skills! 
              </h2>
         </div>
       
@@ -223,7 +139,7 @@ const CourseComponent = () => {
           <div className="section-header">
           {/* <h2>О проекте</h2> */}
           <h3>
-          About this <span className="highlight">course</span>
+          Technical <span className="highlight">course</span>
           </h3>
           
         </div>
@@ -255,7 +171,7 @@ const CourseComponent = () => {
         <div className="section-header">
         <h3>
         
-          Who is this <span className="highlight"> course for?</span>
+        At the intersection of design <span className="highlight">and programming</span>
           </h3></div>
           {classesData.map((card, i) => (
             <div key={i} className="card">
@@ -289,7 +205,7 @@ const CourseComponent = () => {
         <div className="right-block">
           <div className="section-header">  
         <h3 className="">
-        Bonuses and <span className="highlight">guarantees</span>
+        Creative and <span className="highlight">technical</span>
           </h3></div>
           {cardsData.map((card, i) => (
             <div key={i} className="card">

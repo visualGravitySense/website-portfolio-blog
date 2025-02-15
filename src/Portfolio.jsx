@@ -42,14 +42,14 @@ const Portfolio = () => {
         image: amoe1, // путь к картинке
         link: "https://www.behance.net/gallery/67634993/Amoe-Your-Startup-Assistance",
       },
-      {
-        id: 5,
-        title: "Online booking and registration system",
-        description:
-          "Developing a user-friendly booking system that allows clients to easily find and book services.",
-        image: beauty1, // путь к картинке
-        link: "https://www.behance.net/gallery/84094071/Re-Vita-Website-Redesign",
-      },
+      // {
+      //   id: 5,
+      //   title: "Online booking and registration system",
+      //   description:
+      //     "Developing a user-friendly booking system that allows clients to easily find and book services.",
+      //   image: beauty1, // путь к картинке
+      //   link: "https://www.behance.net/gallery/84094071/Re-Vita-Website-Redesign",
+      // },
       {
         id: 6,
         title: "Advertising campaigns for beauty salons",
