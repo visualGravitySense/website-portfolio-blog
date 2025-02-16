@@ -12,7 +12,7 @@ import contact1 from './assets/contact-1.png';
 import picture1 from './assets/picture-1.png';
 import computer1 from './assets/computer-1.png';
 
-const Hero = ({ title, subtitle, secondaryTitle, secondarySubtitle, ctaText, showPopup = true }) => {
+const Promo = ({ title, subtitle, ctaText, showPopup = true }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -108,8 +108,6 @@ const Hero = ({ title, subtitle, secondaryTitle, secondarySubtitle, ctaText, sho
       <div className="hero-content">
         <h1 className="hero-title">{title}</h1>
         <p className="hero-subtitle">{subtitle}</p>
-        <h2 className="hero-title">{secondaryTitle}</h2>
-        <p className="hero-subtitle">{secondarySubtitle}</p>
 
         {showPopup && (
           <button className="cta-button" onClick={togglePopup}>
@@ -191,4 +189,4 @@ const Hero = ({ title, subtitle, secondaryTitle, secondarySubtitle, ctaText, sho
   );
 };
 
-export default Hero;
+export default Promo;

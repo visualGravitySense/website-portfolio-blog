@@ -197,14 +197,14 @@ const ComplexComponent = () => {
             
           ))}
 
-            <div className="buttons">
-            <a href={dgcv1} target = "_blank">
+            {/* <div className="buttons"> */}
+            {/* <a href={dgcv1} target = "_blank"> */}
             {/* <a href={dgcv1} download> */}
-              <button className="btn-purple">View full CV</button>
-            </a>
+              {/* <button className="btn-purple">View full CV</button>
+            </a> */}
               {/* <a href=""><button className="btn-purple">View My CV</button></a> */}
                 {/* <button className="cta-button btn-purple">Начать работать</button> */}
-            </div>
+            {/* </div> */}
         </div>
         
         {/* <div className="right-block">

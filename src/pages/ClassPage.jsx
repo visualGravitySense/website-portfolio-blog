@@ -13,7 +13,7 @@ import DetailsComponent from "../DetailsComponent";
 import Header from "../Header"
 import Footer from "../Footer"
 
-const ProjectPage = () => {
+const ClassPage = () => {
   const { id } = useParams();  // Получаем ID кейса из URL
     const [caseData, setCaseData] = useState(null);
 
@@ -22,7 +22,7 @@ const ProjectPage = () => {
           if (!id) return;
 
           try {
-              const caseRef = doc(db, "cases", id); // Ссылка на документ
+              const caseRef = doc(db, "classes", id); // Ссылка на документ
               const caseSnap = await getDoc(caseRef); // Получаем данные
 
               if (caseSnap.exists()) {
@@ -47,8 +47,10 @@ const ProjectPage = () => {
         <Header/>
 
         <Hero 
-        title="Cases of my projects" 
-        subtitle="Project cases websites, applications." 
+        title="Classes on IT and design" 
+        subtitle="Theory, practice, projects and cases." 
+        // secondaryTitle="Python, React JS, SQL" 
+        // secondarySubtitle="Courses for professionals." 
         showPopup={false}  
         />
     
@@ -58,24 +60,36 @@ const ProjectPage = () => {
         {/* <div className="row"> */}
         {/* <div className="column"> */}
             <AboutCourse           
-                imageSrc2={caseData.imageSrc2}
-                title={caseData.titleShort}
-                description={caseData.descrShirt}
-                secondaryTitle={caseData.secondaryTitleShort}
-                secondaryDescription={caseData.secDescrShirt}
+                image1={caseData.image1}
+                image2={caseData.image1}
+                image3={caseData.image1}
+                title={caseData.titleAbout}
+                description={caseData.descrAbout}
+                secTitle1={caseData.secTitle1}
+                secTitle2={caseData.secTitle1}
+                secTitle3={caseData.secTitle1}
+                secDescr1={caseData.secDescr1}
+                secDescr2={caseData.secDescr1}
+                secDescr3={caseData.secDescr1}
             />
             {/* </div> */}
         {/* <div className="column"> */}
             <AboutPlan 
-                imageSrc3={caseData.imageSrc3}
-                title={caseData.titleCustomer}
-                description={caseData.descrCustomer}
-                secondaryTitle={caseData.secondaryTitle}
-                secondaryDescription={caseData.secondaryDescription}
+                image1={caseData.image1}
+                title={caseData.titleAbout}
+                description={caseData.descrAbout} 
+                secTitle1={caseData.secTitle1}
+                secTitle2={caseData.secTitle1}
+                secTitle3={caseData.secTitle1}
+                secDescr1={caseData.secDescr1}
+                secDescr2={caseData.secDescr1}
+                secDescr3={caseData.secDescr1}
             />
         {/* </div> */}
         {/* </div> */}
-        <div className="row"> 
+
+
+        {/* <div className="row"> 
 
             <div className="column">
                 <AboutComponent           
@@ -91,40 +105,41 @@ const ProjectPage = () => {
                     imageSrc3={caseData.imageSrc3}
                     title={caseData.titleCustomer}
                     description={caseData.descrCustomer}
-                    // secondaryTitle={caseData.secondaryTitle}
-                    // secondaryDescription={caseData.secondaryDescription}
+                    secondaryTitle={caseData.secondaryTitle}
+                    secondaryDescription={caseData.secondaryDescription}
                 />
             </div>
-            </div>
+            </div> */}
       
         
 
         
-            <div className="row"> 
+            {/* <div className="row"> 
 
                 <div className="column">
                     <AboutComponent 
                             imageSrc1={caseData.imageSrc1}
                             title={caseData.titleTargets}
                             description={caseData.descrTargets}
-                            // secondaryTitle={caseData.secondaryTitle}
-                            // secondaryDescription={caseData.secondaryDescription}
+                            secondaryTitle={caseData.secondaryTitle}
+                            secondaryDescription={caseData.secondaryDescription}
                         />
                         </div>
                         <div className="column">
                             <AboutComponent 
-                            // imageSrc3={caseData.imageSrc3}
+                            imageSrc3={caseData.imageSrc3}
                             title={caseData.titleTargets}
                             description={caseData.descrTargets}
-                            // secondaryTitle={caseData.secondaryTitle}
-                            // secondaryDescription={caseData.secondaryDescription}
+                            secondaryTitle={caseData.secondaryTitle}
+                            secondaryDescription={caseData.secondaryDescription}
                         />
                         </div>
-                    </div>
+                    </div> */}
      
     </div>
 
-    <div className="cards-container">
+
+    {/* <div className="cards-container"> */}
       
         {/* <DetailsComponent  */}
           
@@ -153,7 +168,7 @@ const ProjectPage = () => {
                 secondaryDescription={caseData.secondaryDescription}
             /> */}
      
-    </div>
+    {/* </div> */}
 
     
 
@@ -249,4 +264,4 @@ const ProjectPage = () => {
   );
 };
 
-export default ProjectPage;
+export default ClassPage;
