@@ -121,7 +121,7 @@ import './Component.css';
 //       );
 //   };
 
-export default function ({ id, imageSrc3, imageSrc2, imageSrc1, title, description, secondaryTitle, secondaryDescription }) {
+export default function ({ id, image3, image2, image1, title, description, secondaryTitle, secondaryDescription }) {
 
   return (
     
@@ -130,8 +130,8 @@ export default function ({ id, imageSrc3, imageSrc2, imageSrc1, title, descripti
         <div className="">
           
               <div className="card">
-                {imageSrc3 && (
-                  <img src={imageSrc3} alt={title} className="card-image" />
+                {image1 && (
+                  <img src={image1} alt={title} className="card-image" />
                 )}
                 <h3 className="title">{title}</h3>
                 <p className="description">{description}</p>

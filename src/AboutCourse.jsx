@@ -11,14 +11,13 @@ export default function IntroductionComponent({ image1, image2, image3, title, d
 
       <div className="">
 
-        <h2 className="title">{title}</h2>
-        <p className="description">{description}</p>
         
-          <div className="row">
+        
+          {/* <div className="row"> */}
 
             
 
-            <div className="column">
+            {/* <div className="column"> */}
               <div className="card">
                 {/* {imageSrc3 && <img src={imageSrc3} alt={title} className="card-image" />} */}
                 {/* {imageSrc2 && <img src={imageSrc2} alt={title} className="card-image" />} */}
@@ -28,9 +27,10 @@ export default function IntroductionComponent({ image1, image2, image3, title, d
                 <h3 className="title">{secTitle2}</h3>
                 <p className="description">{secDescr2}</p>
                 {/* {secondaryTitle && <h4 className="title">{secondaryTitle}</h4>} */}
-               </div></div>
+               </div>
+               {/* </div> */}
 
-              <div className="column">
+              {/* <div className="column"> */}
                 
                 <div className="card">
                   {/* {image2 && <img src={image2} alt={title} className="card-image" />} */}
@@ -56,9 +56,9 @@ export default function IntroductionComponent({ image1, image2, image3, title, d
                     <p className="description">{secDescr3}</p>
                   </div>
                 
-              </div>
+              {/* </div> */}
           
-          </div>
+          {/* </div> */}
 
         </div>
         

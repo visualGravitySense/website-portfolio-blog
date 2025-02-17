@@ -6,6 +6,7 @@ import { useParams, Link } from "react-router-dom";
 import Hero from "../Hero";
 import IntroductionComponent from "../IntroductionComponent";
 import AboutComponent from "../AboutComponent";
+import CompaniesComponent from "../CompaniesComponent";
 import AboutCourse from "../AboutCourse";
 import AboutPlan from "../AboutPlan";
 import photo1 from '../assets/contact-1.png';
@@ -57,8 +58,28 @@ const ClassPage = () => {
     
     
     <div className="cards-container">
-        {/* <div className="row"> */}
-        {/* <div className="column"> */}
+        <div className="row">
+
+            {/* <h2 className="title">{caseData.title}</h2>
+            <p className="description">{caseData.description}</p> */}
+            
+            <div className="column">
+                <AboutCourse           
+                    image1={caseData.image1}
+                    image2={caseData.image1}
+                    image3={caseData.image1}
+                    title={caseData.titleAbout}
+                    description={caseData.descrAbout}
+                    secTitle1={caseData.secTitle1}
+                    secTitle2={caseData.secTitle1}
+                    secTitle3={caseData.secTitle1}
+                    secDescr1={caseData.secDescr1}
+                    secDescr2={caseData.secDescr1}
+                    secDescr3={caseData.secDescr1}
+                />
+            </div> 
+        
+        <div className="column">
             <AboutCourse           
                 image1={caseData.image1}
                 image2={caseData.image1}
@@ -71,9 +92,11 @@ const ClassPage = () => {
                 secDescr1={caseData.secDescr1}
                 secDescr2={caseData.secDescr1}
                 secDescr3={caseData.secDescr1}
-            />
-            {/* </div> */}
-        {/* <div className="column"> */}
+                />
+                
+            
+        </div>
+
             <AboutPlan 
                 image1={caseData.image1}
                 title={caseData.titleAbout}
@@ -85,8 +108,35 @@ const ClassPage = () => {
                 secDescr2={caseData.secDescr1}
                 secDescr3={caseData.secDescr1}
             />
-        {/* </div> */}
-        {/* </div> */}
+
+        </div>
+    </div>
+
+        <div className="row">
+            <div className="column">
+                
+                <AboutComponent           
+                    imageSrc1={caseData.image1}
+                    title={caseData.titleAbout}
+                    description={caseData.descrAbout}
+                    />
+
+            </div>
+
+            <div className="column">
+                <CompaniesComponent           
+                    imageSrc1={caseData.image1}
+                    title={caseData.titleAbout}
+                    description={caseData.descrAbout}
+                    secondaryTitle={caseData.secondaryTitle}
+                    secondaryDescription={caseData.secDescr1}
+                    />
+
+
+            </div>
+
+
+        </div>
 
 
         {/* <div className="row"> 
@@ -136,7 +186,7 @@ const ClassPage = () => {
                         </div>
                     </div> */}
      
-    </div>
+    {/* </div> */}
 
 
     {/* <div className="cards-container"> */}

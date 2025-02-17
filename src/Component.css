@@ -109,6 +109,26 @@
     max-width: 100%; /* Масштабируем изображение */
     height: auto; /* Сохраняем пропорции */
   }
+
+  .card .brand-images {
+    display: flex; /* Размещаем изображения в ряд */
+    justify-content: center; /* Выравниваем их по центру */
+    gap: 10px; /* Добавляем промежуток между изображениями */
+    flex-wrap: wrap; /* Чтобы не ломалась верстка на маленьких экранах */
+  }
+  
+  .brand-image {
+    max-width: 80px; /* Делаем изображения маленькими */
+    height: auto;
+    object-fit: contain; /* Гарантируем, что логотипы не будут искажаться */
+    filter: grayscale(100%); /* Можно сделать логотипы серыми, если нужно */
+    transition: filter 0.3s ease;
+    margin-right: 8px;
+  }
+  
+  .brand-image:hover {
+    filter: grayscale(0%); /* Цветной логотип при наведении */
+  }
   
   .title {
     /* margin: 20px 0;

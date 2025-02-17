@@ -10,9 +10,9 @@ export default function IntroductionComponent({ image1, image2, image3, title, d
     <div className="complex-component">
 
       <div className="content-wrapper">
-        <div className="row">
+        {/* <div className="row"> */}
 
-          <div className="column">
+          {/* <div className="column"> */}
 
           <div className="intro-text">
             <div className="card">
@@ -26,9 +26,9 @@ export default function IntroductionComponent({ image1, image2, image3, title, d
             </div>
                                 
           </div>
-          </div>
+          {/* </div> */}
 
-          <div className="column">
+          {/* <div className="column"> */}
 
           <div className="intro-text">
             <div className="card">
@@ -43,8 +43,8 @@ export default function IntroductionComponent({ image1, image2, image3, title, d
                                 
           </div>
 
-          </div>
-        </div>
+          {/* </div> */}
+        {/* </div> */}
         
         
       </div>
