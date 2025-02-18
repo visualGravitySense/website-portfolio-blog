@@ -12,9 +12,7 @@ import contact1 from './assets/contact-1.png';
 import picture1 from './assets/picture-1.png';
 import computer1 from './assets/computer-1.png';
 
-import ReactMarkdown from "react-markdown";
-
-const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle, ctaText, bgImage, showPopup = true }) => {
+const Promo = ({ title, subtitle, ctaText, showPopup = true }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -109,13 +107,7 @@ const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle,
 
       <div className="hero-content">
         <h1 className="hero-title">{title}</h1>
-            <div className="markdown-container">
-            <p className="hero-subtitle"><ReactMarkdown>{subtitle}</ReactMarkdown></p>
-            <p className="hero-subtitle"><ReactMarkdown>{description}</ReactMarkdown></p>
-            </div>
-        {/* <p className="hero-subtitle">{description}</p> */}
-        <h2 className="hero-title">{secondaryTitle}</h2>
-        <p className="hero-subtitle">{secondarySubtitle}</p>
+        <p className="hero-subtitle">{subtitle}</p>
 
         {showPopup && (
           <button className="cta-button" onClick={togglePopup}>
@@ -144,7 +136,7 @@ const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle,
                 <input
                   type="text"
                   name="company"
-                  placeholder="Company name (optional)"
+                  placeholder="Company name"
                   value={formData.company}
                   onChange={handleInputChange}
                   
@@ -177,7 +169,7 @@ const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle,
 
                 <textarea
                   name="message"
-                  placeholder="Brief description of the task (optional)"
+                  placeholder="Brief description of the task"
                   value={formData.message}
                   onChange={handleInputChange}
                 ></textarea>
@@ -197,4 +189,4 @@ const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle,
   );
 };
 
-export default Hero;
+export default Promo;

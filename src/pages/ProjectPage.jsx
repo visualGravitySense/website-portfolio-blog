@@ -6,6 +6,8 @@ import { useParams, Link } from "react-router-dom";
 import Hero from "../Hero";
 import IntroductionComponent from "../IntroductionComponent";
 import AboutComponent from "../AboutComponent";
+import AboutCourse from "../AboutCourse";
+import AboutPlan from "../AboutPlan";
 import photo1 from '../assets/contact-1.png';
 import DetailsComponent from "../DetailsComponent";
 import Header from "../Header"
@@ -42,7 +44,7 @@ const ProjectPage = () => {
 
   return (
     <div>
-        <header/>
+        <Header/>
 
         <Hero 
         title="Cases of my projects" 
@@ -53,6 +55,29 @@ const ProjectPage = () => {
     
     
     <div className="cards-container">
+        {/* <div className="row"> */}
+        {/* <div className="column"> */}
+            {/* <AboutCourse           
+                imageSrc2={caseData.imageSrc2}
+                title={caseData.titleShort}
+                description={caseData.descrShirt}
+                secondaryTitle={caseData.secondaryTitleShort}
+                secondaryDescription={caseData.secDescrShirt}
+            /> */}
+            {/* </div> */}
+
+        {/* <div className="column"> */}
+            {/* <AboutPlan 
+                imageSrc3={caseData.imageSrc3}
+                title={caseData.titleCustomer}
+                description={caseData.descrCustomer}
+                secondaryTitle={caseData.secondaryTitle}
+                secondaryDescription={caseData.secondaryDescription}
+            /> */}
+            
+        {/* </div> */}
+        {/* </div> */}
+        
         <div className="row"> 
 
             <div className="column">

@@ -2,12 +2,16 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 import "./Header.css";
 import logo from './assets/logo-digo-1.png';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src={logo} alt="Dmitri Gornakov" />
+        {/* <img src={logo} alt="Dmitri Gornakov" /> */}
+        <Link to="/website-portfolio-blog">
+          <img src={logo} alt="Dmitri Gornakov" />
+        </Link>
       </div>
       <div className="navigation-container">
         <nav className="nav">

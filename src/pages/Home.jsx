@@ -18,19 +18,29 @@ import PortfolioCard from "../components/PortfolioCard";
 import DetailsComponent from "../DetailsComponent";
 
 
+
+
   
 export default function Home() {
     const [cardsData, setCardsData] = useState([]);
+    const [classesData, setClassesData] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             const querySnapshot = await getDocs(collection(db, "cases"));
             const data = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+            
+            const classesSnapshot = await getDocs(collection(db, "classes"));
+            const classes = classesSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+
             setCardsData(data);
+            setClassesData(classes);
         };
 
         fetchData();
     }, []);
+
+    
     
     return (
 
@@ -89,8 +99,44 @@ export default function Home() {
                 ))}
             </div>
 
+
             {/* Courses component prepare for Gamma Intellegence */}
-            <CourseComponent />
+            {/* <CourseComponent /> */}
+            <div className="complex-component" id="lessons">
+      
+                <div className="section-header">
+                        <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+                        The best courses <span className="highlight">– upgrade your </span>IT and design skills! 
+                        </h2>
+                    </div>
+            {/* <div className="section-header">
+                <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+                IT and Design <span className="highlight">Classes</span>
+                </h2>
+            </div>   */}
+
+            <div
+                className= "block"
+                style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+                gap: "1.5rem",
+                }}
+            >
+                {classesData.map((item) => (
+                    <div key={item.id}>
+                        <CourseComponent  
+                            image1={item.image1}
+                            title={item.title}
+                            description={item.description}
+                            id={item.id}
+                        />
+                        
+                    </div>
+                ))}
+            </div>
+            </div>
+
 
             {/* Footer component */}
             <Footer />
