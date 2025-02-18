@@ -57,24 +57,27 @@ const ProjectPage = () => {
     <div className="cards-container">
         {/* <div className="row"> */}
         {/* <div className="column"> */}
-            <AboutCourse           
+            {/* <AboutCourse           
                 imageSrc2={caseData.imageSrc2}
                 title={caseData.titleShort}
                 description={caseData.descrShirt}
                 secondaryTitle={caseData.secondaryTitleShort}
                 secondaryDescription={caseData.secDescrShirt}
-            />
+            /> */}
             {/* </div> */}
+
         {/* <div className="column"> */}
-            <AboutPlan 
+            {/* <AboutPlan 
                 imageSrc3={caseData.imageSrc3}
                 title={caseData.titleCustomer}
                 description={caseData.descrCustomer}
                 secondaryTitle={caseData.secondaryTitle}
                 secondaryDescription={caseData.secondaryDescription}
-            />
+            /> */}
+            
         {/* </div> */}
         {/* </div> */}
+        
         <div className="row"> 
 
             <div className="column">

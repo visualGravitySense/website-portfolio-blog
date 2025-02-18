@@ -52,6 +52,11 @@
   align-items: center;
   background: radial-gradient(circle, #C1BFFF, #F0E5CF, #C1BFFF, #F0E5CF, #F0E5CF);
   background-size: 400% 400%;
+
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -413,4 +418,10 @@
   .floating-star {
     animation: none;
   }
+}
+
+.markdown-container {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }

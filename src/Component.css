@@ -110,15 +110,16 @@
     height: auto; /* Сохраняем пропорции */
   }
 
-  .card .brand-images {
+  .brand-images {
     display: flex; /* Размещаем изображения в ряд */
-    justify-content: center; /* Выравниваем их по центру */
+    /* justify-content: center; Выравниваем их по центру */
     gap: 10px; /* Добавляем промежуток между изображениями */
     flex-wrap: wrap; /* Чтобы не ломалась верстка на маленьких экранах */
+    align-items: center;
   }
   
   .brand-image {
-    max-width: 80px; /* Делаем изображения маленькими */
+    max-width: 120px; /* Делаем изображения маленькими */
     height: auto;
     object-fit: contain; /* Гарантируем, что логотипы не будут искажаться */
     filter: grayscale(100%); /* Можно сделать логотипы серыми, если нужно */
@@ -138,6 +139,24 @@
     font-size: 0.9rem; /* Уменьшаем размер текста */
     color: #6e3aff;
     text-align: left;
+  }
+
+  .titlePurple {
+    color: #6e3aff;
+    
+  }
+
+  .tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* или нужная вам высота */
+    
+  }
+
+  .descrBlack {
+    color: #333;
+    text-align: right;
   }
 
   .description {
@@ -202,6 +221,7 @@
 
   .card {
     margin: 15px 0; /* Больше пространства между карточками */
+    
   }
 
   .section-header h2 {
@@ -224,4 +244,33 @@
 .column {
   flex: 1 1 calc(50% - 8px); /* Две колонки, учитывая gap */
   max-width: calc(50% - 8px);
+}
+
+
+.markdown-container {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* .markdown-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.markdown-container p {
+  margin-bottom: 10px;
+} */
+
+
+.CARD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* или нужная вам высота */
+}
+
+.table-container {
+  /* width: 80%; или нужная вам ширина */
+  overflow-x: auto; /* если таблица может быть шире экрана */
 }

@@ -12,7 +12,9 @@ import contact1 from './assets/contact-1.png';
 import picture1 from './assets/picture-1.png';
 import computer1 from './assets/computer-1.png';
 
-const Hero = ({ title, subtitle, secondaryTitle, secondarySubtitle, ctaText, showPopup = true }) => {
+import ReactMarkdown from "react-markdown";
+
+const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle, ctaText, bgImage, showPopup = true }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -107,7 +109,11 @@ const Hero = ({ title, subtitle, secondaryTitle, secondarySubtitle, ctaText, sho
 
       <div className="hero-content">
         <h1 className="hero-title">{title}</h1>
-        <p className="hero-subtitle">{subtitle}</p>
+            <div className="markdown-container">
+            <p className="hero-subtitle"><ReactMarkdown>{subtitle}</ReactMarkdown></p>
+            <p className="hero-subtitle"><ReactMarkdown>{description}</ReactMarkdown></p>
+            </div>
+        {/* <p className="hero-subtitle">{description}</p> */}
         <h2 className="hero-title">{secondaryTitle}</h2>
         <p className="hero-subtitle">{secondarySubtitle}</p>
 
@@ -138,7 +144,7 @@ const Hero = ({ title, subtitle, secondaryTitle, secondarySubtitle, ctaText, sho
                 <input
                   type="text"
                   name="company"
-                  placeholder="Company name"
+                  placeholder="Company name (optional)"
                   value={formData.company}
                   onChange={handleInputChange}
                   
@@ -171,7 +177,7 @@ const Hero = ({ title, subtitle, secondaryTitle, secondarySubtitle, ctaText, sho
 
                 <textarea
                   name="message"
-                  placeholder="Brief description of the task"
+                  placeholder="Brief description of the task (optional)"
                   value={formData.message}
                   onChange={handleInputChange}
                 ></textarea>

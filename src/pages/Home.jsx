@@ -18,6 +18,8 @@ import PortfolioCard from "../components/PortfolioCard";
 import DetailsComponent from "../DetailsComponent";
 
 
+
+
   
 export default function Home() {
     const [cardsData, setCardsData] = useState([]);
@@ -104,14 +106,14 @@ export default function Home() {
       
                 <div className="section-header">
                         <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                        The best courses from <span className="highlight">Gamma Intelligence </span>– upgrade your IT and design skills! 
+                        The best courses <span className="highlight">– upgrade your </span>IT and design skills! 
                         </h2>
                     </div>
-            <div className="section-header">
+            {/* <div className="section-header">
                 <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
                 IT and Design <span className="highlight">Classes</span>
                 </h2>
-            </div>  
+            </div>   */}
 
             <div
                 className= "block"
