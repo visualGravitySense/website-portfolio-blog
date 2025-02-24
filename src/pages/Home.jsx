@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import Header from "../Header";
 import Hero from "../Hero";
-import ComplexComponent from "../ComplexComponent";
+import ComplexComponent from "../components/ComplexComponent";
 import CourseComponent from "../CourseComponent";
 import Footer from "../Footer";
 import Portfolio from "../Portfolio";
@@ -14,13 +14,10 @@ import "../Component.css";
 
 import crypto1 from '../assets/crypto-4.jpg';
 
-import PortfolioCard from "../components/PortfolioCard";
 import DetailsComponent from "../DetailsComponent";
+import AboutMe from "../components/AboutMe";
 
 
-
-
-  
 export default function Home() {
     const [cardsData, setCardsData] = useState([]);
     const [classesData, setClassesData] = useState([]);
@@ -47,16 +44,25 @@ export default function Home() {
         <div className="app">
             <Header />
 
+            
+
             {/* <HeroSection /> */}
             <Hero 
-                title="I create chaos to organize the world" 
-                subtitle="Design without rules is my element! Here chaos finds order." 
-                ctaText="Order a project" 
+                title="Дизайн и IT-консалтинг, основанные на данных" 
+                subtitle="Помогаю бизнесу расти через аналитику, UX/UI и автоматизацию процессов" 
+                ctaText="Запросить консультацию" 
                 showPopup={true} 
                 />
 
+            
+            {/* About Me Component */}
+            <AboutMe />
+
+
             {/* Block About Me */}
             <ComplexComponent />
+
+            {/* <Competencies /> */}
 
             {/* Block My Portfolio Works */}
             <Portfolio />
@@ -137,6 +143,8 @@ export default function Home() {
             </div>
             </div>
 
+
+            
 
             {/* Footer component */}
             <Footer />

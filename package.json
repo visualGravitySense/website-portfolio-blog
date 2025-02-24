@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "axios": "^1.7.9",
     "emailjs-com": "^3.2.0",
     "firebase": "^11.3.0",
