@@ -67,7 +67,7 @@ export default function Home() {
             {/* Block My Portfolio Works */}
             {/* <Portfolio /> */}
 
-            <div className="section-header">
+            <div className="section-header" id="projects">
                 <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
                 Кейсы моих <span className="highlight">проектов</span>
                 </h2>
@@ -112,7 +112,7 @@ export default function Home() {
       
                 <div className="section-header">
                         <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                        Лучшие курсы — <span className="highlight">совершенствуйте свои навыки  </span>в области ИТ и дизайна! 
+                        Лучшие курсы - <span className="highlight">совершенствуйте свои навыки  </span>в области ИТ и дизайна! 
                         </h2>
                     </div>
             {/* <div className="section-header">

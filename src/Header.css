@@ -3,7 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: linear-gradient(90deg, #E9F3F3, #E8EDF8, #F5EEF8);
+    /* background: linear-gradient(90deg, #E9F3F3, #E8EDF8, #F5EEF8); */
+    background: #222222;
     color: #fff;
     font-family: "Neue Bit", sans-serif;
   }
@@ -14,10 +15,21 @@
   }
   
   .logo img {
-    max-height: 50px; /* Ограничение высоты изображения */
-    width: auto; /* Сохранение пропорций изображения */
+    /* max-height: 45px; Ограничение высоты изображения */
+    /* width: auto; Сохранение пропорций изображения */
+    width: 40px; /* Размер логотипа */
+    height: auto;
   }
-  
+
+ .logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Отступ между логотипом и текстом */
+  text-decoration: none; /* Убираем подчеркивание у ссылки */
+  color: white; /* Цвет текста */
+  font-size: 18px;
+  font-weight: bold;
+} 
   
   .navigation-container {
     display: flex;
@@ -31,14 +43,14 @@
   }
   
   .nav a {
-    color: #6C757D;
+    color: #ffffff;
     /* text-decoration: none; */
     font-size: 0.9rem;
     transition: color 0.3s;
   }
   
   .nav a:hover {
-    color: #5227CC;
+    color: #d7ff00;
     /* font-size: 1.1rem; */
     text-decoration: underline;
   }
@@ -50,7 +62,7 @@
   }
   
   .social-icons a {
-    color: #666;
+    color:rgb(180, 180, 180);
     font-size: 0.9rem;
     transition: color 0.3s;
   }
