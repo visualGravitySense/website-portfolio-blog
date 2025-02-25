@@ -4,8 +4,8 @@
   font-weight: bold;
   text-transform: uppercase;
   /* margin-bottom: 20px; */
-  color: #000;
-  text-shadow: 2px 2px 4px #E9F3F3, -2px -2px 4px #E8EDF8;
+  color: #ffffff;
+  text-shadow: 2px 2px 1px #1a1a1a, -2px -2px 1px #1a1a1a;
   animation: glitch 30s infinite alternate;
   line-height: 1.5;
 }
@@ -15,18 +15,18 @@
 
 /* Текст описания */
 .hero-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 30px;
-  color: #000;
-  text-shadow: 1px 1px 3px #E8EDF8, -1px -1px 3px #E9F3F3;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #1a1a1a, -1px -1px 1px #1a1a1a;
   animation: float 36s ease-in-out infinite;
 }
 
 /* Кнопка */
 .cta-button {
   padding: 15px 30px;
-  background: linear-gradient(180deg, #6e3aff, #4303f3);
-  color: #d7d3e2;
+  background: linear-gradient(180deg, #00f0ff, #6e3aff);
+  color: #1a1a1a;
   /* border: 2px solid transparent; */
   font-size: 1.2rem;
   cursor: pointer;
@@ -38,7 +38,8 @@
 
 .cta-button:hover {
   transform: scale(1.2);
-  box-shadow: 0 0 5px #C1BFFF, 0 0 10px #F0E5CF;
+  box-shadow: 0 0 10px #ff00ff, 0 0 10px #00ffff;
+  /* box-shadow: 0 0 5px #1a1a1a, 0 0 10px #1a1a1a; */
   border-color: #C1BFFF;
 }
 
@@ -50,17 +51,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, #C1BFFF, #F0E5CF, #C1BFFF, #F0E5CF, #F0E5CF);
+  background: radial-gradient(circle, #6e3aff, #1a1a1a, #1a1a1a, #1a1a1a, #1a1a1a);
   background-size: 400% 400%;
-
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
 
   color: #fff;
   text-align: center;
   overflow: hidden;
-  animation: backgroundMove 28s infinite linear;
+  animation: backgroundMove 50s infinite linear;
 }
 
 /* Шумовой фон */
@@ -337,14 +334,14 @@
 
   .hero-title {
     font-size: 2rem;
-    text-shadow: 1px 1px 2px #E9F3F3, -1px -1px 2px #E8EDF8;
+    text-shadow: 1px 1px 2px #1a1a1a, -1px -1px 2px #1a1a1a;
     line-height: 1.5;
   }
 
   .hero-subtitle {
     font-size: 1rem;
     margin-bottom: 20px;
-    text-shadow: 0.5px 0.5px 1.5px #E8EDF8;
+    text-shadow: 0.5px 0.5px 1.5px #1a1a1a;
   }
 
   .cta-button {
@@ -424,4 +421,8 @@
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+.hero-container {
+  max-width: 1200px;
 }

@@ -16,6 +16,7 @@
     align-items: center; /* Центрирование заголовка */
     text-align: center;
     margin-bottom: 15px;
+    background-color: #1a1a1a;
   }
   
   .section-header h2 {
@@ -293,6 +294,7 @@
   gap: 40px;
 }
 
+
 /* Контейнер изображения */
 .about-me__image {
   width: 40%;
@@ -404,4 +406,9 @@
 .icon-style:hover {
   transform: scale(1.1);
   opacity: 1;
+}
+
+
+.details-component {
+  background-color: #1a1a1a;
 }

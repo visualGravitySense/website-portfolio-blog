@@ -65,11 +65,11 @@ export default function Home() {
             {/* <Competencies /> */}
 
             {/* Block My Portfolio Works */}
-            <Portfolio />
+            {/* <Portfolio /> */}
 
             <div className="section-header">
                 <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                Cases of my <span className="highlight">projects</span>
+                Кейсы моих <span className="highlight">проектов</span>
                 </h2>
             </div>  
 
@@ -112,7 +112,7 @@ export default function Home() {
       
                 <div className="section-header">
                         <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                        The best courses <span className="highlight">– upgrade your </span>IT and design skills! 
+                        Лучшие курсы — <span className="highlight">совершенствуйте свои навыки  </span>в области ИТ и дизайна! 
                         </h2>
                     </div>
             {/* <div className="section-header">
