@@ -15,7 +15,7 @@ export default function ({ id, imageSrc3, imageSrc2, imageSrc1, title, descripti
 
   return (
    
-      <div className="">
+      <div className="details-component">
         <div className="card">
           {imageSrc3 && (
             

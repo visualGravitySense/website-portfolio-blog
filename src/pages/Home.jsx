@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import Header from "../Header";
 import Hero from "../Hero";
-import ComplexComponent from "../ComplexComponent";
+import ComplexComponent from "../components/ComplexComponent";
 import CourseComponent from "../CourseComponent";
 import Footer from "../Footer";
 import Portfolio from "../Portfolio";
@@ -14,13 +14,10 @@ import "../Component.css";
 
 import crypto1 from '../assets/crypto-4.jpg';
 
-import PortfolioCard from "../components/PortfolioCard";
 import DetailsComponent from "../DetailsComponent";
+import AboutMe from "../components/AboutMe";
 
 
-
-
-  
 export default function Home() {
     const [cardsData, setCardsData] = useState([]);
     const [classesData, setClassesData] = useState([]);
@@ -47,23 +44,32 @@ export default function Home() {
         <div className="app">
             <Header />
 
+            
+
             {/* <HeroSection /> */}
             <Hero 
-                title="I create chaos to organize the world" 
-                subtitle="Design without rules is my element! Here chaos finds order." 
-                ctaText="Order a project" 
+                title="Дизайн и IT-консалтинг, основанные на данных" 
+                subtitle="Помогаю бизнесу расти через аналитику, UX/UI и автоматизацию процессов" 
+                ctaText="Запросить консультацию" 
                 showPopup={true} 
                 />
+
+            
+            {/* About Me Component */}
+            <AboutMe />
+
 
             {/* Block About Me */}
             <ComplexComponent />
 
-            {/* Block My Portfolio Works */}
-            <Portfolio />
+            {/* <Competencies /> */}
 
-            <div className="section-header">
+            {/* Block My Portfolio Works */}
+            {/* <Portfolio /> */}
+
+            <div className="section-header" id="projects">
                 <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                Cases of my <span className="highlight">projects</span>
+                Кейсы моих <span className="highlight">проектов</span>
                 </h2>
             </div>  
 
@@ -106,7 +112,7 @@ export default function Home() {
       
                 <div className="section-header">
                         <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-                        The best courses <span className="highlight">– upgrade your </span>IT and design skills! 
+                        Лучшие курсы - <span className="highlight">совершенствуйте свои навыки  </span>в области ИТ и дизайна! 
                         </h2>
                     </div>
             {/* <div className="section-header">
@@ -137,6 +143,8 @@ export default function Home() {
             </div>
             </div>
 
+
+            
 
             {/* Footer component */}
             <Footer />

@@ -13,6 +13,9 @@ import picture1 from './assets/picture-1.png';
 import computer1 from './assets/computer-1.png';
 
 import ReactMarkdown from "react-markdown";
+import { motion } from "framer-motion";
+
+import ParticlesBackground from "./components/ParticlesBackground";
 
 const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle, ctaText, bgImage, showPopup = true }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,9 +73,13 @@ const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle,
       {/* Декоративный фон  */}
       <div className="hero-glitch"></div>
       <div className="hero-noise"></div>
+      
+      {/* <div className="absolute inset-0">
+        <ParticlesBackground />        
+      </div> */}
 
       {/* Анимированные элементы */}
-      <img
+      {/* <img
         src={trophy1} alt="Trophy" className="floating-item trophy"
       />
       <img
@@ -83,7 +90,7 @@ const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle,
       />
       <img
         src={contact1} alt="Contact" className="floating-item contact"
-      />
+      /> */}
       {/* <img
         src={computer1}
         alt="Computer"
@@ -108,20 +115,52 @@ const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle,
       />
 
       <div className="hero-content">
-        <h1 className="hero-title">{title}</h1>
-            <div className="markdown-container">
-            <p className="hero-subtitle"><ReactMarkdown>{subtitle}</ReactMarkdown></p>
-            <p className="hero-subtitle"><ReactMarkdown>{description}</ReactMarkdown></p>
+
+        <motion.h1
+          className=""
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <div className="hero-container"><h1 className="hero-title">{title}</h1></div>
+          
+        </motion.h1>
+
+        <motion.p
+          className="mt-4 text-lg text-gray-300"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <div className="markdown-container">
+              <p className="hero-subtitle"><ReactMarkdown>{subtitle}</ReactMarkdown></p>
+              <p className="hero-subtitle"><ReactMarkdown>{description}</ReactMarkdown></p>
             </div>
+        </motion.p>
+        
+
         {/* <p className="hero-subtitle">{description}</p> */}
         <h2 className="hero-title">{secondaryTitle}</h2>
         <p className="hero-subtitle">{secondarySubtitle}</p>
 
+        {/* CTA Кнопка */}
+        <motion.a
+          href="#"
+          className="mt-6 inline-block px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-all"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+        >
         {showPopup && (
           <button className="cta-button" onClick={togglePopup}>
             {ctaText || "Order a project"}
           </button>
         )}
+          
+        </motion.a>
+
+
+        
 
          {/* Popup */}
         {isOpen && (

@@ -1,14 +1,29 @@
 import React from 'react';
-import './Component.css';
-import photo1 from './assets/photo-1.jpg';
-import dgcv1 from './assets/dmitri-gornakov-cv.pdf'
+import '../Component.css';
+import photo1 from '../assets/photo-1.jpg';
+import dgcv1 from '../assets/dmitri-gornakov-cv.pdf'
+
+// import { CogIcon, ChartBarIcon, GlobeAltIcon, UserCircleIcon, AdjustmentsHorizontalIcon, DevicePhoneMobileIcon, DocumentChartBarIcon, EyeIcon, LightBulbIcon  } from "@heroicons/react/24/solid";
+
+import { 
+  CogIcon,
+  UserGroupIcon, // Анализ поведения пользователей
+  AdjustmentsIcon, // A/B-тестирование
+  TrendingUpIcon, // Оптимизация на основе данных
+  RefreshIcon, // Цифровая трансформация
+  ChartPieIcon, // Аналитика и бизнес-отчеты
+  LightningBoltIcon, // Оптимизация сайтов
+  SearchIcon, // Анализ конкурентов
+  LightBulbIcon // Разработка digital-стратегий
+} from "@heroicons/react/solid";
 
 const infoData = [
   {
-    imageSrc3: photo1,
-    title: "Hello!",
+    imageSrc3: "",
+    icon: <UserGroupIcon className="w-8 h-8 text-blue-500" />,
+    title: "Анализ поведения пользователей",
     description: `
-            My name is Dmitri Gornakov - digital solutions architect. I help businesses speak the same language as the client. From product design to working with code and data analysis. I build a world of technological innovations, where technology and aesthetics always go hand in hand, and where every detail works to achieve the goal: attracting customers, strengthening the brand, increasing sales. I create a design without water, simply - that works.
+            С помощью инструментов аналитики я собираю информацию о том, как пользователи взаимодействуют с сайтом или приложением. Это может быть, например, просмотр кликов, время на странице, конверсии.
 
     `,
     secondaryTitle: "",
@@ -16,6 +31,35 @@ const infoData = [
       
     `
   },
+
+  {
+    imageSrc3: "",
+    icon: <AdjustmentsIcon className="w-8 h-8 text-blue-500" />,
+    title: "A/B-тестирование",
+    description: `
+            Я провожу эксперименты, чтобы сравнивать разные версии элементов дизайна и интерфейса. Это позволяет выявить, что работает лучше с точки зрения пользовательского опыта и конверсий.
+
+    `,
+    secondaryTitle: "",
+    secondaryDescription: `
+      
+    `
+  },
+
+  {
+    imageSrc3: "",
+    icon: <TrendingUpIcon className="w-8 h-8 text-blue-500" />,
+    title: "Оптимизация на основе данных",
+    description: `
+            После получения данных я использую их для оптимизации интерфейсов и улучшения взаимодействия с пользователем, что ведет к улучшению показателей: увеличению конверсий, снижению отказов и улучшению общего UX.
+
+    `,
+    secondaryTitle: "",
+    secondaryDescription: `
+      
+    `
+  },
+
   // {
   //   title: "Стек технологий с позиции Full Stack Developer",
   //   description: `
@@ -33,37 +77,40 @@ const infoData = [
  
 const classesData = [
   {
-    title: "What am I doing?",
+    icon: <CogIcon className="w-8 h-8 text-purple-500" />,
+    title: "Автоматизация процессов",
     description: `
-      I create digital solutions that work for results. Design that catches the eye. Websites that sell. Creatives that are memorable.
+      Помогаю компаниям внедрить автоматические решения для рутинных задач, чтобы улучшить их эффективность. Это может быть как автоматизация с помощью программного обеспечения, так и интеграция различных систем.
     `,
     secondaryTitle: "",
     secondaryDescription: `
       `
   },
   {
-    title: "Product Design & UI/UX",
+    icon: <RefreshIcon className="w-8 h-8 text-blue-500" />,
+    title: "Цифровая трансформация",
     description: `
-      From idea to product: Market research and audience needs analysis, formulation of key problems that the product will solve. Concept generation and testing of ideas on rapid prototypes. I design working products that find their users, not just beautiful interfaces.
+      Рекомендую и внедряю технологии, которые помогают компаниям перейти в цифровой формат: от использования облачных решений до модернизации существующих ИТ-систем.
     `,
     secondaryTitle: "",
     secondaryDescription: `
       `
   },
-  {
-    title: "Project Management",
-    description: `
-      I combine strategic planning, design and development, covering the full cycle. Implementation and scaling from a simple idea. I assemble a team and set up work processes. Testing ideas, prototypes and MVP.
-    `,
-    secondaryTitle: "",
-    secondaryDescription: `
+  // {
+  //   title: "CRM-системы",
+  //   description: `
+  //     Разрабатываю и внедряю решения для управления взаимоотношениями с клиентами. Это помогает компаниям автоматизировать маркетинг, продажи и обслуживание клиентов, улучшая их отношения с клиентами и повышая лояльность.
+  //   `,
+  //   secondaryTitle: "",
+  //   secondaryDescription: `
       
-    `
-  },
+  //   `
+  // },
   {
-  title: "React.js, Node.js, Cloud technologies",
+  icon: <ChartPieIcon className="w-8 h-8 text-blue-500" />,
+  title: "Аналитика и бизнес-отчеты",
   description: `
-    Modern web solutions and SaaS products covering the entire cycle from design to deployment and optimization. Development of custom UI components and design systems.
+    Настройка систем аналитики для сбора данных о бизнес-процессах, что помогает принимать более обоснованные решения и улучшать операционную эффективность.
   `,
   secondaryTitle: "",
   secondaryDescription: `
@@ -74,42 +121,38 @@ const classesData = [
 
 const cardsData = [
   {
-    title: "Marketing Digital Designer",
+    title: "Оптимизация сайтов",
+    icon: <LightningBoltIcon className="w-8 h-8 text-blue-500" />,
     description: `
-      Coolbet | January 2022 April 2024
+      Провожу аудит сайтов на предмет их производительности, юзабилити и SEO. Это включает в себя проверку скорости загрузки, удобства интерфейса и соответствия современным стандартам дизайна.
 
     `,
     secondaryTitle: "",
     secondaryDescription: `
-      Conceptualized and developed compelling digital assets 
-including landing pages, interactive banners, and social media 
-components that increased brand awareness and user 
-engagement. 
+      
 
     `
   },
   {
-    title: "Frontend Developer",
+    title: "Анализ конкурентов",
+    icon: <SearchIcon  className="w-8 h-8 text-blue-500" />,
     description: `
-      winz.io | January 2020 December 2021
+      Анализирую сайты конкурентов для выявления их сильных и слабых сторон. Это помогает предложить стратегии, которые позволят компании выделиться на фоне конкурентов, улучшая конверсии и пользовательский опыт.
     `,
     secondaryTitle: "",
     secondaryDescription: `
-      Designed high-impact visual assets and interfaces for a 
-cryptocurrency-based iGaming platform using Angular, 
-enhancing the marketing UI and Affiliate pages with HTML. 
+      
     `
   },
   {
-    title: "Creative Designer",
+    title: "Разработка digital-стратегий",
+    icon: <LightBulbIcon  className="w-8 h-8 text-blue-500" />,
     description: `
-      FCI Levadia | August 2018 August 2019
+       Разрабатываю стратегию для улучшения присутствия компании в интернете, включая SEO, контент-маркетинг, SMM, рекламу и т.д. Стратегия основывается на анализе данных о целевой аудитории и текущих рыночных тенденциях.
     `,
     secondaryTitle: "",
     secondaryDescription: `
-      Revamped the visual identity and digital presence for a 
-football club and a major industrial group, aligning branding 
-elements with target audience expectations.
+      
 
 
 
@@ -125,7 +168,7 @@ const ComplexComponent = () => {
 
       <div className="section-header">
           <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-              About <span className="highlight">Me</span> 
+          Мои <span className="highlight">компетенции</span> 
             </h2>
       </div>
       
@@ -134,19 +177,20 @@ const ComplexComponent = () => {
         {/* Левый блок */}
         
         <div className="left-block">
-          {/* <div className="section-header"> */}
+          <div className="section-header">
           {/* <h2>О проекте</h2> */}
-          {/* <h2>
-          About <span className="highlight">Me</span>
-          </h2> */}
+          <h2>
+          Data-Driven <span className="highlight">UX/UI Design</span>
+          </h2>
           
-        {/* </div> */}
+        </div>
         
           {infoData.map((card, i) => (
               <div key={i} className="card">
-                {card.imageSrc3 && (
+                {/* {card.imageSrc3 && (
                   <img src={card.imageSrc3} alt={card.title} className="card-image" />
-                )}
+                )} */}
+                <div className="icon-style">{card.icon}</div> {/* Иконка */}
 
                 <h3 className="title">{card.title}</h3>
                 <p className="description">{card.description}</p>
@@ -176,12 +220,13 @@ const ComplexComponent = () => {
 
         {/* Центральный блок */}
         <div className="center-block">
-        {/* <div className="section-header">
+        <div className="section-header">
         <h2>
-            Creative <span className="highlight">Classes</span>
-          </h2></div> */}
+        IT-<span className="highlight">консалтинг</span>
+          </h2></div>
           {classesData.map((card, i) => (
             <div key={i} className="card">
+              <div className="icon-style">{card.icon}</div> {/* Иконка */}
               <h3 className="title">{card.title}</h3>
               <p className="description">{card.description}</p>
               <h4 className="title">{card.secondaryTitle}</h4>
@@ -213,12 +258,13 @@ const ComplexComponent = () => {
         {/* Правый блок */}
 
         <div className="right-block">
-          {/* <div className="section-header">  
+          <div className="section-header">  
         <h2 className="">
-          Technology  <span className="highlight">Stack</span>
-          </h2></div> */}
+        Анализ сайтов и <span className="highlight">стратегий</span>
+          </h2></div>
           {cardsData.map((card, i) => (
             <div key={i} className="card">
+              <div className="icon-style">{card.icon}</div> {/* Иконка */}
               
               <h3 className="title">{card.title}</h3>
               <p className="description">{card.description}</p>
@@ -230,14 +276,14 @@ const ComplexComponent = () => {
             
           ))}
 
-            <div className="buttons">
-            <a href={dgcv1} target = "_blank">
+            {/* <div className="buttons"> */}
+            {/* <a href={dgcv1} target = "_blank"> */}
             {/* <a href={dgcv1} download> */}
-              <button className="btn-purple">View full CV</button>
-            </a>
+              {/* <button className="btn-purple">View full CV</button> */}
+            {/* </a> */}
               {/* <a href=""><button className="btn-purple">View My CV</button></a> */}
                 {/* <button className="cta-button btn-purple">Начать работать</button> */}
-            </div>
+            {/* </div> */}
         </div>
         
         {/* <div className="right-block">

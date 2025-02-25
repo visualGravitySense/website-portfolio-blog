@@ -11,14 +11,15 @@ const Header = () => {
         {/* <img src={logo} alt="Dmitri Gornakov" /> */}
         <Link to="/website-portfolio-blog">
           <img src={logo} alt="Dmitri Gornakov" />
+          <h3>DMITRI GORNAKOV</h3>
         </Link>
       </div>
       <div className="navigation-container">
         <nav className="nav">
-          <a href="#hero">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#lessons">Classes</a>
-          <a href="#contact">Contacts</a>
+          <a href="#hero">Главная</a>
+          <a href="#projects">Кейсы</a>
+          <a href="#lessons">Курсы</a>
+          <a href="#contact">Контакт</a>
         </nav>
         <div className="social-icons">
           <a href="https://github.com/visualGravitySense" target="_blank" rel="noopener noreferrer">

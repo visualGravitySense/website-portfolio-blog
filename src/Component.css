@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: #1a1a1a;
   }
   
   .section-header {
@@ -15,11 +16,14 @@
     align-items: center; /* Центрирование заголовка */
     text-align: center;
     margin-bottom: 15px;
+    background-color: #1a1a1a;
   }
   
   .section-header h2 {
     /* font-size: 1.5rem; */
-    color: #4d2c91;
+    /* color: #4d2c91; */
+    color: #00f0ff;
+    
     font-size: 2rem; /* Уменьшаем шрифт */
   }
 
@@ -30,7 +34,8 @@
   }
   
   .highlight {
-    color: #6e3aff;
+    /* color: #6e3aff; */
+    color: #d7ff00;
   }
   
   .content-wrapper {
@@ -91,7 +96,8 @@
   }
   
   .card {
-    background: #f8f8fc;
+    /* background: #f8f8fc; */
+    background-color:#222222;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* padding: 20px; */
@@ -137,7 +143,8 @@
 
     margin: 10px 0; /* Уменьшаем отступы */
     font-size: 0.9rem; /* Уменьшаем размер текста */
-    color: #6e3aff;
+    /* color: #6e3aff; */
+    color: #00f0ff;
     text-align: left;
   }
 
@@ -163,6 +170,7 @@
     /* margin: 20px 0; */
     /* font-size: 1rem; */
     color: #333;
+    color: #fff;
     text-align: left;
 
     margin: 10px 0; /* Уменьшаем отступы */
@@ -273,4 +281,134 @@
 .table-container {
   /* width: 80%; или нужная вам ширина */
   overflow-x: auto; /* если таблица может быть шире экрана */
+}
+
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 8%;
+  gap: 40px;
+}
+
+
+/* Контейнер изображения */
+.about-me__image {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(58, 216, 255, 0.3);
+}
+
+.about-me__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.about-me__image img:hover {
+  transform: scale(1.05);
+}
+
+/* Текстовый блок */
+.about-me__text {
+  width: 50%;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-me__text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00f0ff;
+  margin-bottom: 20px;
+}
+
+.about-me__text p {
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.about-me__text span {
+  color: #00f0ff;
+  font-weight: bold;
+}
+
+/* 🔥 Оптимизация для планшетов */
+@media (max-width: 1024px) {
+  .about-me {
+    flex-direction: column;
+    /* text-align: center; */
+    gap: 30px;
+  }
+
+  .about-me__image {
+    width: 60%;
+    max-width: 300px;
+  }
+
+  .about-me__text {
+    width: 80%;
+  }
+
+  .about-me__text h2 {
+    font-size: 28px;
+    text-align: center;
+
+  }
+
+  .about-me__text p {
+    font-size: 16px;
+  }
+}
+
+/* 📱 Оптимизация для мобильных устройств */
+@media (max-width: 768px) {
+  .about-me {
+    padding: 40px 5%;
+  }
+
+  .about-me__image {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .about-me__text {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .about-me__text h2 {
+    font-size: 24px;
+    text-align: center;
+
+  }
+
+  .about-me__text p {
+    font-size: 14px;
+  }
+}
+
+
+.icon-style {
+  width: 20px;
+  height: 20px;
+  color: #d7ff00; /* Фиолетовый */
+  opacity: 0.8;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-style:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+.details-component {
+  background-color: #1a1a1a;
 }
