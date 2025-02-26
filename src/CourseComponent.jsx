@@ -146,7 +146,7 @@ export default function ({ id, image3, image2, image1, title, description, secon
                         border: "none",
                         cursor: "pointer"
                     }}>
-                        View Details
+                        Подробнее
                     </button>
                 </Link>
               </div>

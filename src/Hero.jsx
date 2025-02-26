@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./Popup.css";
+import { motion } from "framer-motion";
 
 import "./HeroSection.css";
 import star1 from './assets/star-1.png';
@@ -13,7 +14,6 @@ import picture1 from './assets/picture-1.png';
 import computer1 from './assets/computer-1.png';
 
 import ReactMarkdown from "react-markdown";
-import { motion } from "framer-motion";
 
 import ParticlesBackground from "./components/ParticlesBackground";
 
@@ -153,7 +153,7 @@ const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle,
         >
         {showPopup && (
           <button className="cta-button" onClick={togglePopup}>
-            {ctaText || "Order a project"}
+            {ctaText || "Запросить консультацию"}
           </button>
         )}
           
