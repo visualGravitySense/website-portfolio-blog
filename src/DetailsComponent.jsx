@@ -34,7 +34,7 @@ export default function ({ id, imageSrc3, imageSrc2, imageSrc1, title, descripti
                     border: "none",
                     cursor: "pointer"
                 }}>
-                    View Details
+                    Подробнее
                 </button>
             </Link>
         </div>

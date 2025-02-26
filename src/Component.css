@@ -254,6 +254,28 @@
   max-width: calc(50% - 8px);
 }
 
+.column3 {
+  flex: 1 1 calc(33% - 8px); /* Две колонки, учитывая gap */
+  max-width: calc(33% - 8px);
+}
+
+
+/* Оптимизация для мобильных устройств */
+@media (max-width: 768px) {
+  .row {
+    /* flex-direction: column !important; */
+    gap: 16px;
+  }
+  
+  .columnBig,
+  .column,
+  .column3 {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+
 
 .markdown-container {
   max-width: 800px;
@@ -411,4 +433,9 @@
 
 .details-component {
   background-color: #1a1a1a;
+}
+
+.list-none {
+  list-style: none;
+  padding-left: 0;
 }
