@@ -80,7 +80,7 @@ const ProjectPage = () => {
               
               {/* Правая часть - Текст */}
               <div className="about-me__text">
-                <h2 className="text-4xl font-bold text-purple-400">{caseData.title}</h2>
+                <h2 className="text-4xl font-bold text-purple-400">{caseData.titleTargets}</h2>
                 <p className="text-lg">
                     {/* {caseData.descrTargets} */}
                 </p>
@@ -104,29 +104,29 @@ const ProjectPage = () => {
             <div className="column3">
                 <AboutComponent           
                     imageSrc2={caseData.imageSrc2}
-                    title={caseData.titleShort}
-                    description={caseData.descrCustomer}
-                    secondaryTitle={caseData.secondaryTitle}
-                    secondaryDescription={caseData.secondaryDescription}
+                    title={caseData.titleType}
+                    description={caseData.descrType}
+                    // secondaryTitle={caseData.secondaryTitle}
+                    // secondaryDescription={caseData.secondaryDescription}
                 />
                 </div>
             <div className="column3">
                 <AboutComponent 
-                    imageSrc3={caseData.imageSrc3}
-                    title={caseData.titleShort}
-                    description={caseData.descrCustomer}
-                    secondaryTitle={caseData.secondaryTitle}
-                    secondaryDescription={caseData.secondaryDescription}
+                    imageSrc3={caseData.imageSrc4}
+                    title={caseData.titleType1}
+                    description={caseData.descrType1}
+                    // secondaryTitle={caseData.secondaryTitle}
+                    // secondaryDescription={caseData.secondaryDescription}
                 />
             </div>
 
             <div className="column3">
                 <AboutComponent 
-                    imageSrc3={caseData.imageSrc3}
-                    title={caseData.titleShort}
-                    description={caseData.descrCustomer}
-                    secondaryTitle={caseData.secondaryTitle}
-                    secondaryDescription={caseData.secondaryDescription}
+                    imageSrc3={caseData.imageSrc5}
+                    title={caseData.titleType2}
+                    description={caseData.descrType2}
+                    // secondaryTitle={caseData.secondaryTitle}
+                    // secondaryDescription={caseData.secondaryDescription}
                 />
             </div>
 
@@ -140,34 +140,37 @@ const ProjectPage = () => {
               <div className="about-me__text">
                 <h2 className="text-4xl font-bold text-purple-400">{caseData.titleCustomer}</h2>
                 <p className="text-lg">
-                    {/* {caseData.descrTargets} */}
+                    {caseData.descrCustomer}
                 </p>
 
-                    <OneLineText text={descrTargets} />
+                    {/* <OneLineText text={descrTargets} /> */}
 
               </div>
 
             {/* Правая часть - Текст */}
               <div className="about-me__image">
                 <img
-                  src={caseData.imageSrc1}
+                  src={caseData.imageSrc6}
                   alt="Case Photo"
                   className="w-72 h-72 object-cover rounded-2xl shadow-lg border-4 border-purple-500"
                 />
               </div>
             </div>
 
-        
 
-            <h2 className="text-4xl font-bold text-purple-400">📌 Что входит в наш digital-комплекс?</h2>
+            <div className="section-header">
+                <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+                📌 Что входит в наш <span className="highlight">digital-комплекс?</span>
+                </h2>
+            </div>
 
             <div className="row"> 
 
                 <div className="column">
                     <AboutComponent 
                             // imageSrc1={caseData.imageSrc1}
-                            title={caseData.titleTargets}
-                            description={caseData.descrTargets}
+                            title={caseData.titleShort}
+                            description={caseData.descrShirt}
                             // secondaryTitle={caseData.secondaryTitle}
                             // secondaryDescription={caseData.secondaryDescription}
                         />
@@ -175,8 +178,8 @@ const ProjectPage = () => {
                         <div className="column">
                             <AboutComponent 
                             // imageSrc3={caseData.imageSrc3}
-                            title={caseData.titleTargets}
-                            description={caseData.descrTargets}
+                            title={caseData.titleShort1}
+                            description={caseData.descrShirt1}
                             // secondaryTitle={caseData.secondaryTitle}
                             // secondaryDescription={caseData.secondaryDescription}
                         />
