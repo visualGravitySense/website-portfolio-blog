@@ -128,7 +128,7 @@ const ClassPage = ({ showPopup }) => {
             subtitle={caseData.subtitle} 
             // secondaryTitle="Python, React JS, SQL" 
             // secondarySubtitle="Courses for professionals." 
-            ctaText="Register for the course"
+            ctaText="Зарегистрироваться на курс"
             showPopup={true}  
             // bgImage={caseData.image1}
         />
@@ -193,7 +193,7 @@ const ClassPage = ({ showPopup }) => {
             {/* Кнопка для открытия Popup */}
         <div className="buttons">
             <button className="cta-button" onClick={togglePopup}>
-            Book your course
+            Забронируйте свой курс
             </button>
         
         </div>
@@ -300,181 +300,12 @@ const ClassPage = ({ showPopup }) => {
         </div>
 
 
-        {/* <div className="row"> 
-
-            <div className="column">
-                <AboutComponent           
-                    imageSrc2={caseData.imageSrc2}
-                    title={caseData.titleShort}
-                    description={caseData.descrShirt}
-                    secondaryTitle={caseData.secondaryTitleShort}
-                    secondaryDescription={caseData.secDescrShirt}
-                />
-                </div>
-            <div className="column">
-                <AboutComponent 
-                    imageSrc3={caseData.imageSrc3}
-                    title={caseData.titleCustomer}
-                    description={caseData.descrCustomer}
-                    secondaryTitle={caseData.secondaryTitle}
-                    secondaryDescription={caseData.secondaryDescription}
-                />
-            </div>
-            </div> */}
-      
         
-
-        
-            {/* <div className="row"> 
-
-                <div className="column">
-                    <AboutComponent 
-                            imageSrc1={caseData.imageSrc1}
-                            title={caseData.titleTargets}
-                            description={caseData.descrTargets}
-                            secondaryTitle={caseData.secondaryTitle}
-                            secondaryDescription={caseData.secondaryDescription}
-                        />
-                        </div>
-                        <div className="column">
-                            <AboutComponent 
-                            imageSrc3={caseData.imageSrc3}
-                            title={caseData.titleTargets}
-                            description={caseData.descrTargets}
-                            secondaryTitle={caseData.secondaryTitle}
-                            secondaryDescription={caseData.secondaryDescription}
-                        />
-                        </div>
-                    </div> */}
-     
-    {/* </div> */}
-
-
-    {/* <div className="cards-container"> */}
-      
-        {/* <DetailsComponent  */}
-          
-            {/* // imageSrc3={caseData.imageSrc3}
-            // title={caseData.titleType}
-            // description={caseData.descrType}
-            // secondaryTitle={caseData.secondaryTitle}
-            // secondaryDescription={caseData.secondaryDescription} */}
-        {/* /> */}
-
-        {/* <DetailsComponent 
-                
-                imageSrc3={caseData.imageSrc3}
-                title={caseData.title}
-                description={caseData.description}
-                secondaryTitle={caseData.secondaryTitle}
-                secondaryDescription={caseData.secondaryDescription}
-            /> */}
-
-        {/* <DetailsComponent 
-                
-                imageSrc3={caseData.imageSrc3}
-                title={caseData.title}
-                description={caseData.description}
-                secondaryTitle={caseData.secondaryTitle}
-                secondaryDescription={caseData.secondaryDescription}
-            /> */}
-     
-    {/* </div> */}
-
-    
-
-    {/* <div className="row"> */}
-
-         {/* <div className="column">
-          <IntroductionComponent
-            
-            imageSrc3={caseData.imageSrc3}
-            title={caseData.title}
-            description={caseData.description}
-            secondaryTitle={caseData.secondaryTitle}
-            secondaryDescription={caseData.secondaryDescription}
-          />
-        
-        <IntroductionComponent
-            
-            imageSrc3={caseData.imageSrc3}
-            title={caseData.title}
-            description={caseData.description}
-            secondaryTitle={caseData.secondaryTitle}
-            secondaryDescription={caseData.secondaryDescription}
-          />
-       
-      </div> */}
-
-      {/* <div className="column">
-          <IntroductionComponent
-            
-            imageSrc3={caseData.imageSrc3}
-            title={caseData.title}
-            description={caseData.description}
-            secondaryTitle={caseData.secondaryTitle}
-            secondaryDescription={caseData.secondaryDescription}
-          />
-        
-        <IntroductionComponent
-            
-            imageSrc3={caseData.imageSrc3}
-            title={caseData.title}
-            description={caseData.description}
-            secondaryTitle={caseData.secondaryTitle}
-            secondaryDescription={caseData.secondaryDescription}
-          />
-       
-      </div> */}
-
-      {/* <div className="column">
-        
-          <AboutComponent
-            
-            imageSrc={caseData.imageSrc}
-            title={caseData.title}
-            description={caseData.description}
-            secondaryTitle={caseData.secondaryTitle}
-            secondaryDescription={caseData.secondaryDescription}
-          />
-
-        <AboutComponent
-            
-            imageSrc={caseData.imageSrc}
-            title={caseData.title}
-            description={caseData.description}
-            secondaryTitle={caseData.secondaryTitle}
-            secondaryDescription={caseData.secondaryDescription}
-          />
-      </div> */}
-
-      {/* <div className="column">
-        
-          <AboutComponent
-            
-            imageSrc={caseData.imageSrc}
-            title={caseData.title}
-            description={caseData.description}
-            secondaryTitle={caseData.secondaryTitle}
-            secondaryDescription={caseData.secondaryDescription}
-          />
-
-        <AboutComponent
-            
-            imageSrc={caseData.imageSrc}
-            title={caseData.title}
-            description={caseData.description}
-            secondaryTitle={caseData.secondaryTitle}
-            secondaryDescription={caseData.secondaryDescription}
-          />
-      </div>
-
-    </div> */}
 
     {/* Кнопка для открытия Popup */}
         <div className="buttons">
             <button className="cta-button" onClick={togglePopup}>
-            Book your course
+            Забронируйте свой курс
             </button>
         
         </div>
