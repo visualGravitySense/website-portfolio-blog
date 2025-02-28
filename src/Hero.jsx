@@ -5,19 +5,33 @@ import { motion } from "framer-motion";
 
 import "./HeroSection.css";
 import star1 from './assets/star-1.png';
-import logodigo2 from './assets/logo-digo-2.png';
-import trophy1 from './assets/trophy-1.png';
-import profile1 from './assets/profile-1.png';
-import contact1 from './assets/contact-1.png';
 
-import picture1 from './assets/picture-1.png';
-import computer1 from './assets/computer-1.png';
 
 import ReactMarkdown from "react-markdown";
 
-import ParticlesBackground from "./components/ParticlesBackground";
+
 
 const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle, ctaText, bgImage, showPopup = true }) => {
+  const heroStyle = bgImage
+    ? {
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }
+    : {};
+
+  // Опционально, стили для мобильных устройств
+  const mobileHeroStyle = {
+    backgroundSize: "cover",
+    backgroundPosition: "top center",
+    height: "70vh",
+    
+  };
+
+  // Объединяем стили в зависимости от размера экрана
+  const finalHeroStyle =
+  window.innerWidth <= 768 ? { ...heroStyle, ...mobileHeroStyle } : heroStyle;
+
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -69,39 +83,12 @@ const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle,
 
 
   return (
-    <section className="hero hero-creative" id="hero">
+    <section className="hero hero-creative" id="hero" style={heroStyle}>
       {/* Декоративный фон  */}
       <div className="hero-glitch"></div>
       <div className="hero-noise"></div>
       
-      {/* <div className="absolute inset-0">
-        <ParticlesBackground />        
-      </div> */}
-
-      {/* Анимированные элементы */}
-      {/* <img
-        src={trophy1} alt="Trophy" className="floating-item trophy"
-      />
-      <img
-        src={profile1} alt="Profile" className="floating-item profile"
-      />
-      <img
-        src={logodigo2} alt="Picture" className="floating-item picture"
-      />
-      <img
-        src={contact1} alt="Contact" className="floating-item contact"
-      /> */}
-      {/* <img
-        src={computer1}
-        alt="Computer"
-        className="floating-item computer"
-      /> */}
-
-      {/* <img
-        src={logodigo2}
-        alt="Logo"
-        className="floating-item logo" 
-      />*/}
+      
 
       {/* Анимированные звёзды */}
       <img
@@ -158,10 +145,7 @@ const Hero = ({ title, description, subtitle, secondaryTitle, secondarySubtitle,
         )}
           
         </motion.a>
-
-
         
-
          {/* Popup */}
         {isOpen && (
           <div className="popup-overlay">

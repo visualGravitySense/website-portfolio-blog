@@ -12,7 +12,9 @@ import AboutCourseCards from "../AboutCourseCards";
 import AboutPlan from "../AboutPlan";
 import AboutSkills from "../AboutSkills";
 import AboutIndustry from "../AboutIndustry";
+import ReviewCard from "../components/ReviewCard"
 
+import note from '../assets/note1.png';
 import photo1 from '../assets/contact-1.png';
 import DetailsComponent from "../DetailsComponent";
 import Header from "../Header"
@@ -126,23 +128,48 @@ const ClassPage = ({ showPopup }) => {
             title={caseData.title} 
             description={caseData.description}
             subtitle={caseData.subtitle} 
-            // secondaryTitle="Python, React JS, SQL" 
-            // secondarySubtitle="Courses for professionals." 
-            ctaText="Зарегистрироваться на курс"
+            ctaText="Зарегистрироваться"
             showPopup={true}  
-            // bgImage={caseData.image1}
+            bgImage={caseData.image1}
         />
     
     {/* <div className="markdown-container">
         <ReactMarkdown>{caseData.descrAbout}</ReactMarkdown>
     </div> */}
     
-    
-    <div className="cards-container">
-        <div className="row">
+    <div className="section-header" >
+                <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+                Про этот <span className="highlight">курс</span>
+                </h2>
+            </div> 
 
-            {/* <h2 className="title">{caseData.title}</h2>
-            <p className="description">{caseData.description}</p> */}
+    <div className="cards-container">
+    
+        <dic className="row">
+            <div className="column">
+                <AboutCourse 
+                    secTitle1={caseData.secTitle1}
+                    secTitle2={caseData.secTitle2}
+                    secDescr1={caseData.secDescr1}
+                    secDescr2={caseData.secDescr2}
+                
+                />
+            </div>
+
+            <div className="column">
+            <ReviewCard 
+                    bgImage={note}
+                    reviewText={caseData.secDescr1}
+                    caseLink={caseData.secLink}
+                
+                />
+
+            </div>
+        </dic>
+        
+
+        <div className="row">
+            
             
             <div className="column">
                 <AboutCourse           
@@ -158,7 +185,6 @@ const ClassPage = ({ showPopup }) => {
         
         <div className="column">
             
-
             <AboutCourseCards           
                 image1={caseData.image1}
                 image2={caseData.image1}
@@ -193,7 +219,7 @@ const ClassPage = ({ showPopup }) => {
             {/* Кнопка для открытия Popup */}
         <div className="buttons">
             <button className="cta-button" onClick={togglePopup}>
-            Забронируйте свой курс
+            Забронируйте курс
             </button>
         
         </div>
@@ -242,62 +268,53 @@ const ClassPage = ({ showPopup }) => {
                     secDescr6={caseData.descrIndustry6}
                     />
             </div>
-
-
         </div>
-        
-        
     </div>
 
-        <div className="row">
-            <div className="column">
+    <div className="row">
+        <div className="column">
 
-                {/* <AboutComponent           
-                    imageSrc1={caseData.image1}
-                    title={caseData.titleAbout}
-                    description={caseData.descrAbout}
-                    /> */}
+            {/* <AboutComponent           
+                imageSrc1={caseData.image1}
+                title={caseData.titleAbout}
+                description={caseData.descrAbout}
+                /> */}
 
-                 <IntroductionComponent
+                <IntroductionComponent
 
-                    pricingDetails1={caseData.pricingDetails1}
-                    pricingDetails2={caseData.pricingDetails2}
-                    // pricingDetails3={caseData.pricingDetails3}
+                pricingDetails1={caseData.pricingDetails1}
+                pricingDetails2={caseData.pricingDetails2}
+                // pricingDetails3={caseData.pricingDetails3}
 
-                    price1={caseData.price1}
-                    price2={caseData.price2}
+                price1={caseData.price1}
+                price2={caseData.price2}
 
-                    pricing1={caseData.pricing1}
-                    pricing2={caseData.pricing2}
-                    // pricing3={caseData.pricing3}
+                pricing1={caseData.pricing1}
+                pricing2={caseData.pricing2}
+                // pricing3={caseData.pricing3}
 
-                    // imageSrc3={caseData.imageSrc3}
-                    // title={caseData.title}
-                    // description={caseData.description}
-                    // secondaryTitle={caseData.secondaryTitle}
-                    // secondaryDescription={caseData.secondaryDescription}
-                />
-
-            </div>
-
-            <div className="column">
-                <CompaniesComponent           
-                    // imageSrc1={caseData.image1}
-                    imageBrand1={caseData.imageBrand1}
-                    imageBrand2={caseData.imageBrand2}
-                    imageBrand3={caseData.imageBrand3}
-
-                    title={caseData.titleAbout}
-                    description={caseData.descrAbout}
-                    secondaryTitle={caseData.secondarySubtitle}
-                    secondaryDescription={caseData.secDescr1}
-                    />
-
-
-            </div>
-
-
+                // imageSrc3={caseData.imageSrc3}
+                // title={caseData.title}
+                // description={caseData.description}
+                // secondaryTitle={caseData.secondaryTitle}
+                // secondaryDescription={caseData.secondaryDescription}
+            />
         </div>
+
+        <div className="column">
+            <CompaniesComponent           
+                // imageSrc1={caseData.image1}
+                imageBrand1={caseData.imageBrand1}
+                imageBrand2={caseData.imageBrand2}
+                imageBrand3={caseData.imageBrand3}
+
+                title={caseData.titleAbout}
+                description={caseData.descrAbout}
+                secondaryTitle={caseData.secondarySubtitle}
+                secondaryDescription={caseData.secDescr1}
+                />
+        </div>
+    </div>
 
 
         
@@ -305,7 +322,7 @@ const ClassPage = ({ showPopup }) => {
     {/* Кнопка для открытия Popup */}
         <div className="buttons">
             <button className="cta-button" onClick={togglePopup}>
-            Забронируйте свой курс
+            Забронируйте курс
             </button>
         
         </div>
