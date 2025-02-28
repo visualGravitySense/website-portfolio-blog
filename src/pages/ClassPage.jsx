@@ -13,6 +13,7 @@ import AboutPlan from "../AboutPlan";
 import AboutSkills from "../AboutSkills";
 import AboutIndustry from "../AboutIndustry";
 import ReviewCard from "../components/ReviewCard"
+import CompanyLogos from "../components/CompanyLogos"
 
 import note from '../assets/note1.png';
 import photo1 from '../assets/contact-1.png';
@@ -145,7 +146,7 @@ const ClassPage = ({ showPopup }) => {
 
     <div className="cards-container">
     
-        <dic className="row">
+        <div className="row">
             <div className="column">
                 <AboutCourse 
                     secTitle1={caseData.secTitle1}
@@ -165,56 +166,58 @@ const ClassPage = ({ showPopup }) => {
                 />
 
             </div>
-        </dic>
+        </div>
+    </div>
+
+    <CompanyLogos />
         
 
-        <div className="row">
-            
-            
-            <div className="column">
-                <AboutCourse           
-                    image1={caseData.image1}
-                    
-                    secTitle1={caseData.secTitle1}
-                    secTitle2={caseData.secTitle2}
-                    secDescr1={caseData.secDescr1}
-                    secDescr2={caseData.secDescr2}
-                    
-                />
-            </div> 
+    <div className="row">
         
         <div className="column">
-            
-            <AboutCourseCards           
+            <AboutCourse           
                 image1={caseData.image1}
-                image2={caseData.image1}
-                image3={caseData.image1}
-                title={caseData.titleAbout}
-                description={caseData.descrAbout}
-                aboutTitle1={caseData.aboutTitle1}
-                aboutTitle2={caseData.aboutTitle2}
-                aboutTitle3={caseData.aboutTitle3}
-                // aboutTitle4={caseData.aboutTitle4}
-                aboutDescr1={caseData.aboutDescr1}
-                aboutDescr2={caseData.aboutDescr2}
-                aboutDescr3={caseData.aboutDescr3}
-                // aboutDescr4={caseData.aboutDescr4}
-                />
                 
-                <AboutCourse           
-                    // image1={caseData.image1}
-                    
-                    secTitle1={caseData.aboutTitle4}
-                    secDescr1={caseData.aboutDescr4}
-                    secDescr2={caseData.aboutDescr5}
-                    secDescr3={caseData.aboutDescr6}
-                    secDescr4={caseData.aboutDescr7}
-                    
-                />
+                secTitle1={caseData.secTitle1}
+                secTitle2={caseData.secTitle2}
+                secDescr1={caseData.secDescr1}
+                secDescr2={caseData.secDescr2}
+                
+            />
+        </div> 
+    
+    <div className="column">
+        
+        <AboutCourseCards           
+            image1={caseData.image1}
+            image2={caseData.image1}
+            image3={caseData.image1}
+            title={caseData.titleAbout}
+            description={caseData.descrAbout}
+            aboutTitle1={caseData.aboutTitle1}
+            aboutTitle2={caseData.aboutTitle2}
+            aboutTitle3={caseData.aboutTitle3}
+            // aboutTitle4={caseData.aboutTitle4}
+            aboutDescr1={caseData.aboutDescr1}
+            aboutDescr2={caseData.aboutDescr2}
+            aboutDescr3={caseData.aboutDescr3}
+            // aboutDescr4={caseData.aboutDescr4}
+            />
+            
+            <AboutCourse           
+                // image1={caseData.image1}
+                
+                secTitle1={caseData.aboutTitle4}
+                secDescr1={caseData.aboutDescr4}
+                secDescr2={caseData.aboutDescr5}
+                secDescr3={caseData.aboutDescr6}
+                secDescr4={caseData.aboutDescr7}
+                
+            />
 
         </div>
             
-        </div>
+    </div>
 
             {/* Кнопка для открытия Popup */}
         <div className="buttons">
@@ -269,7 +272,7 @@ const ClassPage = ({ showPopup }) => {
                     />
             </div>
         </div>
-    </div>
+    
 
     <div className="row">
         <div className="column">
