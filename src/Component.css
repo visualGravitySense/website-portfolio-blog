@@ -439,3 +439,35 @@
   list-style: none;
   padding-left: 0;
 }
+
+
+/* Стили для отзывов в виде бумажных записок */
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+  flex-wrap: wrap;
+  /* margin-top: 40px; */
+}
+
+.review-wrapper {
+  position: relative;
+  transform: rotate(-3deg);
+  max-width: 300px;
+}
+
+.review-wrapper:nth-child(2) {
+  transform: rotate(3deg);
+}
+
+@media (max-width: 768px) {
+  .reviews-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .review-wrapper {
+    transform: none;
+    max-width: 90%;
+  }
+}

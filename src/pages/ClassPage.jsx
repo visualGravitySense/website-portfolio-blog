@@ -14,6 +14,7 @@ import AboutSkills from "../AboutSkills";
 import AboutIndustry from "../AboutIndustry";
 import ReviewCard from "../components/ReviewCard"
 import CompanyLogos from "../components/CompanyLogos"
+import TeacherComponent from "../components/TeacherComponent"
 
 import note from '../assets/note1.png';
 import photo1 from '../assets/contact-1.png';
@@ -158,18 +159,32 @@ const ClassPage = ({ showPopup }) => {
             </div>
 
             <div className="column">
+                <div className="reviews-container">
+                    <div className="review-wrapper">    
             <ReviewCard 
                     bgImage={note}
                     reviewText={caseData.secDescr1}
                     caseLink={caseData.secLink}
                 
                 />
+                </div>
+                <div className="review-wrapper">
+                    <ReviewCard 
+                            bgImage={note}
+                            reviewText={caseData.secDescr1}
+                            caseLink={caseData.secLink}
+                        
+                        />
+                </div>
+            </div>
 
             </div>
         </div>
     </div>
 
     <CompanyLogos />
+
+    <TeacherComponent />
         
 
     <div className="row">

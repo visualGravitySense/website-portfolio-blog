@@ -157,6 +157,7 @@
 @media (max-width: 480px) {
   .hero.hero-creative {
     height: 50vh;
+    animation: none;
   }
 
   .hero-title {
@@ -325,6 +326,7 @@
   .hero.hero-creative {
     height: 80vh;
     padding: 20px;
+    animation: none;
   }
 
   .hero-title {
@@ -361,6 +363,7 @@
   .hero.hero-creative {
     height: 80vh;
     padding: 15px;
+    animation: none;
   }
 
   .hero-title {
