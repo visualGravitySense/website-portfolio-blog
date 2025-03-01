@@ -8,6 +8,7 @@ import IntroductionComponent from "../IntroductionComponent";
 import AboutComponent from "../AboutComponent";
 import CompaniesComponent from "../CompaniesComponent";
 import AboutCourse from "../AboutCourse";
+import AboutCertificate from "../AboutCertificate";
 import AboutCourseCards from "../AboutCourseCards";
 import AboutPlan from "../AboutPlan";
 import AboutSkills from "../AboutSkills";
@@ -15,6 +16,7 @@ import AboutIndustry from "../AboutIndustry";
 import ReviewCard from "../components/ReviewCard"
 import CompanyLogos from "../components/CompanyLogos"
 import TeacherComponent from "../components/TeacherComponent"
+// import CertificateComponent from "../components/CertificateComponent"
 
 import note from '../assets/note1.png';
 import photo1 from '../assets/contact-1.png';
@@ -185,6 +187,42 @@ const ClassPage = ({ showPopup }) => {
     <CompanyLogos />
 
     <TeacherComponent />
+
+    {/* Кнопка для открытия Popup */}
+    <div className="buttons">
+            <button className="cta-button" onClick={togglePopup}>
+            Забронируйте курс
+            </button>
+        
+        </div>
+
+    {/* <CertificateComponent /> */}
+    <div className="row">
+        <div className="column">
+            <AboutCourse
+                image1={caseData.image1}
+                secTitle1={caseData.secTitle1}
+                secDescr1={caseData.secDescr1}
+                 />
+        </div>
+
+        <div className="column">
+            <AboutCertificate
+                image2={caseData.teacherImage}
+                secTitle1={caseData.secTitle1}
+                secTitle2={caseData.secTitle1}
+                secDescr1={caseData.secDescr1}
+                secDescr2={caseData.secDescr1}
+                 />
+
+            {/* <AboutCourse
+                image1={caseData.image1}
+                secTitle1={caseData.secTitle1}
+                secTitle2={caseData.secTitle2}
+                secDescr1={caseData.secDescr1}
+                secDescr2={caseData.secDescr2} /> */}
+        </div>
+    </div>
         
 
     <div className="row">
@@ -234,13 +272,7 @@ const ClassPage = ({ showPopup }) => {
             
     </div>
 
-            {/* Кнопка для открытия Popup */}
-        <div className="buttons">
-            <button className="cta-button" onClick={togglePopup}>
-            Забронируйте курс
-            </button>
-        
-        </div>
+            
 
         <div className="row">
             <div className="column">
