@@ -60,19 +60,7 @@ const infoData = [
     `
   },
 
-  // {
-  //   title: "Стек технологий с позиции Full Stack Developer",
-  //   description: `
-  //     Front-end: React, Tailwind CSS, Bootstrap
-  //     Back-end: Node.js (Express.js), Python (Django, FastAPI)
-  //     Базы данных: PostgreSQL, MongoDB, Redis
-  //     DevOps: Docker, Kubernetes, GitHub Actions
-  //   `,
-  //   secondaryTitle: "Цели",
-  //   secondaryDescription: `
-  //     Создание отзывчивых интерфейсов, надежная серверная логика, оптимизация инфраструктуры и автоматизация процессов.
-  //   `
-  // }
+
 ];
  
 const classesData = [
@@ -96,16 +84,7 @@ const classesData = [
     secondaryDescription: `
       `
   },
-  // {
-  //   title: "CRM-системы",
-  //   description: `
-  //     Разрабатываю и внедряю решения для управления взаимоотношениями с клиентами. Это помогает компаниям автоматизировать маркетинг, продажи и обслуживание клиентов, улучшая их отношения с клиентами и повышая лояльность.
-  //   `,
-  //   secondaryTitle: "",
-  //   secondaryDescription: `
-      
-  //   `
-  // },
+
   {
   icon: <ChartPieIcon className="w-8 h-8 text-blue-500" />,
   title: "Аналитика и бизнес-отчеты",
@@ -153,9 +132,6 @@ const cardsData = [
     secondaryTitle: "",
     secondaryDescription: `
       
-
-
-
     `
   }
 ];

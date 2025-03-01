@@ -9,7 +9,7 @@
   .review-content {
     position: relative;
     padding: 45px;
-    padding-left: 60px;
+    /* padding-left: 60px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
