@@ -17,7 +17,9 @@ import ReviewCard from "../components/ReviewCard"
 import CompanyLogos from "../components/CompanyLogos"
 import TeacherComponent from "../components/TeacherComponent"
 import ProfessionAbout from "../components/ProfessionAbout"
+import VideoSection from "../components/VideoSection"
 import Faq from "../components/Faq"
+import BgImageSection from "../components/BgImageSection"
 
 import note from '../assets/note1.png';
 import photo1 from '../assets/contact-1.png';
@@ -164,18 +166,18 @@ const ClassPage = ({ showPopup }) => {
             <div className="column">
                 <div className="reviews-container">
                     <div className="review-wrapper">    
-            <ReviewCard 
-                    bgImage={note}
-                    reviewText={caseData.secDescr1}
-                    caseLink={caseData.secLink}
-                
-                />
+                    <ReviewCard 
+                        bgImage={note}
+                        reviewText={caseData.secDescr1}
+                        caseLink={caseData.secLink}
+                        
+                        />
                 </div>
                 <div className="review-wrapper">
                     <ReviewCard 
-                            bgImage={note}
-                            reviewText={caseData.secDescr1}
-                            caseLink={caseData.secLink}
+                        bgImage={note}
+                        reviewText={caseData.secDescr1}
+                        caseLink={caseData.secLink}
                         
                         />
                 </div>
@@ -243,9 +245,7 @@ const ClassPage = ({ showPopup }) => {
                 descr7={caseData.aboutTitle1}
                 image8={caseData.image1}
                 descr8={caseData.aboutTitle1}
-
             />
-
             
         </div> 
     
@@ -261,136 +261,52 @@ const ClassPage = ({ showPopup }) => {
             question4={caseData.secTitle1}
             answer4={caseData.description}
         />
-
         </div>
             
     </div>
 
-            
-
         <div className="row">
             <div className="column">
-
-
-                <AboutCourseCards           
-                    image1={caseData.image1}
-                    image2={caseData.image1}
-                    image3={caseData.image1}
-                    title={caseData.titleAbout}
-                    description={caseData.descrAbout}
-                    aboutTitle1={caseData.aboutTitle1}
-                    aboutTitle2={caseData.aboutTitle2}
-                    aboutTitle3={caseData.aboutTitle3}
-                    // aboutTitle4={caseData.aboutTitle4}
-                    aboutDescr1={caseData.aboutDescr1}
-                    aboutDescr2={caseData.aboutDescr2}
-                    aboutDescr3={caseData.aboutDescr3}
-                    // aboutDescr4={caseData.aboutDescr4}
+               <VideoSection 
+                title={caseData.secTitle1} 
+                videoUrl={caseData.videoLink} 
                 />
-
-                <AboutSkills 
-                    // image1={caseData.image1}
-
-                    title={caseData.titleSkills}
-                    titleSkills1={caseData.titleSkills1}
-                    titleSkills2={caseData.titleSkills2}
-                    titleSkills3={caseData.titleSkills3}
-                    titleSkills4={caseData.titleSkills4}
-                    titleSkills5={caseData.titleSkills5}
-                    titleSkills6={caseData.titleSkills6}
-                    description={caseData.descriptionSkills}
-                    secDescr1={caseData.descrSkills1}
-                    secDescr2={caseData.descrSkills2}
-                    secDescr3={caseData.descrSkills3}
-                    secDescr4={caseData.descrSkills4}
-                    secDescr5={caseData.descrSkills5}
-                    secDescr6={caseData.descrSkills6}
-                    />
             </div>
 
             <div className="column">
-                <AboutCourse           
-                    // image1={caseData.image1}
-                    
-                    secTitle1={caseData.aboutTitle4}
-                    secDescr1={caseData.aboutDescr4}
-                    secDescr2={caseData.aboutDescr5}
-                    secDescr3={caseData.aboutDescr6}
-                    secDescr4={caseData.aboutDescr7}
-                    
-                />
-                
-                <AboutIndustry 
-                    // image1={caseData.image1}
 
-                    title={caseData.titleIndustry}
-                    titleIndustry1={caseData.titleIndustry1}
-                    titleIndustry2={caseData.titleIndustry2}
-                    titleIndustry3={caseData.titleIndustry3}
-                    titleIndustry4={caseData.titleIndustry4}
-                    titleIndustry5={caseData.titleIndustry5}
-                    titleIndustry6={caseData.titleIndustry6}
-                   
-                    description={caseData.descrIndustry} 
-                    secDescr1={caseData.descrIndustry1}
-                    secDescr2={caseData.descrIndustry2}
-                    secDescr3={caseData.descrIndustry3}
-                    secDescr4={caseData.descrIndustry4}
-                    secDescr5={caseData.descrIndustry5}
-                    secDescr6={caseData.descrIndustry6}
+                <div className="section-header" id="projects">
+                    <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+                    Бонусы при записи – <span className="highlight">дополнительные курсы, менторство или стажировка</span>
+                    </h2>
+                </div> 
+
+                <BgImageSection 
+                    imgBG={caseData.teacherImage}
+                    title={caseData.secTitle1}
+                    description={caseData.description}
                     />
+                
             </div>
         </div>
     
 
-    <div className="row">
-        <div className="column">
+    
 
-            {/* <AboutComponent           
-                imageSrc1={caseData.image1}
-                title={caseData.titleAbout}
-                description={caseData.descrAbout}
-                /> */}
+        <IntroductionComponent
 
-                <IntroductionComponent
+            pricingDetails1={caseData.pricingDetails1}
+            pricingDetails2={caseData.pricingDetails2}
+            
+            price1={caseData.price1}
+            price2={caseData.price2}
 
-                pricingDetails1={caseData.pricingDetails1}
-                pricingDetails2={caseData.pricingDetails2}
-                // pricingDetails3={caseData.pricingDetails3}
-
-                price1={caseData.price1}
-                price2={caseData.price2}
-
-                pricing1={caseData.pricing1}
-                pricing2={caseData.pricing2}
-                // pricing3={caseData.pricing3}
-
-                // imageSrc3={caseData.imageSrc3}
-                // title={caseData.title}
-                // description={caseData.description}
-                // secondaryTitle={caseData.secondaryTitle}
-                // secondaryDescription={caseData.secondaryDescription}
-            />
-        </div>
-
-        <div className="column">
-            <CompaniesComponent           
-                // imageSrc1={caseData.image1}
-                imageBrand1={caseData.imageBrand1}
-                imageBrand2={caseData.imageBrand2}
-                imageBrand3={caseData.imageBrand3}
-
-                title={caseData.titleAbout}
-                description={caseData.descrAbout}
-                secondaryTitle={caseData.secondarySubtitle}
-                secondaryDescription={caseData.secDescr1}
-                />
-        </div>
-    </div>
-
-
+            pricing1={caseData.pricing1}
+            pricing2={caseData.pricing2}
+            
+        />
         
-
+        
     {/* Кнопка для открытия Popup */}
         <div className="buttons">
             <button className="cta-button" onClick={togglePopup}>

@@ -145,7 +145,7 @@
   }
 
   .titlePurple {
-    color: #6e3aff;
+    color: #00f0ff;
     
   }
 
@@ -158,8 +158,8 @@
   }
 
   .descrBlack {
-    color: #333;
-    text-align: right;
+    /* color: #333; */
+    text-align: center;
   }
 
   .description {
