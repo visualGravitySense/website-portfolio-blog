@@ -16,7 +16,7 @@ import AboutIndustry from "../AboutIndustry";
 import ReviewCard from "../components/ReviewCard"
 import CompanyLogos from "../components/CompanyLogos"
 import TeacherComponent from "../components/TeacherComponent"
-// import CertificateComponent from "../components/CertificateComponent"
+import ProfessionAbout from "../components/ProfessionAbout"
 
 import note from '../assets/note1.png';
 import photo1 from '../assets/contact-1.png';
@@ -215,12 +215,7 @@ const ClassPage = ({ showPopup }) => {
                 secDescr2={caseData.secDescr1}
                  />
 
-            {/* <AboutCourse
-                image1={caseData.image1}
-                secTitle1={caseData.secTitle1}
-                secTitle2={caseData.secTitle2}
-                secDescr1={caseData.secDescr1}
-                secDescr2={caseData.secDescr2} /> */}
+            
         </div>
     </div>
         
@@ -228,7 +223,29 @@ const ClassPage = ({ showPopup }) => {
     <div className="row">
         
         <div className="column">
-            <AboutCourse           
+            <ProfessionAbout 
+                title={caseData.secTitle1}
+                description={caseData.description}
+                image1={caseData.image1}
+                descr1={caseData.aboutTitle1}
+                image2={caseData.image1}
+                descr2={caseData.aboutTitle1}
+                image3={caseData.image1}
+                descr3={caseData.aboutTitle1}
+                image4={caseData.image1}
+                descr4={caseData.aboutTitle1}
+                image5={caseData.image1}
+                descr5={caseData.aboutTitle1}
+                image6={caseData.image1}
+                descr6={caseData.aboutTitle1}
+                image7={caseData.image1}
+                descr7={caseData.aboutTitle1}
+                image8={caseData.image1}
+                descr8={caseData.aboutTitle1}
+
+            />
+
+            {/* <AboutCourse           
                 image1={caseData.image1}
                 
                 secTitle1={caseData.secTitle1}
@@ -236,7 +253,7 @@ const ClassPage = ({ showPopup }) => {
                 secDescr1={caseData.secDescr1}
                 secDescr2={caseData.secDescr2}
                 
-            />
+            /> */}
         </div> 
     
     <div className="column">
