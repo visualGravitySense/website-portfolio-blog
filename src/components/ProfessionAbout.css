@@ -1,0 +1,64 @@
+.profession-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.profession-title {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.profession-description {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.profession-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profession-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profession-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #333;
+}
+
+.competency-text {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .profession-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .profession-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .profession-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
