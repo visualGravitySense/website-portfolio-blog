@@ -134,24 +134,20 @@ const ClassPage = ({ showPopup }) => {
         <Hero 
             title={caseData.title} 
             description={caseData.description}
-            subtitle={caseData.subtitle} 
-            ctaText="Зарегистрироваться"
+            ctaText={caseData.ctaText} 
             showPopup={true}  
             bgImage={caseData.image1}
+            // subtitle={caseData.subtitle} 
+            // ctaText="Зарегистрироваться"
         />
     
-    {/* <div className="markdown-container">
-        <ReactMarkdown>{caseData.descrAbout}</ReactMarkdown>
-    </div> */}
-    
-    <div className="section-header" >
-                <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+        <div className="section-header" >
+            <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
                 Про этот <span className="highlight">курс</span>
-                </h2>
-            </div> 
+            </h2>
+        </div> 
 
     <div className="cards-container">
-    
         <div className="row">
             <div className="column">
                 <AboutCourse 
@@ -167,23 +163,24 @@ const ClassPage = ({ showPopup }) => {
                 <div className="reviews-container">
                     <div className="review-wrapper">    
                     <ReviewCard 
-                        bgImage={note}
-                        reviewText={caseData.secDescr1}
-                        caseLink={caseData.secLink}
-                        
+                        reviewText={caseData.caseDescr1}
+                        linkName={caseData.linkName}
+                        caseLink={caseData.caseLink1}
+                        // bgImage={note}
                         />
+                    </div>
+                    <div className="review-wrapper">
+                        <ReviewCard 
+                            reviewText={caseData.caseDescr2}
+                            linkName={caseData.linkName}
+                            caseLink={caseData.caseLink2}
+                            // bgImage={note}
+                            
+                            />
+                    </div>
                 </div>
-                <div className="review-wrapper">
-                    <ReviewCard 
-                        bgImage={note}
-                        reviewText={caseData.secDescr1}
-                        caseLink={caseData.secLink}
-                        
-                        />
-                </div>
-            </div>
+            </div>  
 
-            </div>
         </div>
     </div>
 
@@ -203,19 +200,19 @@ const ClassPage = ({ showPopup }) => {
     <div className="row">
         <div className="column">
             <AboutCourse
-                image1={caseData.image1}
-                secTitle1={caseData.secTitle1}
-                secDescr1={caseData.secDescr1}
+                image1={caseData.certificateImage}
+                secTitle1={caseData.certificateTitle}
+                secDescr1={caseData.certificateDescription}
                  />
         </div>
 
         <div className="column">
             <AboutCertificate
-                image2={caseData.teacherImage}
-                secTitle1={caseData.secTitle1}
-                secTitle2={caseData.secTitle1}
-                secDescr1={caseData.secDescr1}
-                secDescr2={caseData.secDescr1}
+                classImage={caseData.classImage}
+                classTitle={caseData.classTitle}
+                classDescription={caseData.classDescription}
+                // secTitle2={caseData.secTitle1}
+                // secDescr2={caseData.secDescr1}
                  />
 
             
@@ -227,26 +224,25 @@ const ClassPage = ({ showPopup }) => {
         
         <div className="column">
             <ProfessionAbout 
-                title={caseData.secTitle1}
-                description={caseData.description}
+                title={caseData.professionTitle}
+                description={caseData.professionDescription}
                 image1={caseData.image1}
-                descr1={caseData.aboutTitle1}
-                image2={caseData.image1}
-                descr2={caseData.aboutTitle1}
-                image3={caseData.image1}
-                descr3={caseData.aboutTitle1}
-                image4={caseData.image1}
-                descr4={caseData.aboutTitle1}
-                image5={caseData.image1}
-                descr5={caseData.aboutTitle1}
-                image6={caseData.image1}
-                descr6={caseData.aboutTitle1}
-                image7={caseData.image1}
-                descr7={caseData.aboutTitle1}
-                image8={caseData.image1}
-                descr8={caseData.aboutTitle1}
+                descr1={caseData.professionTitle1}
+                image2={caseData.image2}
+                descr2={caseData.professionTitle2}
+                image3={caseData.image3}
+                descr3={caseData.professionTitle3}
+                image4={caseData.image4}
+                descr4={caseData.professionTitle4}
+                image5={caseData.image5}
+                descr5={caseData.professionTitle5}
+                image6={caseData.image6}
+                descr6={caseData.professionTitle6}
+                image7={caseData.image7}
+                descr7={caseData.professionTitle7}
+                image8={caseData.image8}
+                descr8={caseData.professionTitle8}
             />
-            
         </div> 
     
     <div className="column">

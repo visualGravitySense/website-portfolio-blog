@@ -444,7 +444,7 @@
   align-items: center;
   /* gap: 20px; */
   flex-wrap: wrap;
-  /* margin-top: 40px; */
+  margin-top: 40px;
 }
 
 .review-wrapper {
