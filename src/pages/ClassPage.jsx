@@ -136,7 +136,7 @@ const ClassPage = ({ showPopup }) => {
             description={caseData.description}
             ctaText={caseData.ctaText} 
             showPopup={true}  
-            bgImage={caseData.image1}
+            bgImage={caseData.heroImage}
             // subtitle={caseData.subtitle} 
             // ctaText="Зарегистрироваться"
         />
