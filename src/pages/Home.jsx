@@ -44,8 +44,6 @@ export default function Home() {
         <div className="app">
             <Header />
 
-            
-
             {/* <HeroSection /> */}
             <Hero 
                 title="Дизайн и IT-консалтинг, основанные на данных" 
@@ -53,11 +51,9 @@ export default function Home() {
                 ctaText="Запросить консультацию" 
                 showPopup={true} 
                 />
-
             
             {/* About Me Component */}
             <AboutMe />
-
 
             {/* Block About Me */}
             <ComplexComponent />
@@ -105,7 +101,6 @@ export default function Home() {
                 ))}
             </div>
 
-
             {/* Courses component prepare for Gamma Intellegence */}
             {/* <CourseComponent /> */}
             <div className="complex-component" id="lessons">
@@ -143,8 +138,6 @@ export default function Home() {
             </div>
             
             </div>
-
-
             
 
             {/* Footer component */}
