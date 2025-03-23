@@ -36,7 +36,8 @@ const TeacherComponent = () => {
                             <img src={classItem.teacherImage} alt={classItem.teacherTitle} className="teacher-image" />
                             <h3 className="teacher-title">{classItem.teacherTitle}</h3>
                             <p className="teacher-description">{classItem.teacherDescription}</p>
-                            <a href={classItem.teacherLink} className="teacher-link">LinkedIn</a>
+                            <a href={classItem.teacherLink} className="teacher-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
                         </div>
                     ))}
                 </div>

@@ -30,12 +30,12 @@ export default function IntroductionComponent({ pricingDetails1, pricingDetails2
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
               />
               <h2 className="titlePurple text-4xl font-bold text-[#6e3aff] text-center mb-6 font-mono uppercase tracking-widest">
-                💥 Выберите свой план 💥
+                💥 Стоимость курса 💥
               </h2>
               <table className="w-full text-left text-white border-collapse relative z-10">
                 <thead>
                   <tr className="text-xl border-b-4 border-gray-700">
-                    <th className="titlePurple p-4">💎 Пакет</th>
+                    <th className="titlePurple p-4">💎 Курс</th>
                     <th className="titlePurple p-4">🚀 Что включено?</th>
                     <th className="titlePurple p-4">💰 Цена</th>
                   </tr>

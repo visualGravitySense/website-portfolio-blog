@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics, isSupported } from "firebase/analytics";
+import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, doc, getDoc, getDocs } from "firebase/firestore";
 
 // 🔹 Firebase config (вставь своё)
@@ -16,16 +16,6 @@ const firebaseConfig = {
 // 🔹 Инициализация
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-// const analytics = getAnalytics(app);
+const analytics = getAnalytics(app);
 
-// Проверяем, поддерживается ли Analytics перед инициализацией
-let analytics;
-if (typeof window !== "undefined") {
-  isSupported().then((supported) => {
-    if (supported) {
-      analytics = getAnalytics(app);
-    }
-  });
-}
-
-export { db, analytics, collection, getDocs, getDoc, doc  };
+export { db, collection, getDocs, getDoc, doc  };
