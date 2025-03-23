@@ -127,7 +127,7 @@ export default function Home() {
                 {classesData.map((item) => (
                     <div key={item.id}>
                         <CourseComponent  
-                            image1={item.image1}
+                            image1={item.image}
                             title={item.title}
                             description={item.description}
                             id={item.id}

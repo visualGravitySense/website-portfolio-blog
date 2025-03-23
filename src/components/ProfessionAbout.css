@@ -21,7 +21,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .profession-item {

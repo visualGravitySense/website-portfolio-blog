@@ -292,13 +292,13 @@ const ClassPage = ({ showPopup }) => {
         <IntroductionComponent
 
             pricingDetails1={caseData.pricingDetails1}
-            // pricingDetails2={caseData.pricingDetails2}
+            pricingDetails2={caseData.pricingDetails2}
             
             price1={caseData.price1}
-            // price2={caseData.price2}
+            price2={caseData.price2}
 
             pricing1={caseData.pricing1}
-            // pricing2={caseData.pricing2}
+            pricing2={caseData.pricing2}
             
         />
         
