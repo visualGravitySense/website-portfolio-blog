@@ -162,13 +162,13 @@ const ClassPage = ({ showPopup }) => {
             <div className="column">
                 <div className="reviews-container">
                     <div className="review-wrapper">    
-                    <ReviewCard 
-                        reviewText={caseData.caseDescr1}
-                        linkName={caseData.linkName}
-                        caseLink={caseData.caseLink1}
-                        // bgImage={note}
-                        />
-                    </div>
+                        <ReviewCard 
+                            reviewText={caseData.caseDescr1}
+                            linkName={caseData.linkName}
+                            caseLink={caseData.caseLink1}
+                            // bgImage={note}
+                            />
+                        </div>
                     <div className="review-wrapper">
                         <ReviewCard 
                             reviewText={caseData.caseDescr2}
@@ -248,14 +248,14 @@ const ClassPage = ({ showPopup }) => {
     <div className="column">
         
         <Faq 
-            question1={caseData.secTitle1}
-            answer1={caseData.description}
-            question2={caseData.secTitle1}
-            answer2={caseData.description}
-            question3={caseData.secTitle1}
-            answer3={caseData.description}
-            question4={caseData.secTitle1}
-            answer4={caseData.description}
+            question1={caseData.question4}
+            answer1={caseData.answer4}
+            question2={caseData.question1}
+            answer2={caseData.answer1}
+            question3={caseData.question2}
+            answer3={caseData.answer2}
+            question4={caseData.question3}
+            answer4={caseData.answer3}
         />
         </div>
             
@@ -278,9 +278,9 @@ const ClassPage = ({ showPopup }) => {
                 </div> 
 
                 <BgImageSection 
-                    imgBG={caseData.teacherImage}
-                    title={caseData.secTitle1}
-                    description={caseData.description}
+                    imgBG={caseData.bonusImage}
+                    title={caseData.bonusTitle}
+                    description={caseData.descrBonus}
                     />
                 
             </div>
@@ -292,13 +292,13 @@ const ClassPage = ({ showPopup }) => {
         <IntroductionComponent
 
             pricingDetails1={caseData.pricingDetails1}
-            pricingDetails2={caseData.pricingDetails2}
+            // pricingDetails2={caseData.pricingDetails2}
             
             price1={caseData.price1}
-            price2={caseData.price2}
+            // price2={caseData.price2}
 
             pricing1={caseData.pricing1}
-            pricing2={caseData.pricing2}
+            // pricing2={caseData.pricing2}
             
         />
         
