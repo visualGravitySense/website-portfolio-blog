@@ -25,7 +25,7 @@
 /* Кнопка */
 .cta-button {
   padding: 15px 30px;
-  background: linear-gradient(180deg, #00f0ff, #6e3aff);
+  background: linear-gradient(180deg, #00c851,#00ffe1 );
   color: #1a1a1a;
   /* border: 2px solid transparent; */
   font-size: 1.2rem;
@@ -38,7 +38,7 @@
 
 .cta-button:hover {
   transform: scale(1.2);
-  box-shadow: 0 0 10px #ff00ff, 0 0 10px #00ffff;
+  box-shadow: 0 0 10px #00c851, 0 0 10px #00ffe1;
   /* box-shadow: 0 0 5px #1a1a1a, 0 0 10px #1a1a1a; */
   border-color: #C1BFFF;
 }
@@ -424,3 +424,5 @@
 .hero-container {
   max-width: 1200px;
 }
+
+
