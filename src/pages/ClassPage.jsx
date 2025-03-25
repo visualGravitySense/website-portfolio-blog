@@ -127,6 +127,27 @@ const ClassPage = ({ showPopup }) => {
       return <p>Loading...</p>;
   }
 
+  const teachers = [
+    { 
+        title: caseData?.teacherTitle,
+        image: caseData?.teacherImage, 
+        description: caseData?.teacherDescription,
+        link: caseData?.teacherLink
+    },
+    { 
+        title: caseData?.teacherTitle1,
+        image: caseData?.teacherImage1, 
+        description: caseData?.teacherDescription1,
+        link: caseData?.teacherLink1
+    },
+    { 
+        title: caseData?.teacherTitle2,
+        image: caseData?.teacherImage2, 
+        description: caseData?.teacherDescription2,
+        link: caseData?.teacherLink2
+    }
+].filter(teacher => teacher.description); // Убираем пустые значения
+
   return (
     <div>
         <Header/>
@@ -186,7 +207,36 @@ const ClassPage = ({ showPopup }) => {
 
     <CompanyLogos />
 
-    <TeacherComponent />
+    {/* <TeacherComponent /> */}
+
+    <div>
+        {/* <h2 className="">
+            Преподаватели и <span className="highlight">их опыт</span>
+        </h2> */}
+
+        <div className="section-header" >
+            <h2 style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+            Преподаватели и <span className="highlight">их опыт</span>
+            </h2>
+        </div> 
+
+        <div className="teachers-container">
+            {teachers.length > 0 ? (
+                teachers.map((teacher, index) => (
+                    <TeacherComponent 
+                        key={index}
+                        image={teacher.image} 
+                        description={teacher.description}
+                        title={teacher.title}
+                        link={teacher.link}
+                    />
+                ))
+            ) : (
+                <p>Преподаватели не найдены</p>
+            )}
+        </div>
+        
+    </div>
 
     {/* Кнопка для открытия Popup */}
     <div className="buttons">

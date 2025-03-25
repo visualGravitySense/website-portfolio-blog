@@ -488,3 +488,36 @@
 .card:hover {
   box-shadow: 0px 0px 20px rgba(110, 58, 255, 0.8);
 } */
+
+.teachers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Автоматически подстраивает количество колонок */
+  gap: 20px; /* Расстояние между карточками */
+  justify-items: center; /* Центрирует карточки по горизонтали */
+}
+
+.teacher-card {
+  background-color: #2c2c2c; /* Тёмный фон для карточки */
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%; /* Чтобы карточка занимала доступную ширину */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Плавный эффект при наведении */
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px); /* Легкий подъем при наведении */
+}
+
+.teacher-card img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 50%; Картинка круглая */
+  margin-bottom: 10px;
+}
+
+.teacher-card .description {
+  color: #ccc; /* Светлый цвет текста */
+  font-size: 14px;
+}
