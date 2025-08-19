@@ -1,0 +1,72 @@
+/* Основной контейнер, делится 50/50 */
+.complex-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #1a1a1a;
+    gap: 20px;
+  }
+  
+  /* Левая часть: картинка */
+  .complex-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .complex-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Правая часть: текст */
+  .complex-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .complex-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .complex-description {
+    margin-bottom: 15px;
+  }
+  
+  .complex-description p {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 1.5;
+  }
+  
+  /* Адаптивность для мобильных устройств */
+  @media (max-width: 768px) {
+    .complex-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .complex-image-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .complex-text-container {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

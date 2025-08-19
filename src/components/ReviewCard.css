@@ -1,0 +1,54 @@
+.review-card {
+    background-color: #1e1e1e; /* Тёмный фон */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    max-width: 400px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.review-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5f5f5; /* Светлый текст */
+    margin-bottom: 10px;
+}
+
+.review-link {
+    color: #6e3aff; /* Фиолетовый акцент */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.review-link:hover {
+    text-decoration: underline;
+    color: #8f5aff;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .review-card {
+        max-width: 90%;
+        padding: 20px;
+    }
+    .review-text {
+        font-size: 14px;
+    }
+    .review-link {
+        font-size: 14px;
+    }
+}

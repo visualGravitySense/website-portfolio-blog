@@ -1,0 +1,428 @@
+/* Заголовок */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* margin-bottom: 20px; */
+  color: #ffffff;
+  text-shadow: 2px 2px 1px #1a1a1a, -2px -2px 1px #1a1a1a;
+  animation: glitch 30s infinite alternate;
+  line-height: 1.5;
+}
+.hero-title .highlight {
+  color: #5227CC; /* Цвет для выделения */
+}
+
+/* Текст описания */
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #1a1a1a, -1px -1px 1px #1a1a1a;
+  animation: float 36s ease-in-out infinite;
+}
+
+/* Кнопка */
+.cta-button {
+  padding: 15px 30px;
+  background: linear-gradient(180deg, #00c851,#00ffe1 );
+  color: #1a1a1a;
+  /* border: 2px solid transparent; */
+  font-size: 1.2rem;
+  cursor: pointer;
+  /* text-transform: uppercase; */
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  /* box-shadow: 0 0 15px #ff00ff, 0 0 20px #00ffff; */
+}
+
+.cta-button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #00c851, 0 0 10px #00ffe1;
+  /* box-shadow: 0 0 5px #1a1a1a, 0 0 10px #1a1a1a; */
+  border-color: #C1BFFF;
+}
+
+/* Секция Hero */
+.hero.hero-creative {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #6e3aff, #1a1a1a, #1a1a1a, #1a1a1a, #1a1a1a);
+  background-size: 400% 400%;
+
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  animation: backgroundMove 50s infinite linear;
+}
+
+/* Шумовой фон */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/noise.png') repeat;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+/* Дополнительный фон */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background: conic-gradient(from 180deg at center, #C1BFFF, #F0E5CF, #C1BFFF, #F0E5CF, #C1BFFF);
+  clip-path: polygon(10% 0, 90% 10%, 80% 90%, 0% 80%);
+  opacity: 0.3;
+  animation: glitch 30s infinite ease-in-out alternate;
+  z-index: 2;
+}
+
+/* Контент */
+.hero-content {
+  position: relative;
+  z-index: 5;
+}
+
+/* Анимация движения фона */
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Анимация glitch для заголовка */
+@keyframes glitch {
+  0% {
+    transform: translate(-5px, -5px) scale(1.1);
+  }
+  50% {
+    transform: translate(5px, 5px) scale(1.2);
+  }
+  100% {
+    transform: translate(-10px, 10px) scale(1.1);
+  }
+}
+
+/* Анимация плавного движения текста */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .hero.hero-creative {
+    height: 60vh;
+    animation: none;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 8px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero.hero-creative {
+    height: 50vh;
+    animation: none;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Анимация звёзд */
+.floating-star {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: floatStar 15s infinite ease-in-out;
+  opacity: 0.7;
+  z-index: 3;
+}
+
+/* Позиционирование звёзд */
+.star-1 {
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.star-2 {
+  top: 30%;
+  right: 20%;
+  animation-delay: 5s;
+  transform: scale(1.2);
+}
+
+.star-3 {
+  bottom: 15%;
+  left: 35%;
+  animation-delay: 10s;
+  transform: scale(0.8);
+}
+
+/* Анимация движения звёзд */
+@keyframes floatStar {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* Анимация звёзд */
+.floating-star {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: floatStar 15s infinite ease-in-out;
+  opacity: 0.7;
+  z-index: 3;
+}
+
+/* Позиционирование звёзд */
+.star-1 {
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.star-2 {
+  top: 30%;
+  right: 20%;
+  animation-delay: 5s;
+  transform: scale(1.2);
+}
+
+.star-3 {
+  bottom: 15%;
+  left: 35%;
+  animation-delay: 10s;
+  transform: scale(0.8);
+}
+
+/* Анимация движения звёзд */
+@keyframes floatStar {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Общий стиль анимированных элементов */
+.floating-item {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  animation: floatItem 12s infinite ease-in-out;
+  opacity: 0.8;
+  z-index: 3;
+}
+
+/* Позиционирование каждого элемента */
+.trophy {
+  top: 5%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.profile {
+  top: 15%;
+  right: 10%;
+  animation-delay: 3s;
+  transform: scale(1.2);
+}
+
+.picture {
+  bottom: 20%;
+  left: 20%;
+  animation-delay: 6s;
+}
+
+.contact {
+  bottom: 10%;
+  right: 15%;
+  animation-delay: 9s;
+}
+
+.computer {
+  top: 35%;
+  left: 40%;
+  animation-delay: 12s;
+}
+
+
+/* Анимация движения для всех элементов */
+@keyframes floatItem {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .hero.hero-creative {
+    height: 80vh;
+    padding: 20px;
+    animation: none;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #1a1a1a, -1px -1px 2px #1a1a1a;
+    line-height: 1.5;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-shadow: 0.5px 0.5px 1.5px #1a1a1a;
+  }
+
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .floating-star {
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
+  }
+
+  .picture {
+    bottom: 10%;
+    left: 10%;
+    animation-delay: 6s;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero.hero-creative {
+    height: 80vh;
+    padding: 15px;
+    animation: none;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .cta-button {
+    padding: 16px 16px;
+    font-size: 1.5rem;
+  }
+
+  .floating-star {
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+  }
+
+  .picture {
+    bottom: 10%;
+    left: 10%;
+    animation-delay: 6s;
+  }
+}
+
+/* Упрощение эффектов на мобильных */
+.hero.hero-creative::before {
+  opacity: 0.1;
+}
+
+.hero.hero-creative::after {
+  display: none; /* Убираем дополнительный фон для мобильных */
+}
+
+/* Уменьшение сложных анимаций на мобильных */
+@media (max-width: 768px) {
+  .hero-title,
+  .hero-subtitle {
+    animation: none; /* Убираем сложные анимации для производительности */
+  }
+
+  .floating-star {
+    animation: none;
+  }
+}
+
+.markdown-container {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hero-container {
+  max-width: 1200px;
+}
+
+

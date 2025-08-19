@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background: linear-gradient(90deg, #E9F3F3, #E8EDF8, #F5EEF8); */
+    background: #222222;
+    color: #fff;
+    font-family: "Neue Bit", sans-serif;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    /* max-height: 45px; Ограничение высоты изображения */
+    /* width: auto; Сохранение пропорций изображения */
+    width: 40px; /* Размер логотипа */
+    height: auto;
+  }
+
+ .logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Отступ между логотипом и текстом */
+  text-decoration: none; /* Убираем подчеркивание у ссылки */
+  color: white; /* Цвет текста */
+  font-size: 18px;
+  font-weight: bold;
+} 
+  
+  .navigation-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Расстояние между блоками навигации и соц. иконок */
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px; /* Расстояние между ссылками */
+  }
+  
+  .nav a {
+    color: #ffffff;
+    /* text-decoration: none; */
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #d7ff00;
+    /* font-size: 1.1rem; */
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px; /* Расстояние между соц. иконками */
+    /* align-items: center; */
+  }
+  
+  .social-icons a {
+    color:rgb(180, 180, 180);
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  /* Оригинальные цвета при наведении */
+  .social-icons a:hover:nth-child(1) {
+    color: #ff00f2; /* GitHub (темно-серый) */
+  }
+  
+  .social-icons a:hover:nth-child(2) {
+    color: #0077b5; /* LinkedIn (синий) */
+  }
+  
+  .social-icons a:hover:nth-child(3) {
+    color: #e4405f; /* Instagram (розовый) */
+  }
+  
+  .social-icons a:hover:nth-child(4) {
+    color: #38d4a5; /* Email (красный) */
+  }
+  
+  /* Скрываем навигацию на мобильных устройствах */
+@media (max-width: 768px) {
+  .navigation-container {
+    display: none;
+  }
+}
+
+/* Центрируем логотип на мобильных устройствах */
+@media (max-width: 768px) {
+  .logo {
+    justify-content: center; /* Выравнивание по центру */
+    margin: 0 auto; /* Убираем возможные отступы */
+  }
+}

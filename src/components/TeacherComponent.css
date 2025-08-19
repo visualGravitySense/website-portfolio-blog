@@ -1,0 +1,70 @@
+.teachers-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
+  
+  .teacher-card {
+    background: #222222;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .teacher-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .teacher-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .teacher-description {
+    font-size: 14px;
+    color:rgb(170, 170, 170);
+    margin-top: 10px;
+  }
+  
+  .teacher-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .teacher-link:hover {
+    background: #0056b3;
+  }
+  
+  /* Адаптивность для мобильных устройств */
+  @media (max-width: 768px) {
+    .teachers-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .teacher-card {
+      width: 90%;
+      max-width: 320px;
+    }
+  }
+  

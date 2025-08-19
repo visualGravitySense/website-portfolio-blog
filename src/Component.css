@@ -1,0 +1,523 @@
+.complex-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+  }
+  
+  .section-header {
+    display: flex;
+    /* justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px; */
+
+    flex-direction: column; /* В одну колонку на мобильных */
+    align-items: center; /* Центрирование заголовка */
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #1a1a1a;
+  }
+  
+  .section-header h2 {
+    /* font-size: 1.5rem; */
+    /* color: #4d2c91; */
+    color: #00f0ff;
+    
+    font-size: 2rem; /* Уменьшаем шрифт */
+  }
+
+  .section-header h3 {
+    /* font-size: 1.5rem; */
+    color: #4d2c91;
+    font-size: 1.2rem; /* Уменьшаем шрифт */
+  }
+  
+  .highlight {
+    /* color: #6e3aff; */
+    color: #d7ff00;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    /* justify-content: space-between;
+    width: 100%; */
+
+    /* flex-direction: column; Вертикальный макет */
+    /* width: 100%; */
+    /* align-items: center; Центрируем блоки */
+
+    justify-content: space-between;
+    gap: 20px; /* Пространство между блоками */
+    flex-wrap: wrap; /* Позволяет переносить блоки на следующую строку */
+    width: 100%;
+
+  }
+
+  
+  .intro-text,
+  .intro-immage {
+    flex: 1;
+    /* padding: 10px; */
+
+    /* flex: none; Отменяем равные пропорции */
+    /* width: 100%; Растягиваем блоки     */
+
+    /* max-width: calc(50% - 20px); Три блока в ряд с учетом gap */
+    /* box-sizing: border-box; Учитываем отступы и ширину */
+  }
+
+  .block {
+    /* flex: 1; */
+    padding: 10px;    
+    /* max-width: calc(33.33% - 20px); Три блока в ряд с учетом gap */
+    box-sizing: border-box; /* Учитываем отступы и ширину */
+  }
+
+  .cards-container {
+    display: flex; /* Включает flexbox */
+    flex-wrap: wrap; /* Если элементы не помещаются, они переносятся */
+    justify-content: center; /* Центрируем элементы */
+    gap: 20px; /* Отступ между карточками */
+  }
+  
+  
+  .left-block,
+  .center-block,
+  .right-block {
+    flex: 1;
+    padding: 10px;
+
+    /* flex: none; Отменяем равные пропорции */
+    /* width: 100%; Растягиваем блоки     */
+
+    max-width: calc(33.33% - 20px); /* Три блока в ряд с учетом gap */
+    box-sizing: border-box; /* Учитываем отступы и ширину */
+  }
+  
+  .card {
+    background-color:#222222;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Уменьшаем отступы */
+    text-align: center;
+    margin: 10px 16px; /* Увеличиваем вертикальный отступ */
+  }
+  
+  .card img {
+    /* max-width: 300px; */
+    margin-bottom: 10px;
+
+    max-width: 100%; /* Масштабируем изображение */
+    height: auto; /* Сохраняем пропорции */
+  }
+
+  .brand-images {
+    display: flex; /* Размещаем изображения в ряд */
+    /* justify-content: center; Выравниваем их по центру */
+    gap: 10px; /* Добавляем промежуток между изображениями */
+    flex-wrap: wrap; /* Чтобы не ломалась верстка на маленьких экранах */
+    align-items: center;
+  }
+  
+  .brand-image {
+    max-width: 120px; /* Делаем изображения маленькими */
+    height: auto;
+    object-fit: contain; /* Гарантируем, что логотипы не будут искажаться */
+    filter: grayscale(100%); /* Можно сделать логотипы серыми, если нужно */
+    transition: filter 0.3s ease;
+    margin-right: 8px;
+  }
+  
+  .brand-image:hover {
+    filter: grayscale(0%); /* Цветной логотип при наведении */
+  }
+  
+  .title {
+    /* margin: 20px 0;
+    font-size: 1rem; */
+
+    margin: 10px 0; /* Уменьшаем отступы */
+    font-size: 0.9rem; /* Уменьшаем размер текста */
+    /* color: #6e3aff; */
+    color: #00f0ff;
+    text-align: left;
+  }
+
+  .titlePurple {
+    color: #00f0ff;
+    
+  }
+
+  .tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* или нужная вам высота */
+    
+  }
+
+  .descrBlack {
+    /* color: #333; */
+    text-align: center;
+  }
+
+  .description {
+    /* margin: 20px 0; */
+    /* font-size: 1rem; */
+    color: #333;
+    color: #fff;
+    text-align: left;
+
+    margin: 10px 0; /* Уменьшаем отступы */
+    font-size: 0.9rem; /* Уменьшаем размер текста */
+    
+  }
+  
+  .buttons {
+    display: flex;
+
+    /* flex-direction: column; Кнопки в одну колонку */
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .btn {
+    /* padding: 10px 20px; */
+    padding: 8px 15px; /* Уменьшаем размер кнопок */
+
+    border: none;
+    border-radius: 5px;
+    
+    /* font-size: 1rem; */
+    font-size: 0.9rem; /* Уменьшаем шрифт */
+
+    cursor: pointer;
+  }
+  
+  .btn-green {
+    background-color: #ccff00;
+    color: #000;
+  }
+  
+  .btn-purple {
+    background-color: #6e3aff;
+    color: #fff;
+  }
+  
+
+  /* Media query для мобильных устройств */
+@media (max-width: 768px) {
+  
+
+  .content-wrapper {
+    flex-direction: column; /* Все блоки в одну колонку */
+    /* align-items: stretch; Растянуть на всю ширину */
+    gap: 15px; /* Уменьшаем пространство между блоками */
+  }
+
+  .left-block,
+  .center-block,
+  .right-block {
+    max-width: 100%; /* Растягиваем на всю ширину */
+    padding: 10px;
+  }
+
+  .card {
+    margin: 15px 0; /* Больше пространства между карточками */
+    
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem; /* Ещё меньше для узких экранов */
+  }
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 24px; расстояние между колонками */
+}
+
+.columnBig {
+  flex: 1 1 calc(100% - 8px); /* Две колонки, учитывая gap */
+  max-width: calc(100% - 8px);
+}
+
+.column {
+  flex: 1 1 calc(50% - 8px); /* Две колонки, учитывая gap */
+  max-width: calc(50% - 8px);
+}
+
+.column3 {
+  flex: 1 1 calc(33% - 8px); /* Две колонки, учитывая gap */
+  max-width: calc(33% - 8px);
+}
+
+
+/* Оптимизация для мобильных устройств */
+@media (max-width: 768px) {
+  .row {
+    /* flex-direction: column !important; */
+    gap: 16px;
+  }
+  
+  .columnBig,
+  .column,
+  .column3 {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+
+
+.markdown-container {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* .markdown-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.markdown-container p {
+  margin-bottom: 10px;
+} */
+
+
+.CARD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* или нужная вам высота */
+}
+
+.table-container {
+  /* width: 80%; или нужная вам ширина */
+  overflow-x: auto; /* если таблица может быть шире экрана */
+}
+
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 8%;
+  gap: 40px;
+}
+
+
+/* Контейнер изображения */
+.about-me__image {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(58, 216, 255, 0.3);
+}
+
+.about-me__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.about-me__image img:hover {
+  transform: scale(1.05);
+}
+
+/* Текстовый блок */
+.about-me__text {
+  width: 50%;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-me__text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00f0ff;
+  margin-bottom: 20px;
+}
+
+.about-me__text p {
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.about-me__text span {
+  color: #00f0ff;
+  font-weight: bold;
+}
+
+/* 🔥 Оптимизация для планшетов */
+@media (max-width: 1024px) {
+  .about-me {
+    flex-direction: column;
+    /* text-align: center; */
+    gap: 30px;
+  }
+
+  .about-me__image {
+    width: 60%;
+    max-width: 300px;
+  }
+
+  .about-me__text {
+    width: 80%;
+  }
+
+  .about-me__text h2 {
+    font-size: 28px;
+    text-align: center;
+
+  }
+
+  .about-me__text p {
+    font-size: 16px;
+  }
+}
+
+/* 📱 Оптимизация для мобильных устройств */
+@media (max-width: 768px) {
+  .about-me {
+    padding: 40px 5%;
+  }
+
+  .about-me__image {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .about-me__text {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .about-me__text h2 {
+    font-size: 24px;
+    text-align: center;
+
+  }
+
+  .about-me__text p {
+    font-size: 14px;
+  }
+}
+
+
+.icon-style {
+  width: 20px;
+  height: 20px;
+  color: #d7ff00; /* Фиолетовый */
+  opacity: 0.8;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-style:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+.details-component {
+  background-color: #1a1a1a;
+}
+
+.list-none {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+/* Стили для отзывов в виде бумажных записок */
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.review-wrapper {
+  position: relative;
+  transform: rotate(-3deg);
+  max-width: 300px;
+}
+
+.review-wrapper:nth-child(2) {
+  transform: rotate(3deg);
+}
+
+@media (max-width: 768px) {
+  .reviews-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .review-wrapper {
+    transform: none;
+    max-width: 90%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Exo+2:wght@400;700&display=swap');
+
+.font-exo {
+  font-family: "Exo 2", sans-serif;
+}
+
+.font-russo {
+  font-family: "Russo One", sans-serif;
+  font-size: 16px;
+}
+
+
+/* .card {
+  transition: all 0.3s ease-in-out;
+}
+
+
+.card:hover {
+  box-shadow: 0px 0px 20px rgba(110, 58, 255, 0.8);
+} */
+
+.teachers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Автоматически подстраивает количество колонок */
+  gap: 20px; /* Расстояние между карточками */
+  justify-items: center; /* Центрирует карточки по горизонтали */
+}
+
+.teacher-card {
+  background-color: #2c2c2c; /* Тёмный фон для карточки */
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%; /* Чтобы карточка занимала доступную ширину */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Плавный эффект при наведении */
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px); /* Легкий подъем при наведении */
+}
+
+.teacher-card img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 50%; Картинка круглая */
+  margin-bottom: 10px;
+}
+
+.teacher-card .description {
+  color: #ccc; /* Светлый цвет текста */
+  font-size: 14px;
+}

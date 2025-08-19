@@ -1,0 +1,84 @@
+.landing-page {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .landing-hero {
+    background: linear-gradient(135deg, #ff7a18, #af002d 70%);
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  .landing-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .landing-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .landing-hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #fff;
+    color: #af002d;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .landing-hero button:hover {
+    background: #af002d;
+    color: #fff;
+  }
+  
+  .landing-features {
+    padding: 40px 20px;
+  }
+  
+  .landing-features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .landing-features ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .landing-features li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .landing-cta {
+    background: #f4f4f4;
+    padding: 50px 20px;
+  }
+  
+  .landing-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .landing-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .landing-cta button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: #af002d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .landing-cta button:hover {
+    background: #ff7a18;
+  }
+  
